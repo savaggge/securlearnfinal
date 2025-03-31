@@ -36,7 +36,7 @@
             </div>
             <div class="card-body p-2">
                 <div class="d-flex flex-wrap justify-content-center" id="alphabet-index">
-                    {% for letter in 'ABCDEFGHIJKLMNOPQRSTUVWXYZ' %}
+                    {% for letter in 'АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯABCDEFGHIJKLMNOPQRSTUVWXYZ' %}
                     <a href="#letter-{{ letter }}" class="text-center p-2 m-1 text-decoration-none border rounded alphabet-link">{{ letter }}</a>
                     {% endfor %}
                 </div>
@@ -238,9 +238,10 @@
 {% block extra_head %}
 <style>
     .alphabet-link {
-        width: 36px;
-        height: 36px;
-        line-height: 32px;
+        width: 30px;
+        height: 30px;
+        line-height: 26px;
+        font-size: 0.85rem;
         transition: all 0.2s;
     }
     
