@@ -8,59 +8,58 @@ RESOURCES = [
     # Tools Section
     {
         "name": "Have I Been Pwned",
-        "description": "A free service that allows you to check if your email or phone is in a data breach. It helps you discover if your accounts have been compromised and take action.",
+        "description": "Бесплатный сервис, который позволяет проверить, не утекли ли ваши email или телефон при взломе баз данных. Он помогает узнать, были ли скомпрометированы ваши аккаунты, и предпринять необходимые действия.",
         "category": "tools",
         "price_type": "free",
         "price_type_color": "success",
         "url": "https://haveibeenpwned.com/",
-        "tags": ["breach notification", "account security", "data leaks", "monitoring"]
+        "tags": ["уведомления о взломах", "безопасность аккаунта", "утечки данных", "мониторинг"]
     },
     {
         "name": "Qualys SSL Labs",
-        "description": "A free online service that performs a deep analysis of the SSL/TLS web server configuration. It helps you identify potential security issues with your website's configuration.",
+        "description": "Бесплатный онлайн-сервис, который выполняет глубокий анализ конфигурации SSL/TLS веб-сервера. Помогает выявить потенциальные проблемы безопасности в конфигурации вашего веб-сайта.",
         "category": "tools",
         "price_type": "free",
         "price_type_color": "success",
         "url": "https://www.ssllabs.com/ssltest/",
-        "tags": ["ssl", "tls", "website security", "configuration testing"]
+        "tags": ["ssl", "tls", "безопасность веб-сайта", "тестирование конфигурации"]
     },
     {
         "name": "OWASP ZAP",
-        "description": "The OWASP Zed Attack Proxy is a free security tool that helps find security vulnerabilities in web applications during the development and testing phase.",
+        "description": "OWASP Zed Attack Proxy - это бесплатный инструмент безопасности, который помогает находить уязвимости в веб-приложениях на этапе разработки и тестирования.",
         "category": "tools",
         "price_type": "free",
         "price_type_color": "success",
         "url": "https://www.zaproxy.org/",
-        "tags": ["web application security", "vulnerability scanner", "penetration testing"]
+        "tags": ["безопасность веб-приложений", "сканер уязвимостей", "тестирование на проникновение"]
     },
     {
         "name": "Wireshark",
-        "description": "A free and open-source packet analyzer used for network troubleshooting, analysis, and security. It lets you see what's happening on your network at a microscopic level.",
+        "description": "Бесплатный анализатор сетевых пакетов с открытым исходным кодом, используемый для устранения неполадок в сети, анализа и обеспечения безопасности. Позволяет видеть, что происходит в вашей сети на микроскопическом уровне.",
         "category": "tools",
         "price_type": "free",
         "price_type_color": "success",
         "url": "https://www.wireshark.org/",
-        "tags": ["network analysis", "packet capture", "protocol analyzer", "network security"]
+        "tags": ["анализ сети", "захват пакетов", "анализатор протоколов", "сетевая безопасность"]
     },
     {
         "name": "Bitwarden",
-        "description": "An open-source password manager that securely stores and manages passwords. The free version offers essential features for individual users, while paid plans add advanced features.",
+        "description": "Менеджер паролей с открытым исходным кодом, который безопасно хранит и управляет паролями. Бесплатная версия предлагает основные функции для индивидуальных пользователей, а платные планы добавляют расширенные возможности.",
         "category": "tools",
         "price_type": "freemium",
         "price_type_color": "warning",
         "url": "https://bitwarden.com/",
-        "tags": ["password manager", "credentials", "authentication", "secure storage"]
+        "tags": ["менеджер паролей", "учетные данные", "аутентификация", "безопасное хранение"]
     },
     {
         "name": "Privacy Badger",
-        "description": "A free browser extension that automatically learns to block invisible trackers. Instead of keeping lists of what to block, Privacy Badger learns by watching which domains appear to be tracking you.",
+        "description": "Бесплатное расширение для браузера, которое автоматически учится блокировать невидимые трекеры. Вместо хранения списков того, что нужно блокировать, Privacy Badger обучается, наблюдая, какие домены, похоже, отслеживают ваши действия.",
         "category": "tools",
         "price_type": "free",
         "price_type_color": "success",
         "url": "https://privacybadger.org/",
-        "tags": ["privacy", "tracking protection", "browser extension", "data collection"]
+        "tags": ["конфиденциальность", "защита от отслеживания", "расширение для браузера", "сбор данных"]
     },
-    
     # Guides Section
     {
         "name": "NIST Cybersecurity Framework",
