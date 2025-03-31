@@ -384,279 +384,279 @@ TUTORIALS = [
     # Password Security Category
     {
         "id": "password-security",
-        "title": "Creating Strong Passwords",
-        "description": "Learn how to create and manage strong, unique passwords for better security.",
+        "title": "Создание надежных паролей",
+        "description": "Узнайте, как создавать и управлять надежными, уникальными паролями для лучшей защиты.",
         "category": "password-security",
-        "difficulty": "Beginner",
-        "duration": "15 min",
-        "objectives": "Understand password vulnerabilities, learn to create strong passwords, and discover password management strategies.",
-        "introduction": "Passwords remain the primary authentication method for most digital services, making them a critical element of your online security. Despite their importance, many people continue to use weak, easily guessable passwords or reuse the same password across multiple sites. This tutorial will teach you how to create strong passwords and manage them effectively to protect your digital identity.",
+        "difficulty": "Начинающий",
+        "duration": "15 мин",
+        "objectives": "Понимание уязвимостей паролей, обучение созданию надежных паролей и освоение стратегий управления паролями.",
+        "introduction": "Пароли остаются основным методом аутентификации для большинства цифровых сервисов, что делает их критически важным элементом вашей онлайн-безопасности. Несмотря на их важность, многие люди продолжают использовать слабые, легко угадываемые пароли или повторно используют один и тот же пароль на нескольких сайтах. Этот учебник научит вас, как создавать надежные пароли и эффективно управлять ими для защиты вашей цифровой личности.",
         "sections": [
             {
-                "title": "Why Password Security Matters",
+                "title": "Почему безопасность паролей важна",
                 "content": [
-                    "Passwords are the keys to your digital life. When attackers obtain your passwords, they can:",
-                    "• Access your personal and financial information",
-                    "• Make purchases using your payment methods",
-                    "• Steal your identity or impersonate you",
-                    "• Access your workplace systems and sensitive data",
-                    "• Use your accounts to attack others",
-                    "The risks aren't just theoretical. According to cybersecurity reports, 81% of data breaches are caused by weak or stolen passwords. A single compromised password can lead to multiple account breaches due to password reuse."
+                    "Пароли - это ключи к вашей цифровой жизни. Когда злоумышленники получают ваши пароли, они могут:",
+                    "• Получить доступ к вашей личной и финансовой информации",
+                    "• Совершать покупки, используя ваши платежные методы",
+                    "• Украсть вашу личность или выдавать себя за вас",
+                    "• Получить доступ к системам и конфиденциальным данным вашего рабочего места",
+                    "• Использовать ваши учетные записи для атак на других",
+                    "Риски не просто теоретические. Согласно отчетам по кибербезопасности, 81% утечек данных вызваны слабыми или украденными паролями. Один скомпрометированный пароль может привести к взлому нескольких учетных записей из-за повторного использования пароля."
                 ],
                 "alert": {
                     "type": "danger",
                     "icon": "exclamation-circle",
-                    "title": "Common Password Mistakes",
-                    "content": "The most common passwords still include '123456', 'password', 'qwerty', and 'admin'. These can be cracked in less than a second. Even adding a single character, number, or symbol significantly increases the time required to crack a password."
+                    "title": "Распространенные ошибки при создании паролей",
+                    "content": "Самые распространенные пароли до сих пор включают '123456', 'password', 'qwerty' и 'admin'. Эти пароли можно взломать менее чем за секунду. Даже добавление одного символа, цифры или специального знака значительно увеличивает время, необходимое для взлома пароля."
                 }
             },
             {
-                "title": "Characteristics of Strong Passwords",
+                "title": "Характеристики надежных паролей",
                 "content": [
-                    "A strong password has several important characteristics:",
-                    "• Length: At least 12 characters; longer passwords are exponentially harder to crack",
-                    "• Complexity: A mix of uppercase and lowercase letters, numbers, and special characters",
-                    "• Unpredictability: Avoids common words, phrases, or patterns",
-                    "• Uniqueness: Different for each account or service",
-                    "• Memorability: Something you can remember without writing down",
-                    "The strength of a password is primarily determined by its length and randomness. Adding just a few characters to a password can make it exponentially more difficult to crack."
+                    "Надежный пароль имеет несколько важных характеристик:",
+                    "• Длина: Не менее 12 символов; более длинные пароли экспоненциально сложнее взломать",
+                    "• Сложность: Сочетание прописных и строчных букв, цифр и специальных символов",
+                    "• Непредсказуемость: Отсутствие распространенных слов, фраз или шаблонов",
+                    "• Уникальность: Разные пароли для каждой учетной записи или сервиса",
+                    "• Запоминаемость: Что-то, что вы можете запомнить, не записывая",
+                    "Надежность пароля в первую очередь определяется его длиной и случайностью. Добавление всего нескольких символов к паролю может сделать его экспоненциально более сложным для взлома."
                 ],
                 "code": {
                     "language": "text",
-                    "snippet": "# Examples of password strength:\n\n'password' - Would be cracked instantly\n'Password1' - Would be cracked in less than a day\n'P@ssw0rd!' - Would be cracked in a few days\n'Tr0ub4dor&3' - Would take several months to crack\n'correct-horse-battery-staple' - Would take centuries to crack with current technology"
+                    "snippet": "# Примеры надежности паролей:\n\n'password' - Может быть взломан мгновенно\n'Password1' - Может быть взломан менее чем за день\n'P@ssw0rd!' - Может быть взломан за несколько дней\n'Tr0ub4dor&3' - Потребуется несколько месяцев для взлома\n'correct-horse-battery-staple' - Потребуются столетия для взлома при текущих технологиях"
                 }
             },
             {
-                "title": "Creating Memorable Yet Strong Passwords",
+                "title": "Создание запоминающихся и надежных паролей",
                 "content": [
-                    "The challenge with passwords is balancing security with memorability. Here are effective strategies for creating passwords you can remember:",
-                    "• Passphrase Method: Combine multiple random words with spaces or symbols (e.g., 'correct-horse-battery-staple')",
-                    "• Sentence Method: Take the first letter of each word in a memorable sentence (e.g., 'Mary had a little lamb' becomes 'Mhall')",
-                    "• Substitution Method: Replace letters with similar-looking numbers or symbols (e.g., 'password' becomes 'p@$$w0rd')",
-                    "• Personal Algorithm: Create a system for generating unique passwords for each site (e.g., combining the service name with a personal phrase)",
-                    "The most secure approach is to use a password manager to generate and store completely random, unique passwords for each service."
+                    "Задача с паролями заключается в балансировании безопасности и запоминаемости. Вот эффективные стратегии для создания паролей, которые вы можете запомнить:",
+                    "• Метод парольной фразы: Объедините несколько случайных слов с пробелами или символами (например, 'correct-horse-battery-staple')",
+                    "• Метод предложения: Возьмите первую букву каждого слова в запоминающемся предложении (например, 'У лукоморья дуб зелёный' становится 'Улдз')",
+                    "• Метод подстановки: Замените буквы похожими на них цифрами или символами (например, 'password' становится 'p@$$w0rd')",
+                    "• Личный алгоритм: Создайте систему для генерации уникальных паролей для каждого сайта (например, комбинируя название сервиса с личной фразой)",
+                    "Самый безопасный подход - использовать менеджер паролей для генерации и хранения полностью случайных, уникальных паролей для каждого сервиса."
                 ],
                 "image": {
                     "url": "https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/svgs/solid/key.svg",
-                    "alt": "Strong Password Illustration",
-                    "caption": "Strong passwords are your first line of defense against unauthorized access"
+                    "alt": "Иллюстрация сильного пароля",
+                    "caption": "Надежные пароли - это ваша первая линия защиты от несанкционированного доступа"
                 }
             },
             {
-                "title": "Password Management Best Practices",
+                "title": "Лучшие практики управления паролями",
                 "content": [
-                    "Even with strong passwords, proper management is essential for maintaining security:",
-                    "• Use a password manager: These tools generate, store, and auto-fill strong, unique passwords for all your accounts",
-                    "• Enable two-factor authentication (2FA): This adds an extra layer of security beyond just a password",
-                    "• Never reuse passwords: Each account should have a completely different password",
-                    "• Change passwords regularly: Especially for critical accounts like email and banking",
-                    "• Don't share passwords: Even with trusted individuals, sharing reduces security",
-                    "• Be cautious of password storage: Browser password managers are convenient but typically less secure than dedicated password managers",
-                    "• Have a recovery plan: Know how to recover access if you forget a password or lose access to your password manager"
+                    "Даже с надежными паролями, правильное управление необходимо для поддержания безопасности:",
+                    "• Используйте менеджер паролей: Эти инструменты генерируют, хранят и автоматически заполняют надежные, уникальные пароли для всех ваших учетных записей",
+                    "• Включите двухфакторную аутентификацию (2FA): Это добавляет дополнительный уровень защиты помимо просто пароля",
+                    "• Никогда не используйте пароли повторно: Каждая учетная запись должна иметь совершенно разный пароль",
+                    "• Регулярно меняйте пароли: Особенно для критически важных учетных записей, таких как электронная почта и банковские услуги",
+                    "• Не делитесь паролями: Даже с доверенными лицами, совместное использование снижает безопасность",
+                    "• Будьте осторожны с хранением паролей: Менеджеры паролей в браузере удобны, но обычно менее безопасны, чем специализированные менеджеры паролей",
+                    "• Имейте план восстановления: Знайте, как восстановить доступ, если вы забудете пароль или потеряете доступ к своему менеджеру паролей"
                 ]
             }
         ],
         "key_takeaways": [
-            "Strong passwords are essential for protecting your digital identity",
-            "The strength of a password depends on length, complexity, and uniqueness",
-            "Passphrases (multiple random words) are both secure and memorable",
-            "Password managers are the most secure way to create and store unique passwords",
-            "Two-factor authentication adds an essential extra layer of security"
+            "Надежные пароли необходимы для защиты вашей цифровой личности",
+            "Надежность пароля зависит от длины, сложности и уникальности",
+            "Парольные фразы (несколько случайных слов) одновременно безопасны и легко запоминаются",
+            "Менеджеры паролей - самый безопасный способ создания и хранения уникальных паролей",
+            "Двухфакторная аутентификация добавляет важный дополнительный уровень безопасности"
         ],
         "exercise": {
-            "title": "Password Audit and Upgrade",
-            "description": "Assess your current password practices and upgrade your most important accounts.",
+            "title": "Аудит и улучшение паролей",
+            "description": "Оцените ваши текущие практики использования паролей и обновите пароли для самых важных учетных записей.",
             "steps": [
-                "Make a list of your most critical accounts (email, banking, social media, etc.)",
-                "Check if any of these accounts share the same or similar passwords",
-                "Create new, strong passwords for each account using the techniques learned",
-                "Enable two-factor authentication on all accounts that support it",
-                "Consider using a password manager to store and generate your passwords"
+                "Составьте список ваших наиболее важных учетных записей (электронная почта, банковские сервисы, социальные сети и т.д.)",
+                "Проверьте, используются ли одинаковые или похожие пароли в нескольких учетных записях",
+                "Создайте новые надежные пароли для каждой учетной записи, используя изученные техники",
+                "Включите двухфакторную аутентификацию на всех учетных записях, которые ее поддерживают",
+                "Рассмотрите возможность использования менеджера паролей для хранения и генерации паролей"
             ],
-            "hint": "Start with your email account, as it often serves as a recovery method for other accounts. Then move on to financial accounts and other sensitive services."
+            "hint": "Начните с вашей учетной записи электронной почты, так как она часто используется для восстановления доступа к другим учетным записям. Затем переходите к финансовым учетным записям и другим важным сервисам."
         },
         "further_reading": [
             {
                 "title": "NIST Password Guidelines",
                 "url": "https://pages.nist.gov/800-63-3/sp800-63b.html#sec5",
-                "description": "Official US government guidelines on password security"
+                "description": "Официальные рекомендации правительства США по безопасности паролей"
             },
             {
                 "title": "Have I Been Pwned",
                 "url": "https://haveibeenpwned.com/",
-                "description": "Check if your email or password has been compromised in data breaches"
+                "description": "Проверьте, не был ли ваш адрес электронной почты или пароль скомпрометирован в утечках данных"
             },
             {
                 "title": "Password Strength Testing Tools",
                 "url": "https://www.security.org/how-secure-is-my-password/",
-                "description": "Tools to estimate how quickly your password could be cracked"
+                "description": "Инструменты для оценки того, как быстро ваш пароль может быть взломан"
             }
         ],
         "related_tutorials": [
             {
                 "id": "two-factor-authentication",
-                "title": "Setting Up Two-Factor Authentication",
-                "difficulty": "Beginner"
+                "title": "Настройка двухфакторной аутентификации",
+                "difficulty": "Начинающий"
             },
             {
                 "id": "password-managers",
-                "title": "Using Password Managers",
-                "difficulty": "Beginner"
+                "title": "Использование менеджеров паролей",
+                "difficulty": "Начинающий"
             },
             {
                 "id": "social-engineering",
-                "title": "Recognizing Social Engineering Attacks",
-                "difficulty": "Beginner"
+                "title": "Распознавание атак социальной инженерии",
+                "difficulty": "Начинающий"
             }
         ]
     },
     {
         "id": "two-factor-authentication",
-        "title": "Setting Up Two-Factor Authentication",
-        "description": "Learn how to add an extra layer of security to your accounts beyond just passwords.",
+        "title": "Настройка двухфакторной аутентификации",
+        "description": "Узнайте, как добавить дополнительный уровень защиты к вашим учетным записям помимо просто паролей.",
         "category": "password-security",
-        "difficulty": "Beginner",
-        "duration": "15 min",
-        "objectives": "Understand what two-factor authentication is, why it's important, and how to set it up on various accounts.",
-        "introduction": "Two-factor authentication (2FA), sometimes called multi-factor authentication, adds an additional layer of security to your accounts beyond just a password. It combines something you know (your password) with something you have (like your phone) or something you are (biometrics). This tutorial will explain why 2FA is crucial and guide you through setting it up on your most important accounts.",
+        "difficulty": "Начинающий",
+        "duration": "15 мин",
+        "objectives": "Понять, что такое двухфакторная аутентификация, почему она важна и как настроить ее на различных учетных записях.",
+        "introduction": "Двухфакторная аутентификация (2FA), иногда называемая многофакторной аутентификацией, добавляет дополнительный уровень безопасности к вашим учетным записям помимо просто пароля. Она объединяет то, что вы знаете (ваш пароль) с тем, что у вас есть (например, ваш телефон) или тем, что представляет собой ваша личность (биометрические данные). Этот учебник объяснит, почему 2FA так важна, и проведет вас через процесс ее настройки на ваших самых важных учетных записях.",
         "sections": [
             {
-                "title": "Understanding Two-Factor Authentication",
+                "title": "Понимание двухфакторной аутентификации",
                 "content": [
-                    "Two-factor authentication adds an extra verification step when logging into your accounts. Even if someone discovers your password, they still can't access your account without the second factor.",
-                    "There are several types of second factors:",
-                    "• SMS codes: A one-time code sent to your phone via text message",
-                    "• Authentication apps: Apps like Google Authenticator or Authy that generate time-based codes",
-                    "• Push notifications: Approve login attempts directly on your trusted device",
-                    "• Physical security keys: USB devices like YubiKey that you insert into your computer",
-                    "• Biometrics: Fingerprints, facial recognition, or other physical characteristics",
-                    "Each method offers different levels of security and convenience. Generally, authentication apps and physical security keys are more secure than SMS codes."
+                    "Двухфакторная аутентификация добавляет дополнительный шаг проверки при входе в ваши учетные записи. Даже если кто-то узнает ваш пароль, он все равно не сможет получить доступ к вашей учетной записи без второго фактора.",
+                    "Существует несколько типов вторых факторов:",
+                    "• SMS-коды: Одноразовый код, отправляемый на ваш телефон через текстовое сообщение",
+                    "• Приложения аутентификации: Приложения вроде Google Authenticator или Authy, которые генерируют коды на основе времени",
+                    "• Push-уведомления: Одобрение попыток входа непосредственно на вашем доверенном устройстве",
+                    "• Физические ключи безопасности: USB-устройства типа YubiKey, которые вы вставляете в компьютер",
+                    "• Биометрия: Отпечатки пальцев, распознавание лица или другие физические характеристики",
+                    "Каждый метод предлагает различные уровни безопасности и удобства. Как правило, приложения аутентификации и физические ключи безопасности более надежны, чем SMS-коды."
                 ],
                 "image": {
                     "url": "https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/svgs/solid/shield-alt.svg",
-                    "alt": "Two-Factor Authentication Illustration",
-                    "caption": "2FA adds a second verification layer, dramatically increasing account security"
+                    "alt": "Иллюстрация двухфакторной аутентификации",
+                    "caption": "2FA добавляет второй уровень проверки, значительно повышая безопасность учетной записи"
                 }
             },
             {
-                "title": "Why You Need Two-Factor Authentication",
+                "title": "Зачем вам нужна двухфакторная аутентификация",
                 "content": [
-                    "Two-factor authentication is one of the most effective security measures available:",
-                    "• It protects against password breaches: Even if your password is stolen, attackers still can't access your account",
-                    "• It defends against phishing: Most 2FA methods can't be easily intercepted or faked by phishing attempts",
-                    "• It alerts you to unauthorized access attempts: You'll receive authentication prompts when someone tries to log in with your password",
-                    "• It's recommended by security experts: Cybersecurity professionals universally recommend using 2FA",
-                    "According to Microsoft, accounts with 2FA are 99.9% less likely to be compromised than accounts with passwords alone. This simple step can eliminate most account takeover risks."
+                    "Двухфакторная аутентификация - одна из самых эффективных доступных мер безопасности:",
+                    "• Она защищает от утечек паролей: Даже если ваш пароль украден, злоумышленники все равно не смогут получить доступ к вашей учетной записи",
+                    "• Она защищает от фишинга: Большинство методов 2FA не могут быть легко перехвачены или подделаны при попытках фишинга",
+                    "• Она оповещает вас о несанкционированных попытках доступа: Вы будете получать запросы аутентификации, когда кто-то пытается войти с вашим паролем",
+                    "• Она рекомендуется экспертами по безопасности: Специалисты по кибербезопасности повсеместно рекомендуют использовать 2FA",
+                    "Согласно данным Microsoft, учетные записи с 2FA на 99,9% менее подвержены компрометации, чем учетные записи только с паролями. Этот простой шаг может устранить большинство рисков захвата учетной записи."
                 ],
                 "alert": {
                     "type": "info",
                     "icon": "info-circle",
-                    "title": "Real-World Protection",
-                    "content": "Two-factor authentication would have prevented many major account breaches, including high-profile social media account takeovers and email compromises that led to data theft."
+                    "title": "Защита в реальном мире",
+                    "content": "Двухфакторная аутентификация могла бы предотвратить многие серьезные взломы учетных записей, включая громкие захваты учетных записей в социальных сетях и компрометацию электронной почты, которые привели к хищению данных."
                 }
             },
             {
-                "title": "Setting Up 2FA on Common Services",
+                "title": "Настройка 2FA на популярных сервисах",
                 "content": [
-                    "Most major online services now offer two-factor authentication. Here's how to enable it on some of the most important ones:",
+                    "Большинство основных онлайн-сервисов теперь предлагают двухфакторную аутентификацию. Вот как включить ее на некоторых из самых важных:",
                     "Google/Gmail:",
-                    "1. Go to your Google Account (myaccount.google.com)",
-                    "2. Select 'Security' from the navigation panel",
-                    "3. Under 'Signing in to Google,' select '2-Step Verification'",
-                    "4. Follow the on-screen steps",
+                    "1. Перейдите в учетную запись Google (myaccount.google.com)",
+                    "2. Выберите 'Безопасность' на панели навигации",
+                    "3. В разделе 'Вход в Google' выберите 'Двухэтапная аутентификация'",
+                    "4. Следуйте инструкциям на экране",
                     "",
                     "Facebook:",
-                    "1. Click the down arrow in the top right and select 'Settings & Privacy' → 'Settings'",
-                    "2. Click 'Security and Login'",
-                    "3. Scroll to 'Two-Factor Authentication' and click 'Edit'",
-                    "4. Choose the authentication method you want to use",
+                    "1. Нажмите на стрелку вниз в правом верхнем углу и выберите 'Настройки и конфиденциальность' → 'Настройки'",
+                    "2. Нажмите 'Безопасность и вход'",
+                    "3. Прокрутите до 'Двухфакторная аутентификация' и нажмите 'Редактировать'",
+                    "4. Выберите желаемый метод аутентификации",
                     "",
                     "Apple ID:",
-                    "1. Go to appleid.apple.com and sign in",
-                    "2. In the Security section, click 'Edit'",
-                    "3. Click 'Turn On Two-Factor Authentication'",
-                    "4. Follow the instructions to verify your phone number"
+                    "1. Перейдите на appleid.apple.com и войдите в систему",
+                    "2. В разделе безопасности нажмите 'Редактировать'",
+                    "3. Нажмите 'Включить двухфакторную аутентификацию'",
+                    "4. Следуйте инструкциям для подтверждения номера телефона"
                 ],
                 "code": {
                     "language": "text",
-                    "snippet": "# Common locations to find 2FA settings:\n\n• Google: Account → Security → 2-Step Verification\n• Facebook: Settings → Security and Login → Two-Factor Authentication\n• Twitter: Settings and privacy → Security and account access → Security → Two-factor authentication\n• Microsoft: Account → Security → Two-step verification\n• Amazon: Account & Lists → Account → Login & security → Edit (next to Two-Step Verification)\n• Instagram: Settings → Security → Two-Factor Authentication"
+                    "snippet": "# Распространенные места для поиска настроек 2FA:\n\n• Google: Аккаунт → Безопасность → Двухэтапная аутентификация\n• Facebook: Настройки → Безопасность и вход → Двухфакторная аутентификация\n• Twitter: Настройки и конфиденциальность → Безопасность и доступ к аккаунту → Безопасность → Двухфакторная аутентификация\n• Microsoft: Аккаунт → Безопасность → Двухэтапная проверка\n• Amazon: Аккаунт и списки → Аккаунт → Безопасность и вход → Редактировать (рядом с Двухэтапной проверкой)\n• Instagram: Настройки → Безопасность → Двухфакторная аутентификация"
                 }
             },
             {
-                "title": "Using Authentication Apps",
+                "title": "Использование приложений для аутентификации",
                 "content": [
-                    "Authentication apps are one of the most secure 2FA methods. They generate time-based one-time passwords (TOTP) that change every 30 seconds. Here's how to use them:",
-                    "1. Download an authentication app such as:",
+                    "Приложения для аутентификации - один из самых безопасных методов 2FA. Они генерируют одноразовые пароли на основе времени (TOTP), которые меняются каждые 30 секунд. Вот как их использовать:",
+                    "1. Загрузите приложение для аутентификации, такое как:",
                     "   • Google Authenticator",
                     "   • Authy",
                     "   • Microsoft Authenticator",
                     "   • LastPass Authenticator",
                     "",
-                    "2. When setting up 2FA on a service, choose the 'Authentication app' option",
+                    "2. При настройке 2FA на сервисе выберите опцию 'Приложение аутентификации'",
                     "",
-                    "3. You'll typically be shown a QR code to scan with your app",
+                    "3. Обычно вам показывают QR-код для сканирования с помощью приложения",
                     "",
-                    "4. Your app will then generate a 6-digit code that changes every 30 seconds",
+                    "4. Затем ваше приложение будет генерировать 6-значный код, который меняется каждые 30 секунд",
                     "",
-                    "5. Enter the current code to complete setup",
+                    "5. Введите текущий код для завершения настройки",
                     "",
-                    "6. Store backup codes safely in case you lose access to your authentication app",
+                    "6. Храните резервные коды в безопасном месте на случай, если вы потеряете доступ к приложению аутентификации",
                     "",
-                    "Important: If you get a new phone, you'll need to transfer your authentication app accounts to the new device. Make sure you understand the backup and recovery process for your chosen app."
+                    "Важно: если вы получите новый телефон, вам потребуется перенести учетные записи из приложения аутентификации на новое устройство. Убедитесь, что вы понимаете процесс резервного копирования и восстановления для выбранного вами приложения."
                 ]
             }
         ],
         "key_takeaways": [
-            "Two-factor authentication dramatically improves account security",
-            "Authentication apps and security keys provide better protection than SMS codes",
-            "Enable 2FA on your most important accounts first (email, banking, cloud storage)",
-            "Always save backup codes in a secure location",
-            "2FA is especially important for accounts containing sensitive information or with payment methods attached"
+            "Двухфакторная аутентификация значительно повышает безопасность учетной записи",
+            "Приложения аутентификации и физические ключи безопасности обеспечивают лучшую защиту, чем SMS-коды",
+            "Сначала включите 2FA на самых важных учетных записях (электронная почта, банковские услуги, облачное хранилище)",
+            "Всегда храните резервные коды в безопасном месте",
+            "2FA особенно важна для учетных записей, содержащих конфиденциальную информацию или привязанные платежные методы"
         ],
         "exercise": {
-            "title": "Enable 2FA on Critical Accounts",
-            "description": "Set up two-factor authentication on your most important online accounts.",
+            "title": "Включение 2FA на критически важных учетных записях",
+            "description": "Настройте двухфакторную аутентификацию на ваших самых важных онлайн-аккаунтах.",
             "steps": [
-                "Make a list of your most critical online accounts (email, banking, social media)",
-                "Download an authentication app if you don't already have one",
-                "For each account, find the security or 2FA settings section",
-                "Follow the instructions to enable 2FA (preferably using an authentication app)",
-                "Store any backup codes in a secure location (password manager or printed copy in a safe place)"
+                "Составьте список ваших самых важных онлайн-аккаунтов (электронная почта, банковские услуги, социальные сети)",
+                "Загрузите приложение аутентификации, если у вас его еще нет",
+                "Для каждой учетной записи найдите раздел настроек безопасности или 2FA",
+                "Следуйте инструкциям для включения 2FA (предпочтительно с использованием приложения аутентификации)",
+                "Храните резервные коды в безопасном месте (менеджер паролей или печатная копия в надежном месте)"
             ],
-            "hint": "Start with your email account since it's typically used to reset passwords for other services. Then move on to financial accounts, social media, and cloud storage."
+            "hint": "Начните с вашей учетной записи электронной почты, поскольку она обычно используется для восстановления доступа к другим сервисам. Затем переходите к финансовым учетным записям, социальным сетям и облачным хранилищам."
         },
         "further_reading": [
             {
                 "title": "Two Factor Auth Directory",
                 "url": "https://twofactorauth.org/",
-                "description": "A directory of websites and services that support 2FA"
+                "description": "Каталог веб-сайтов и сервисов, поддерживающих 2FA"
             },
             {
                 "title": "NIST Digital Identity Guidelines",
                 "url": "https://pages.nist.gov/800-63-3/",
-                "description": "Official US government guidelines on authentication"
+                "description": "Официальные руководства правительства США по аутентификации"
             },
             {
                 "title": "EFF's Guide to Two-Factor Authentication",
                 "url": "https://ssd.eff.org/en/module/how-enable-two-factor-authentication",
-                "description": "The Electronic Frontier Foundation's guide to 2FA"
+                "description": "Руководство по двухфакторной аутентификации от Electronic Frontier Foundation"
             }
         ],
         "related_tutorials": [
             {
                 "id": "password-security",
-                "title": "Creating Strong Passwords",
-                "difficulty": "Beginner"
+                "title": "Создание надежных паролей",
+                "difficulty": "Начинающий"
             },
             {
                 "id": "password-managers",
-                "title": "Using Password Managers",
-                "difficulty": "Beginner"
+                "title": "Использование менеджеров паролей",
+                "difficulty": "Начинающий"
             },
             {
                 "id": "account-security",
-                "title": "Securing Your Online Accounts",
-                "difficulty": "Beginner"
+                "title": "Защита ваших онлайн-аккаунтов",
+                "difficulty": "Начинающий"
             }
         ]
     },
