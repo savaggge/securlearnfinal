@@ -1,0 +1,51 @@
+    # Books Section
+    {
+        "name": "Cybersecurity For Dummies",
+        "description": "Дружелюбное введение в концепции кибербезопасности для начинающих, объясняющее угрозы, защитные меры и лучшие практики простым языком, доступным для нетехнических читателей.",
+        "category": "books",
+        "price_type": "paid",
+        "price_type_color": "danger",
+        "url": "https://www.wiley.com/en-us/Cybersecurity+For+Dummies-p-9781119560326",
+        "author": "Joseph Steinberg",
+        "tags": ["начинающие", "основы", "нетехнический", "введение"]
+    },
+    {
+        "name": "Social Engineering: The Science of Human Hacking",
+        "description": "Исследует методы социальной инженерии и дает представление о том, как распознавать и защищаться от тактик манипуляции, используемых злоумышленниками.",
+        "category": "books",
+        "price_type": "paid",
+        "price_type_color": "danger",
+        "url": "https://www.wiley.com/en-us/Social+Engineering%3A+The+Science+of+Human+Hacking%2C+2nd+Edition-p-9781119433385",
+        "author": "Christopher Hadnagy",
+        "tags": ["социальная инженерия", "манипуляции", "психология", "человеческий фактор"]
+    },
+    {
+        "name": "Practical Malware Analysis",
+        "description": "Практическое руководство по анализу вредоносного ПО для понимания того, как оно работает, как его идентифицировать и как с ним бороться.",
+        "category": "books",
+        "price_type": "paid",
+        "price_type_color": "danger",
+        "url": "https://nostarch.com/malware",
+        "author": "Michael Sikorski & Andrew Honig",
+        "tags": ["вредоносное ПО", "анализ", "обратная инженерия", "обнаружение угроз"]
+    },
+    {
+        "name": "The Web Application Hacker's Handbook",
+        "description": "Комплексное руководство по поиску и использованию уязвимостей в веб-приложениях. Необходимо для разработчиков и специалистов по безопасности, которые хотят защитить веб-приложения.",
+        "category": "books",
+        "price_type": "paid",
+        "price_type_color": "danger",
+        "url": "https://www.wiley.com/en-us/The+Web+Application+Hacker%27s+Handbook%3A+Finding+and+Exploiting+Security+Flaws%2C+2nd+Edition-p-9781118026472",
+        "author": "Dafydd Stuttard & Marcus Pinto",
+        "tags": ["веб-безопасность", "тестирование на проникновение", "уязвимости", "безопасность приложений"]
+    },
+    {
+        "name": "CISSP All-in-One Exam Guide",
+        "description": "Комплексное руководство по темам, охватываемым в экзамене Certified Information Systems Security Professional, но также служит отличным справочником для профессионалов в области кибербезопасности.",
+        "category": "books",
+        "price_type": "paid",
+        "price_type_color": "danger",
+        "url": "https://www.amazon.com/CISSP-All-One-Guide-Eighth/dp/1260142655/",
+        "author": "Shon Harris & Fernando Maymi",
+        "tags": ["сертификация", "комплексный", "справочник", "профессиональный"]
+    },

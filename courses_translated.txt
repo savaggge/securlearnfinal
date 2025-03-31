@@ -1,0 +1,51 @@
+    # Courses Section
+    {
+        "name": "Cybersecurity Fundamentals",
+        "description": "Курс для начинающих, охватывающий основы кибербезопасности, включая идентификацию угроз, управление рисками и защитные меры.",
+        "category": "courses",
+        "price_type": "free",
+        "price_type_color": "success",
+        "url": "https://www.coursera.org/learn/cyber-security-basics",
+        "provider": "Coursera",
+        "tags": ["основы", "начинающие", "идентификация угроз", "управление рисками"]
+    },
+    {
+        "name": "Introduction to Cyber Security",
+        "description": "Узнайте о безопасности в интернете и о том, как защитить свою цифровую жизнь. Этот курс охватывает необходимые знания для понимания киберугроз и способов защиты от них.",
+        "category": "courses",
+        "price_type": "free",
+        "price_type_color": "success",
+        "url": "https://www.futurelearn.com/courses/introduction-to-cyber-security",
+        "provider": "FutureLearn & The Open University",
+        "tags": ["начинающие", "онлайн-безопасность", "цифровая защита", "основы"]
+    },
+    {
+        "name": "Cyber Security Awareness: Building Your Digital Shield",
+        "description": "Комплексный курс, который поможет вам понять основы кибербезопасности и внедрить практические меры для защиты себя в интернете.",
+        "category": "courses",
+        "price_type": "paid",
+        "price_type_color": "danger",
+        "url": "https://www.udemy.com/course/cyber-security-awareness/",
+        "provider": "Udemy",
+        "tags": ["осведомленность", "практическая безопасность", "онлайн-защита", "угрозы"]
+    },
+    {
+        "name": "Cybersecurity Essentials",
+        "description": "Развивайте понимание киберпреступности, принципов безопасности, технологий и процедур, используемых для защиты сетей. Рекомендовано для студентов, планирующих учиться на сертификацию CompTIA Security+.",
+        "category": "courses",
+        "price_type": "free",
+        "price_type_color": "success",
+        "url": "https://www.netacad.com/courses/cybersecurity/cybersecurity-essentials",
+        "provider": "Cisco Networking Academy",
+        "tags": ["принципы безопасности", "защита сети", "подготовка к сертификации", "киберпреступность"]
+    },
+    {
+        "name": "Complete Cyber Security Course",
+        "description": "Серия углубленных курсов, охватывающих анонимность, конфиденциальность, методы взлома и основы безопасности. Разработана для обеспечения комплексного понимания кибербезопасности.",
+        "category": "courses",
+        "price_type": "paid",
+        "price_type_color": "danger",
+        "url": "https://www.udemy.com/course/the-complete-internet-security-privacy-course-volume-1/",
+        "provider": "Udemy",
+        "tags": ["комплексный", "конфиденциальность", "анонимность", "методы взлома"]
+    },
