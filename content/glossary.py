@@ -1,336 +1,336 @@
 """
-Cybersecurity glossary module.
-Contains definitions and explanations of cybersecurity terms.
+Модуль глоссария по кибербезопасности.
+Содержит определения и объяснения терминов кибербезопасности.
 """
 
-# Glossary terms with definitions, categories, and related terms
+# Термины глоссария с определениями, категориями и связанными терминами
 GLOSSARY_TERMS = [
     {
         "term": "Adware",
-        "definition": "Software that automatically displays or downloads advertising material such as banners or pop-ups when a user is online. While not always malicious, adware can sometimes contain spyware components.",
-        "category": "Threats",
+        "definition": "Программное обеспечение, которое автоматически отображает или загружает рекламные материалы, такие как баннеры или всплывающие окна, когда пользователь находится в сети. Хотя не всегда является вредоносным, adware иногда может содержать компоненты шпионского ПО.",
+        "category": "Угрозы",
         "category_color": "danger",
-        "related_terms": ["Malware", "Spyware", "Browser Hijacker"]
+        "related_terms": ["Вредоносное ПО", "Шпионское ПО", "Браузерный перехватчик"]
     },
     {
-        "term": "Authentication",
-        "definition": "The process of verifying the identity of a user, device, or system, typically to grant access to resources. Common authentication methods include passwords, biometrics, smart cards, and security tokens.",
-        "example": "When you enter your username and password to log into your email account, you're going through an authentication process.",
-        "category": "Authentication",
+        "term": "Аутентификация",
+        "definition": "Процесс проверки личности пользователя, устройства или системы, обычно для предоставления доступа к ресурсам. Распространенные методы аутентификации включают пароли, биометрию, смарт-карты и токены безопасности.",
+        "example": "Когда вы вводите имя пользователя и пароль для входа в свою электронную почту, вы проходите процесс аутентификации.",
+        "category": "Аутентификация",
         "category_color": "primary",
-        "related_terms": ["Multi-Factor Authentication", "Single Sign-On", "Password"]
+        "related_terms": ["Многофакторная аутентификация", "Единый вход", "Пароль"]
     },
     {
-        "term": "Backdoor",
-        "definition": "A method, often secret, of bypassing normal authentication or encryption in a system. Backdoors may be created by system developers for troubleshooting or maintenance, but they can also be installed by attackers to gain unauthorized access.",
-        "category": "Threats",
+        "term": "Бэкдор",
+        "definition": "Метод, часто секретный, обхода нормальной аутентификации или шифрования в системе. Бэкдоры могут быть созданы разработчиками систем для устранения неполадок или обслуживания, но также могут быть установлены злоумышленниками для получения несанкционированного доступа.",
+        "category": "Угрозы",
         "category_color": "danger",
-        "related_terms": ["Malware", "Trojan", "Remote Access Tool"]
+        "related_terms": ["Вредоносное ПО", "Троян", "Инструмент удаленного доступа"]
     },
     {
-        "term": "Biometrics",
-        "definition": "The measurement and statistical analysis of people's unique physical and behavioral characteristics, used for identification and access control. Common biometric methods include fingerprint scanning, facial recognition, voice recognition, and iris scanning.",
-        "example": "Unlocking your smartphone with your fingerprint or facial scan is an example of biometric authentication.",
-        "category": "Authentication",
+        "term": "Биометрия",
+        "definition": "Измерение и статистический анализ уникальных физических и поведенческих характеристик людей, используемых для идентификации и контроля доступа. Распространенные биометрические методы включают сканирование отпечатков пальцев, распознавание лиц, распознавание голоса и сканирование радужной оболочки глаза.",
+        "example": "Разблокировка смартфона с помощью отпечатка пальца или сканирования лица - это пример биометрической аутентификации.",
+        "category": "Аутентификация",
         "category_color": "primary",
-        "related_terms": ["Authentication", "Two-Factor Authentication", "Identity Verification"]
+        "related_terms": ["Аутентификация", "Двухфакторная аутентификация", "Проверка личности"]
     },
     {
-        "term": "Botnet",
-        "definition": "A network of compromised computers (bots) infected with malware and controlled remotely by an attacker (botmaster). Botnets are often used for distributed denial-of-service attacks, spam distribution, or credential stuffing.",
-        "category": "Threats",
+        "term": "Ботнет",
+        "definition": "Сеть скомпрометированных компьютеров (ботов), зараженных вредоносным ПО и удаленно управляемых злоумышленником (ботмастером). Ботнеты часто используются для распределенных атак типа «отказ в обслуживании», распространения спама или автоматического подбора учетных данных.",
+        "category": "Угрозы",
         "category_color": "danger",
-        "related_terms": ["DDoS", "Malware", "Zombie Computer"]
+        "related_terms": ["DDoS", "Вредоносное ПО", "Зомби-компьютер"]
     },
     {
-        "term": "Brute Force Attack",
-        "definition": "An attack method that uses trial and error to crack passwords, login credentials, or encryption keys by systematically checking all possible combinations until the correct one is found.",
-        "example": "An attacker trying every possible four-digit PIN from 0000 to 9999 to unlock a stolen phone is using a brute force attack.",
-        "category": "Threats",
+        "term": "Атака методом перебора",
+        "definition": "Метод атаки, который использует метод проб и ошибок для взлома паролей, учетных данных или ключей шифрования путем систематической проверки всех возможных комбинаций, пока не будет найдена правильная.",
+        "example": "Злоумышленник, пытающийся подобрать каждый возможный четырехзначный PIN-код от 0000 до 9999 для разблокировки украденного телефона, использует атаку методом перебора.",
+        "category": "Угрозы",
         "category_color": "danger",
-        "related_terms": ["Dictionary Attack", "Password Cracking", "Rainbow Table"]
+        "related_terms": ["Атака по словарю", "Взлом паролей", "Радужная таблица"]
     },
     {
-        "term": "CIA Triad",
-        "definition": "A model designed to guide policies for information security within an organization. The three core principles are: Confidentiality (ensuring data is accessible only to authorized parties), Integrity (maintaining accuracy and trustworthiness of data), and Availability (ensuring authorized users have access to information when needed).",
-        "category": "General",
+        "term": "Триада КЦД",
+        "definition": "Модель, разработанная для руководства политиками информационной безопасности в организации. Три основных принципа: Конфиденциальность (обеспечение доступа к данным только авторизованным сторонам), Целостность (поддержание точности и надежности данных) и Доступность (обеспечение доступа авторизованных пользователей к информации, когда это необходимо).",
+        "category": "Общее",
         "category_color": "info",
-        "related_terms": ["Confidentiality", "Integrity", "Availability"]
+        "related_terms": ["Конфиденциальность", "Целостность", "Доступность"]
     },
     {
-        "term": "Confidentiality",
-        "definition": "The principle of ensuring that information is accessible only to those authorized to have access. It is one of the three components of the CIA triad of information security.",
-        "example": "Encryption transforms readable data into an encoded format that can only be read by someone with the decryption key, maintaining confidentiality.",
-        "category": "General",
+        "term": "Конфиденциальность",
+        "definition": "Принцип обеспечения доступа к информации только тем, кто имеет на это разрешение. Это один из трех компонентов триады КЦД информационной безопасности.",
+        "example": "Шифрование преобразует читаемые данные в закодированный формат, который может быть прочитан только тем, у кого есть ключ дешифрования, сохраняя конфиденциальность.",
+        "category": "Общее",
         "category_color": "info",
-        "related_terms": ["CIA Triad", "Encryption", "Privacy"]
+        "related_terms": ["Триада КЦД", "Шифрование", "Приватность"]
     },
     {
-        "term": "Cryptography",
-        "definition": "The practice and study of techniques for secure communication in the presence of adversaries. Modern cryptography concerns itself with confidentiality, integrity, authentication, and non-repudiation.",
-        "category": "Cryptography",
+        "term": "Криптография",
+        "definition": "Практика и исследование методов защищенной коммуникации в присутствии противников. Современная криптография занимается вопросами конфиденциальности, целостности, аутентификации и невозможности отказа от авторства.",
+        "category": "Криптография",
         "category_color": "success",
-        "related_terms": ["Encryption", "Public Key Infrastructure", "Hash Function"]
+        "related_terms": ["Шифрование", "Инфраструктура открытых ключей", "Хеш-функция"]
     },
     {
-        "term": "Data Breach",
-        "definition": "An incident where sensitive, protected, or confidential data is copied, transmitted, viewed, stolen, or used by an unauthorized individual. Data breaches may involve personal health information (PHI), personally identifiable information (PII), trade secrets, or intellectual property.",
-        "example": "When a company's database containing customer credit card information is hacked and the data is stolen, that's a data breach.",
-        "category": "Threats",
+        "term": "Утечка данных",
+        "definition": "Инцидент, при котором конфиденциальные, защищенные или секретные данные копируются, передаются, просматриваются, похищаются или используются несанкционированным лицом. Утечки данных могут включать информацию о личном здоровье (PHI), персональные идентификационные данные (PII), коммерческие тайны или интеллектуальную собственность.",
+        "example": "Когда база данных компании, содержащая информацию о кредитных картах клиентов, взламывается и данные похищаются, это утечка данных.",
+        "category": "Угрозы",
         "category_color": "danger",
-        "related_terms": ["Data Leak", "Identity Theft", "Exfiltration"]
+        "related_terms": ["Утечка информации", "Кража личности", "Эксфильтрация"]
     },
     {
-        "term": "DDoS Attack",
-        "definition": "Distributed Denial of Service. An attack where multiple compromised systems (often infected with malware) are used to target a single system, service, or website with a flood of traffic. The goal is to overwhelm the target, causing it to slow down or crash and deny service to legitimate users.",
-        "category": "Threats",
+        "term": "DDoS-атака",
+        "definition": "Распределенный отказ в обслуживании. Атака, при которой несколько скомпрометированных систем (часто зараженных вредоносным ПО) используются для нацеливания на одну систему, сервис или веб-сайт с потоком трафика. Цель - перегрузить цель, вызвав ее замедление или сбой и отказ в обслуживании законным пользователям.",
+        "category": "Угрозы",
         "category_color": "danger",
-        "related_terms": ["DoS Attack", "Botnet", "Traffic Amplification"]
+        "related_terms": ["DoS-атака", "Ботнет", "Усиление трафика"]
     },
     {
-        "term": "Defense in Depth",
-        "definition": "A cybersecurity strategy that employs multiple layers of security controls throughout a system. The idea is that if one layer fails, additional layers provide further protection, rather than relying on a single security mechanism.",
-        "example": "A company using firewalls, intrusion detection systems, encryption, and employee training is implementing defense in depth.",
-        "category": "General",
+        "term": "Глубокая защита",
+        "definition": "Стратегия кибербезопасности, использующая несколько уровней контроля безопасности во всей системе. Идея заключается в том, что если один уровень выйдет из строя, дополнительные уровни обеспечат дальнейшую защиту, а не полагаться на единый механизм безопасности.",
+        "example": "Компания, использующая файерволы, системы обнаружения вторжений, шифрование и обучение сотрудников, реализует глубокую защиту.",
+        "category": "Общее",
         "category_color": "info",
-        "related_terms": ["Security Controls", "Layered Security", "Risk Management"]
+        "related_terms": ["Контроль безопасности", "Многоуровневая безопасность", "Управление рисками"]
     },
     {
-        "term": "Encryption",
-        "definition": "The process of converting information into a code to prevent unauthorized access. Encryption uses an algorithm and a key to transform plaintext into ciphertext, which appears random and can only be read by decrypting it with the appropriate key.",
-        "category": "Cryptography",
+        "term": "Шифрование",
+        "definition": "Процесс преобразования информации в код для предотвращения несанкционированного доступа. Шифрование использует алгоритм и ключ для преобразования открытого текста в шифротекст, который выглядит случайным и может быть прочитан только путем его расшифровки с помощью соответствующего ключа.",
+        "category": "Криптография",
         "category_color": "success",
-        "related_terms": ["Cryptography", "Decryption", "End-to-End Encryption"]
+        "related_terms": ["Криптография", "Дешифрование", "Сквозное шифрование"]
     },
     {
-        "term": "End-to-End Encryption",
-        "definition": "A system of communication where only the communicating users can read the messages. In principle, it prevents potential eavesdroppers – including telecom providers, internet providers, and the service provider itself – from accessing the cryptographic keys needed to decrypt the conversation.",
-        "example": "When you send a message via WhatsApp or Signal, it's encrypted on your device and only decrypted on the recipient's device, with no ability for the service provider to read the content.",
-        "category": "Cryptography",
+        "term": "Сквозное шифрование",
+        "definition": "Система связи, в которой только общающиеся пользователи могут читать сообщения. В принципе, она предотвращает доступ потенциальных перехватчиков – включая телекоммуникационных провайдеров, интернет-провайдеров и самого поставщика услуг – к криптографическим ключам, необходимым для расшифровки разговора.",
+        "example": "Когда вы отправляете сообщение через WhatsApp или Signal, оно шифруется на вашем устройстве и расшифровывается только на устройстве получателя, без возможности для поставщика услуг прочитать содержимое.",
+        "category": "Криптография",
         "category_color": "success",
-        "related_terms": ["Encryption", "Secure Messaging", "Privacy"]
+        "related_terms": ["Шифрование", "Защищенный обмен сообщениями", "Приватность"]
     },
     {
-        "term": "Exploit",
-        "definition": "A piece of software, a command, or a methodology that takes advantage of a vulnerability or security flaw in a system or application. Exploits are often used as part of an attack to gain unauthorized access to a system or network.",
-        "category": "Threats",
+        "term": "Эксплойт",
+        "definition": "Программное обеспечение, команда или методология, которые используют уязвимость или недостаток безопасности в системе или приложении. Эксплойты часто используются как часть атаки для получения несанкционированного доступа к системе или сети.",
+        "category": "Угрозы",
         "category_color": "danger",
-        "related_terms": ["Vulnerability", "Zero-Day", "Payload"]
+        "related_terms": ["Уязвимость", "Уязвимость нулевого дня", "Полезная нагрузка"]
     },
     {
-        "term": "Firewall",
-        "definition": "A network security system that monitors and controls incoming and outgoing network traffic based on predetermined security rules. Firewalls establish a barrier between a trusted network and an untrusted network, such as the internet.",
-        "example": "A firewall might be configured to block all incoming traffic to ports that aren't specifically needed for approved applications.",
-        "category": "Network",
+        "term": "Файервол",
+        "definition": "Система сетевой безопасности, которая отслеживает и контролирует входящий и исходящий сетевой трафик на основе заранее определенных правил безопасности. Файерволы устанавливают барьер между доверенной сетью и недоверенной сетью, такой как интернет.",
+        "example": "Файервол может быть настроен на блокировку всего входящего трафика к портам, которые не нужны специально для одобренных приложений.",
+        "category": "Сеть",
         "category_color": "warning",
-        "related_terms": ["Network Security", "Packet Filtering", "DMZ"]
+        "related_terms": ["Сетевая безопасность", "Фильтрация пакетов", "DMZ"]
     },
     {
-        "term": "Hash Function",
-        "definition": "A mathematical function that converts an input of arbitrary length into a fixed-size string of bytes. The output, known as the hash value or digest, is unique to each unique input. Hash functions are used for data integrity checks, password storage, and digital signatures.",
-        "category": "Cryptography",
+        "term": "Хеш-функция",
+        "definition": "Математическая функция, которая преобразует входные данные произвольной длины в строку байтов фиксированного размера. Выходные данные, известные как хеш-значение или дайджест, уникальны для каждого уникального ввода. Хеш-функции используются для проверки целостности данных, хранения паролей и цифровых подписей.",
+        "category": "Криптография",
         "category_color": "success",
-        "related_terms": ["Cryptography", "MD5", "SHA-256"]
+        "related_terms": ["Криптография", "MD5", "SHA-256"]
     },
     {
         "term": "HTTPS",
-        "definition": "Hypertext Transfer Protocol Secure. An extension of HTTP that uses SSL/TLS for security. HTTPS encrypts the data exchanged between a user's browser and the website, protecting against eavesdropping, tampering, and man-in-the-middle attacks.",
-        "example": "When you see a padlock icon in your browser and 'https://' in the URL, it indicates the connection is encrypted using HTTPS.",
-        "category": "Network",
+        "definition": "Протокол защищенной передачи гипертекста. Расширение HTTP, использующее SSL/TLS для обеспечения безопасности. HTTPS шифрует данные, обмениваемые между браузером пользователя и веб-сайтом, защищая от прослушивания, подделки и атак типа «человек посередине».",
+        "example": "Когда вы видите значок замка в браузере и 'https://' в URL, это указывает на то, что соединение зашифровано с использованием HTTPS.",
+        "category": "Сеть",
         "category_color": "warning",
-        "related_terms": ["HTTP", "SSL/TLS", "Encryption"]
+        "related_terms": ["HTTP", "SSL/TLS", "Шифрование"]
     },
     {
-        "term": "Identity Theft",
-        "definition": "The deliberate use of someone else's identity, usually as a method to gain financial advantage or obtain credit and other benefits in the other person's name, and perhaps to the other person's disadvantage or loss.",
-        "category": "Threats",
+        "term": "Кража личности",
+        "definition": "Преднамеренное использование чужой личности, обычно как метод получения финансовой выгоды или получения кредита и других преимуществ от имени другого человека, и, возможно, в ущерб или убыток для этого человека.",
+        "category": "Угрозы",
         "category_color": "danger",
-        "related_terms": ["Phishing", "Data Breach", "Social Engineering"]
+        "related_terms": ["Фишинг", "Утечка данных", "Социальная инженерия"]
     },
     {
-        "term": "Integrity",
-        "definition": "In information security, integrity means maintaining and assuring the accuracy and completeness of data over its entire lifecycle. This means data cannot be modified in an unauthorized or undetected manner.",
-        "example": "Digital signatures are used to verify that a message hasn't been altered in transit, maintaining its integrity.",
-        "category": "General",
+        "term": "Целостность",
+        "definition": "В информационной безопасности целостность означает поддержание и обеспечение точности и полноты данных на протяжении всего их жизненного цикла. Это означает, что данные не могут быть изменены несанкционированным или необнаруженным способом.",
+        "example": "Цифровые подписи используются для проверки того, что сообщение не было изменено в пути, сохраняя его целостность.",
+        "category": "Общее",
         "category_color": "info",
-        "related_terms": ["CIA Triad", "Digital Signature", "Hash Function"]
+        "related_terms": ["Триада КЦД", "Цифровая подпись", "Хеш-функция"]
     },
     {
-        "term": "Intrusion Detection System (IDS)",
-        "definition": "A device or software application that monitors a network or systems for malicious activity or policy violations. IDS systems collect and analyze information from various areas within a computer or network to identify possible security breaches.",
-        "category": "Network",
+        "term": "Система обнаружения вторжений (IDS)",
+        "definition": "Устройство или программное приложение, которое отслеживает сеть или системы на предмет вредоносной активности или нарушений политик. Системы IDS собирают и анализируют информацию из различных областей компьютера или сети для выявления возможных нарушений безопасности.",
+        "category": "Сеть",
         "category_color": "warning",
-        "related_terms": ["Intrusion Prevention System", "Security Information and Event Management", "Network Monitoring"]
+        "related_terms": ["Система предотвращения вторжений", "Управление информацией о безопасности и событиями", "Мониторинг сети"]
     },
     {
-        "term": "Keylogger",
-        "definition": "A type of surveillance software or hardware that has the capability to record every keystroke made on a computer. Keyloggers can be used legitimately by IT departments to troubleshoot issues or by parents to monitor children's activities, but they are often used maliciously to steal passwords and other sensitive information.",
-        "category": "Threats",
+        "term": "Кейлоггер",
+        "definition": "Тип программного или аппаратного обеспечения для наблюдения, которое способно записывать каждое нажатие клавиши на компьютере. Кейлоггеры могут использоваться законно ИТ-отделами для устранения неполадок или родителями для мониторинга активности детей, но часто используются злонамеренно для кражи паролей и другой конфиденциальной информации.",
+        "category": "Угрозы",
         "category_color": "danger",
-        "related_terms": ["Spyware", "Malware", "Surveillance"]
+        "related_terms": ["Шпионское ПО", "Вредоносное ПО", "Наблюдение"]
     },
     {
-        "term": "Malware",
-        "definition": "Short for 'malicious software,' this is any software intentionally designed to cause damage to a computer, server, client, or computer network. Malware includes viruses, worms, trojans, ransomware, spyware, adware, and other malicious programs.",
-        "example": "Ransomware is a type of malware that encrypts a victim's files and demands payment for the decryption key.",
-        "category": "Threats",
+        "term": "Вредоносное ПО",
+        "definition": "Сокращение от 'вредоносное программное обеспечение', это любое программное обеспечение, намеренно созданное для причинения вреда компьютеру, серверу, клиенту или компьютерной сети. Вредоносное ПО включает вирусы, черви, трояны, программы-вымогатели, шпионские программы, рекламное ПО и другие вредоносные программы.",
+        "example": "Программа-вымогатель - это тип вредоносного ПО, которое шифрует файлы жертвы и требует оплату за ключ дешифрования.",
+        "category": "Угрозы",
         "category_color": "danger",
-        "related_terms": ["Virus", "Ransomware", "Spyware"]
+        "related_terms": ["Вирус", "Программа-вымогатель", "Шпионское ПО"]
     },
     {
-        "term": "Man-in-the-Middle Attack",
-        "definition": "An attack where the attacker secretly relays and possibly alters the communications between two parties who believe they are directly communicating with each other. This allows the attacker to intercept, read, and modify data passing between the two parties.",
-        "category": "Threats",
+        "term": "Атака «человек посередине»",
+        "definition": "Атака, при которой злоумышленник тайно ретранслирует и, возможно, изменяет коммуникации между двумя сторонами, которые считают, что они напрямую общаются друг с другом. Это позволяет злоумышленнику перехватывать, читать и изменять данные, проходящие между двумя сторонами.",
+        "category": "Угрозы",
         "category_color": "danger",
-        "related_terms": ["Eavesdropping", "Session Hijacking", "SSL Stripping"]
+        "related_terms": ["Подслушивание", "Перехват сессии", "SSL-перехват"]
     },
     {
-        "term": "Multi-Factor Authentication (MFA)",
-        "definition": "An authentication method that requires the user to provide two or more verification factors to gain access to a resource. These factors typically include something you know (password), something you have (security token), and something you are (biometric verification).",
-        "example": "When logging into your bank account requires both a password and a verification code sent to your phone, that's multi-factor authentication.",
-        "category": "Authentication",
+        "term": "Многофакторная аутентификация (MFA)",
+        "definition": "Метод аутентификации, требующий от пользователя предоставления двух или более факторов проверки для получения доступа к ресурсу. Эти факторы обычно включают то, что вы знаете (пароль), то, что у вас есть (токен безопасности), и то, что вы собой представляете (биометрическая верификация).",
+        "example": "Когда для входа в банковский счет требуется как пароль, так и проверочный код, отправленный на ваш телефон, это многофакторная аутентификация.",
+        "category": "Аутентификация",
         "category_color": "primary",
-        "related_terms": ["Two-Factor Authentication", "Authentication", "Security Token"]
+        "related_terms": ["Двухфакторная аутентификация", "Аутентификация", "Токен безопасности"]
     },
     {
-        "term": "Network Security",
-        "definition": "The policies, processes, and practices adopted to prevent, detect, and monitor unauthorized access, misuse, modification, or denial of a computer network and network-accessible resources.",
-        "category": "Network",
+        "term": "Сетевая безопасность",
+        "definition": "Политики, процессы и практики, принятые для предотвращения, обнаружения и мониторинга несанкционированного доступа, неправильного использования, изменения или отказа в доступе к компьютерной сети и доступным через сеть ресурсам.",
+        "category": "Сеть",
         "category_color": "warning",
-        "related_terms": ["Firewall", "Intrusion Detection System", "VPN"]
+        "related_terms": ["Файервол", "Система обнаружения вторжений", "VPN"]
     },
     {
-        "term": "Patch",
-        "definition": "A software update designed to address security vulnerabilities or other bugs in a program or operating system. Regularly applying patches is a critical security practice.",
-        "example": "Microsoft regularly releases patches on 'Patch Tuesday' to fix security vulnerabilities in Windows and other Microsoft products.",
-        "category": "General",
+        "term": "Патч",
+        "definition": "Обновление программного обеспечения, предназначенное для устранения уязвимостей безопасности или других ошибок в программе или операционной системе. Регулярное применение патчей является критической практикой безопасности.",
+        "example": "Microsoft регулярно выпускает патчи в «Патч-вторник» для устранения уязвимостей безопасности в Windows и других продуктах Microsoft.",
+        "category": "Общее",
         "category_color": "info",
-        "related_terms": ["Vulnerability", "Security Update", "Patch Management"]
+        "related_terms": ["Уязвимость", "Обновление безопасности", "Управление патчами"]
     },
     {
-        "term": "Payload",
-        "definition": "In the context of malware or exploits, the payload is the part of the code that performs the malicious action, such as stealing data, encrypting files, or creating a backdoor. It's the 'weapon' that's delivered after a vulnerability has been exploited.",
-        "category": "Threats",
+        "term": "Полезная нагрузка",
+        "definition": "В контексте вредоносного ПО или эксплойтов, полезная нагрузка - это часть кода, которая выполняет вредоносное действие, такое как кража данных, шифрование файлов или создание бэкдора. Это «оружие», которое доставляется после того, как уязвимость была использована.",
+        "category": "Угрозы",
         "category_color": "danger",
-        "related_terms": ["Exploit", "Malware", "Virus"]
+        "related_terms": ["Эксплойт", "Вредоносное ПО", "Вирус"]
     },
     {
-        "term": "Penetration Testing",
-        "definition": "An authorized simulated cyberattack on a computer system, performed to evaluate the security of the system. The test is performed to identify vulnerabilities, strengths, and weaknesses in a system's security.",
-        "example": "A company might hire ethical hackers to attempt to breach their systems to identify security weaknesses before real attackers can exploit them.",
-        "category": "General",
+        "term": "Тестирование на проникновение",
+        "definition": "Авторизованная симулированная кибератака на компьютерную систему, выполняемая для оценки безопасности системы. Тест проводится для выявления уязвимостей, сильных и слабых сторон в безопасности системы.",
+        "example": "Компания может нанять этичных хакеров для попытки взлома своих систем, чтобы выявить уязвимости безопасности до того, как реальные злоумышленники смогут их использовать.",
+        "category": "Общее",
         "category_color": "info",
-        "related_terms": ["Ethical Hacking", "Vulnerability Assessment", "Red Team"]
+        "related_terms": ["Этичный хакинг", "Оценка уязвимостей", "Красная команда"]
     },
     {
-        "term": "Phishing",
-        "definition": "A type of social engineering attack often used to steal user data, including login credentials and credit card numbers. It occurs when an attacker, masquerading as a trusted entity, dupes a victim into opening an email, instant message, or text message and clicking on a malicious link or attachment.",
-        "category": "Threats",
+        "term": "Фишинг",
+        "definition": "Тип атаки социальной инженерии, часто используемый для кражи пользовательских данных, включая учетные данные для входа и номера кредитных карт. Это происходит, когда злоумышленник, маскирующийся под доверенную организацию, обманывает жертву, заставляя ее открыть электронное письмо, мгновенное сообщение или текстовое сообщение и нажать на вредоносную ссылку или вложение.",
+        "category": "Угрозы",
         "category_color": "danger",
-        "related_terms": ["Social Engineering", "Spear Phishing", "Whaling"]
+        "related_terms": ["Социальная инженерия", "Целевой фишинг", "Китовая охота"]
     },
     {
-        "term": "Public Key Infrastructure (PKI)",
-        "definition": "A set of roles, policies, hardware, software, and procedures needed to create, manage, distribute, use, store, and revoke digital certificates and manage public-key encryption. PKI facilitates the secure electronic transfer of information for activities such as e-commerce, internet banking, and confidential email.",
-        "category": "Cryptography",
+        "term": "Инфраструктура открытых ключей (PKI)",
+        "definition": "Набор ролей, политик, оборудования, программного обеспечения и процедур, необходимых для создания, управления, распространения, использования, хранения и отзыва цифровых сертификатов и управления шифрованием с открытым ключом. PKI облегчает безопасную электронную передачу информации для таких видов деятельности, как электронная коммерция, интернет-банкинг и конфиденциальная электронная почта.",
+        "category": "Криптография",
         "category_color": "success",
-        "related_terms": ["Digital Certificate", "Public Key Cryptography", "Certificate Authority"]
+        "related_terms": ["Цифровой сертификат", "Криптография с открытым ключом", "Удостоверяющий центр"]
     },
     {
-        "term": "Ransomware",
-        "definition": "A type of malicious software designed to block access to a computer system or data until a sum of money (ransom) is paid. Ransomware typically encrypts files on the victim's system and demands payment to provide the decryption key.",
-        "example": "The WannaCry ransomware attack in 2017 affected hundreds of thousands of computers worldwide by encrypting files and demanding Bitcoin payments.",
-        "category": "Threats",
+        "term": "Программа-вымогатель",
+        "definition": "Тип вредоносного программного обеспечения, предназначенного для блокировки доступа к компьютерной системе или данным до тех пор, пока не будет выплачена сумма денег (выкуп). Программы-вымогатели обычно шифруют файлы в системе жертвы и требуют оплату за предоставление ключа дешифрования.",
+        "example": "Атака программы-вымогателя WannaCry в 2017 году затронула сотни тысяч компьютеров по всему миру, шифруя файлы и требуя платежи в биткоинах.",
+        "category": "Угрозы",
         "category_color": "danger",
-        "related_terms": ["Malware", "Encryption", "Crypto-locker"]
+        "related_terms": ["Вредоносное ПО", "Шифрование", "Крипто-локер"]
     },
     {
-        "term": "Risk Management",
-        "definition": "The identification, assessment, and prioritization of risks followed by coordinated application of resources to minimize, monitor, and control the probability or impact of adverse events. In cybersecurity, risk management involves identifying vulnerabilities and threats, assessing their potential impact, and implementing controls to mitigate them.",
-        "category": "General",
+        "term": "Управление рисками",
+        "definition": "Идентификация, оценка и приоритезация рисков с последующим координированным применением ресурсов для минимизации, мониторинга и контроля вероятности или влияния неблагоприятных событий. В кибербезопасности управление рисками включает выявление уязвимостей и угроз, оценку их потенциального воздействия и реализацию мер контроля для их снижения.",
+        "category": "Общее",
         "category_color": "info",
-        "related_terms": ["Vulnerability Assessment", "Threat Modeling", "Security Controls"]
+        "related_terms": ["Оценка уязвимостей", "Моделирование угроз", "Средства контроля безопасности"]
     },
     {
-        "term": "Social Engineering",
-        "definition": "The psychological manipulation of people into performing actions or divulging confidential information. It's a type of confidence trick for the purpose of information gathering, fraud, or system access.",
-        "example": "An attacker calling an employee and pretending to be IT support to trick them into revealing their password is using social engineering.",
-        "category": "Threats",
+        "term": "Социальная инженерия",
+        "definition": "Психологическая манипуляция людьми с целью выполнения действий или разглашения конфиденциальной информации. Это вид мошенничества с целью сбора информации, совершения мошенничества или получения доступа к системе.",
+        "example": "Злоумышленник, звонящий сотруднику и притворяющийся ИТ-поддержкой, чтобы обманом заставить его раскрыть свой пароль, использует социальную инженерию.",
+        "category": "Угрозы",
         "category_color": "danger",
-        "related_terms": ["Phishing", "Pretexting", "Baiting"]
+        "related_terms": ["Фишинг", "Предлог", "Приманка"]
     },
     {
-        "term": "Spear Phishing",
-        "definition": "A targeted phishing attack directed at specific individuals or companies. Unlike regular phishing attacks, which cast a wide net, spear phishing is highly customized and often uses personal information about the target to increase credibility.",
-        "category": "Threats",
+        "term": "Целевой фишинг",
+        "definition": "Целенаправленная фишинговая атака, направленная на конкретных людей или компании. В отличие от обычных фишинговых атак, которые охватывают широкую аудиторию, целевой фишинг тщательно настроен и часто использует личную информацию о цели для повышения правдоподобности.",
+        "category": "Угрозы",
         "category_color": "danger",
-        "related_terms": ["Phishing", "Social Engineering", "Whaling"]
+        "related_terms": ["Фишинг", "Социальная инженерия", "Китовая охота"]
     },
     {
-        "term": "Spyware",
-        "definition": "Software that secretly gathers user information through the user's internet connection without their knowledge, usually for advertising purposes. Spyware can also harvest sensitive information like passwords or financial data.",
-        "category": "Threats",
+        "term": "Шпионское ПО",
+        "definition": "Программное обеспечение, которое тайно собирает информацию о пользователе через интернет-соединение пользователя без его ведома, обычно в рекламных целях. Шпионское ПО также может собирать конфиденциальную информацию, такую как пароли или финансовые данные.",
+        "category": "Угрозы",
         "category_color": "danger",
-        "related_terms": ["Malware", "Adware", "Tracking Cookie"]
+        "related_terms": ["Вредоносное ПО", "Рекламное ПО", "Отслеживающие cookie"]
     },
     {
         "term": "SSL/TLS",
-        "definition": "Secure Sockets Layer (SSL) and its successor, Transport Layer Security (TLS), are cryptographic protocols designed to provide communications security over a computer network. They're commonly used to secure communications on the web, email, and other data transfers.",
-        "example": "When you see 'https://' in your browser's address bar, it indicates the site is using SSL/TLS encryption to secure the connection.",
-        "category": "Cryptography",
+        "definition": "Secure Sockets Layer (SSL) и его преемник, Transport Layer Security (TLS), представляют собой криптографические протоколы, предназначенные для обеспечения безопасности связи в компьютерной сети. Они обычно используются для защиты связи в веб, электронной почте и других передачах данных.",
+        "example": "Когда вы видите 'https://' в адресной строке браузера, это указывает на то, что сайт использует шифрование SSL/TLS для защиты соединения.",
+        "category": "Криптография",
         "category_color": "success",
-        "related_terms": ["HTTPS", "Encryption", "Certificate"]
+        "related_terms": ["HTTPS", "Шифрование", "Сертификат"]
     },
     {
-        "term": "Two-Factor Authentication (2FA)",
-        "definition": "A security process in which a user provides two different authentication factors to verify their identity. This is a more secure method than single-factor authentication, as it adds an additional layer of security.",
-        "example": "When logging into an account requires both a password and a verification code sent to your phone, that's two-factor authentication.",
-        "category": "Authentication",
+        "term": "Двухфакторная аутентификация (2FA)",
+        "definition": "Процесс безопасности, при котором пользователь предоставляет два разных фактора аутентификации для подтверждения своей личности. Это более безопасный метод, чем однофакторная аутентификация, так как он добавляет дополнительный уровень безопасности.",
+        "example": "Когда для входа в аккаунт требуется как пароль, так и проверочный код, отправленный на ваш телефон, это двухфакторная аутентификация.",
+        "category": "Аутентификация",
         "category_color": "primary",
-        "related_terms": ["Multi-Factor Authentication", "Authentication", "One-Time Password"]
+        "related_terms": ["Многофакторная аутентификация", "Аутентификация", "Одноразовый пароль"]
     },
     {
-        "term": "Virtual Private Network (VPN)",
-        "definition": "A service that creates a private, encrypted connection over a less secure network, such as the public internet. VPNs protect your online activity from snooping, interference, and censorship by extending a private network across a public network.",
-        "category": "Network",
+        "term": "Виртуальная частная сеть (VPN)",
+        "definition": "Сервис, который создает частное, зашифрованное соединение через менее безопасную сеть, такую как публичный интернет. VPN защищают вашу онлайн-активность от слежки, помех и цензуры, расширяя частную сеть через публичную сеть.",
+        "category": "Сеть",
         "category_color": "warning",
-        "related_terms": ["Encryption", "Tunnel", "Remote Access"]
+        "related_terms": ["Шифрование", "Туннель", "Удаленный доступ"]
     },
     {
-        "term": "Virus",
-        "definition": "A type of malicious software that, when executed, replicates itself by modifying other computer programs and inserting its own code. When this replication succeeds, the affected areas are then said to be 'infected' with a virus.",
-        "example": "The ILOVEYOU virus in 2000 spread via email and overwrote files, causing billions of dollars in damage worldwide.",
-        "category": "Threats",
+        "term": "Вирус",
+        "definition": "Тип вредоносного программного обеспечения, которое при выполнении воспроизводит себя путем изменения других компьютерных программ и вставки своего собственного кода. Когда это воспроизведение успешно, пораженные области считаются 'зараженными' вирусом.",
+        "example": "Вирус ILOVEYOU в 2000 году распространялся через электронную почту и перезаписывал файлы, нанося ущерб на миллиарды долларов во всем мире.",
+        "category": "Угрозы",
         "category_color": "danger",
-        "related_terms": ["Malware", "Worm", "Trojan"]
+        "related_terms": ["Вредоносное ПО", "Червь", "Троян"]
     },
     {
-        "term": "Vulnerability",
-        "definition": "A weakness in a system, application, or network that could be exploited by a threat actor to perform unauthorized actions. Vulnerabilities can exist in software code, design, implementation, or operation.",
-        "category": "General",
+        "term": "Уязвимость",
+        "definition": "Слабое место в системе, приложении или сети, которое может быть использовано злоумышленником для выполнения несанкционированных действий. Уязвимости могут существовать в программном коде, дизайне, реализации или эксплуатации.",
+        "category": "Общее",
         "category_color": "info",
-        "related_terms": ["Exploit", "Patch", "Zero-Day"]
+        "related_terms": ["Эксплойт", "Патч", "Уязвимость нулевого дня"]
     },
     {
-        "term": "Whaling",
-        "definition": "A specific type of phishing attack that targets high-profile individuals like C-level executives, politicians, or celebrities. These attacks are highly personalized and often involve substantial research about the target.",
-        "category": "Threats",
+        "term": "Китовая охота",
+        "definition": "Специфический тип фишинговой атаки, нацеленной на высокопоставленных лиц, таких как руководители C-уровня, политики или знаменитости. Эти атаки высоко персонализированы и часто включают значительное исследование о цели.",
+        "category": "Угрозы",
         "category_color": "danger",
-        "related_terms": ["Phishing", "Spear Phishing", "Social Engineering"]
+        "related_terms": ["Фишинг", "Целевой фишинг", "Социальная инженерия"]
     },
     {
-        "term": "Zero-Day Vulnerability",
-        "definition": "A software vulnerability that is unknown to those who should be interested in mitigating it, including the vendor. Zero-day vulnerabilities are particularly dangerous because there are no available patches or defenses, and attackers can exploit them before developers have a chance to address them.",
-        "example": "In 2017, the EternalBlue exploit targeted a zero-day vulnerability in Microsoft's SMB protocol, later used in the WannaCry ransomware attack.",
-        "category": "Threats",
+        "term": "Уязвимость нулевого дня",
+        "definition": "Уязвимость программного обеспечения, которая неизвестна тем, кто должен быть заинтересован в ее устранении, включая поставщика. Уязвимости нулевого дня особенно опасны, потому что для них нет доступных патчей или защиты, и злоумышленники могут использовать их до того, как разработчики успеют их устранить.",
+        "example": "В 2017 году эксплойт EternalBlue нацелился на уязвимость нулевого дня в протоколе SMB Microsoft, позже использованную в атаке программы-вымогателя WannaCry.",
+        "category": "Угрозы",
         "category_color": "danger",
-        "related_terms": ["Vulnerability", "Exploit", "Patch"]
+        "related_terms": ["Уязвимость", "Эксплойт", "Патч"]
     },
     {
-        "term": "Zero Trust",
-        "definition": "A security concept centered on the belief that organizations should not automatically trust anything inside or outside their perimeters and must verify everything trying to connect to their systems before granting access. The principle is 'never trust, always verify.'",
-        "category": "General",
+        "term": "Нулевое доверие",
+        "definition": "Концепция безопасности, основанная на убеждении, что организации не должны автоматически доверять чему-либо внутри или за пределами своих периметров и должны проверять все, что пытается подключиться к их системам, прежде чем предоставить доступ. Принцип: 'никогда не доверяй, всегда проверяй'.",
+        "category": "Общее",
         "category_color": "info",
-        "related_terms": ["Least Privilege", "Micro-segmentation", "Identity Verification"]
+        "related_terms": ["Минимальные привилегии", "Микросегментация", "Проверка личности"]
     }
 ]
