@@ -1,11 +1,11 @@
 {% extends "layout.html" %}
 
-{% block title %}CyberSecEdu - Learn Cybersecurity Fundamentals{% endblock %}
+{% block title %}КиберБезОбразование - Основы кибербезопасности{% endblock %}
 
 {% block content %}
 <div class="py-5 text-center">
-    <h1><i class="fas fa-shield-alt me-3"></i>Welcome to CyberSecEdu</h1>
-    <p class="lead mt-3">Your journey to cybersecurity knowledge starts here</p>
+    <h1><i class="fas fa-shield-alt me-3"></i>Добро пожаловать в КиберБезОбразование</h1>
+    <p class="lead mt-3">Ваше путешествие в мир кибербезопасности начинается здесь</p>
 </div>
 
 <div class="row g-4 py-3">
@@ -13,9 +13,9 @@
         <div class="card h-100 shadow-sm">
             <div class="card-body text-center">
                 <i class="fas fa-graduation-cap fa-3x mb-3 text-info"></i>
-                <h3 class="card-title">Learn the Basics</h3>
-                <p class="card-text">Start with foundational cybersecurity concepts through our structured tutorials, designed for beginners with no prior experience.</p>
-                <a href="{{ url_for('tutorials') }}" class="btn btn-primary mt-3">View Tutorials</a>
+                <h3 class="card-title">Изучайте основы</h3>
+                <p class="card-text">Начните с фундаментальных концепций кибербезопасности через наши структурированные уроки, разработанные для начинающих без предварительного опыта.</p>
+                <a href="{{ url_for('tutorials') }}" class="btn btn-primary mt-3">Перейти к урокам</a>
             </div>
         </div>
     </div>
@@ -23,9 +23,9 @@
         <div class="card h-100 shadow-sm">
             <div class="card-body text-center">
                 <i class="fas fa-book fa-3x mb-3 text-warning"></i>
-                <h3 class="card-title">Cybersecurity Glossary</h3>
-                <p class="card-text">Explore our comprehensive glossary of cybersecurity terms and concepts to build your knowledge foundation.</p>
-                <a href="{{ url_for('glossary') }}" class="btn btn-primary mt-3">Browse Glossary</a>
+                <h3 class="card-title">Глоссарий кибербезопасности</h3>
+                <p class="card-text">Изучите наш обширный глоссарий терминов и концепций кибербезопасности, чтобы заложить основу своих знаний.</p>
+                <a href="{{ url_for('glossary') }}" class="btn btn-primary mt-3">Просмотреть глоссарий</a>
             </div>
         </div>
     </div>
@@ -33,9 +33,9 @@
         <div class="card h-100 shadow-sm">
             <div class="card-body text-center">
                 <i class="fas fa-tools fa-3x mb-3 text-danger"></i>
-                <h3 class="card-title">Useful Resources</h3>
-                <p class="card-text">Access a curated collection of tools, guides, and external resources to enhance your cybersecurity learning.</p>
-                <a href="{{ url_for('resources') }}" class="btn btn-primary mt-3">Explore Resources</a>
+                <h3 class="card-title">Полезные ресурсы</h3>
+                <p class="card-text">Получите доступ к тщательно отобранной коллекции инструментов, руководств и внешних ресурсов для улучшения вашего обучения кибербезопасности.</p>
+                <a href="{{ url_for('resources') }}" class="btn btn-primary mt-3">Исследовать ресурсы</a>
             </div>
         </div>
     </div>
@@ -45,40 +45,40 @@
     <div class="col-lg-8">
         <div class="card shadow-sm mb-4">
             <div class="card-body">
-                <h2 class="card-title">Why Learn Cybersecurity?</h2>
-                <p class="card-text">In today's digital world, cybersecurity knowledge is essential. Whether you're:</p>
+                <h2 class="card-title">Почему стоит изучать кибербезопасность?</h2>
+                <p class="card-text">В современном цифровом мире знания о кибербезопасности необходимы. Независимо от того, кто вы:</p>
                 <ul>
-                    <li>A student curious about technology security</li>
-                    <li>A professional wanting to protect your organization</li>
-                    <li>Someone who wants to safeguard their personal data</li>
+                    <li>Студент, интересующийся вопросами технологической безопасности</li>
+                    <li>Профессионал, желающий защитить свою организацию</li>
+                    <li>Человек, желающий обезопасить свои личные данные</li>
                 </ul>
-                <p class="card-text">Our platform offers the fundamental knowledge needed to understand and implement basic security practices.</p>
+                <p class="card-text">Наша платформа предлагает фундаментальные знания, необходимые для понимания и внедрения базовых практик безопасности.</p>
             </div>
         </div>
 
         <div class="card shadow-sm">
             <div class="card-body">
-                <h2 class="card-title">Our Approach to Teaching</h2>
-                <p class="card-text">We believe in learning by understanding. Our materials:</p>
+                <h2 class="card-title">Наш подход к обучению</h2>
+                <p class="card-text">Мы верим в обучение через понимание. Наши материалы:</p>
                 <div class="row">
                     <div class="col-md-6">
                         <div class="d-flex align-items-start mb-3">
                             <i class="fas fa-check-circle text-success me-2 mt-1"></i>
-                            <span>Break down complex concepts into simple explanations</span>
+                            <span>Разбивают сложные концепции на простые объяснения</span>
                         </div>
                         <div class="d-flex align-items-start mb-3">
                             <i class="fas fa-check-circle text-success me-2 mt-1"></i>
-                            <span>Provide practical examples and real-world contexts</span>
+                            <span>Предоставляют практические примеры и реальные контексты</span>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="d-flex align-items-start mb-3">
                             <i class="fas fa-check-circle text-success me-2 mt-1"></i>
-                            <span>Build knowledge progressively from fundamentals</span>
+                            <span>Наращивают знания постепенно, начиная с основ</span>
                         </div>
                         <div class="d-flex align-items-start mb-3">
                             <i class="fas fa-check-circle text-success me-2 mt-1"></i>
-                            <span>Emphasize best practices and ethical considerations</span>
+                            <span>Подчеркивают лучшие практики и этические соображения</span>
                         </div>
                     </div>
                 </div>
@@ -89,38 +89,38 @@
     <div class="col-lg-4">
         <div class="card shadow-sm mb-4">
             <div class="card-header bg-primary text-white">
-                <h3 class="h5 mb-0"><i class="fas fa-lightbulb me-2"></i>Did You Know?</h3>
+                <h3 class="h5 mb-0"><i class="fas fa-lightbulb me-2"></i>Знаете ли вы?</h3>
             </div>
             <div class="card-body">
-                <p>Cybersecurity breaches cost businesses an average of $4.24 million per incident in 2021, according to IBM's Cost of a Data Breach Report.</p>
-                <p>Over 80% of data breaches involve weak or stolen passwords.</p>
-                <p>A new cybersecurity threat emerges approximately every 39 seconds.</p>
-                <a href="{{ url_for('tutorials') }}" class="btn btn-outline-primary btn-sm">Learn How to Stay Safe</a>
+                <p>Утечки кибербезопасности обходятся бизнесу в среднем в $4,24 миллиона за инцидент в 2021 году, согласно отчету IBM о стоимости утечки данных.</p>
+                <p>Более 80% утечек данных связаны со слабыми или украденными паролями.</p>
+                <p>Новая угроза кибербезопасности возникает примерно каждые 39 секунд.</p>
+                <a href="{{ url_for('tutorials') }}" class="btn btn-outline-primary btn-sm">Узнайте, как оставаться в безопасности</a>
             </div>
         </div>
 
         {% if not current_user.is_authenticated %}
         <div class="card shadow-sm">
             <div class="card-header bg-success text-white">
-                <h3 class="h5 mb-0"><i class="fas fa-user-plus me-2"></i>Join Our Community</h3>
+                <h3 class="h5 mb-0"><i class="fas fa-user-plus me-2"></i>Присоединитесь к нашему сообществу</h3>
             </div>
             <div class="card-body">
-                <p>Create a free account to track your progress, save your favorite resources, and join our cybersecurity learning community.</p>
+                <p>Создайте бесплатную учетную запись для отслеживания своего прогресса, сохранения любимых ресурсов и присоединения к нашему сообществу по обучению кибербезопасности.</p>
                 <div class="d-grid gap-2">
-                    <a href="{{ url_for('register') }}" class="btn btn-success">Register Now</a>
-                    <a href="{{ url_for('login') }}" class="btn btn-outline-secondary">Already have an account? Login</a>
+                    <a href="{{ url_for('register') }}" class="btn btn-success">Зарегистрироваться</a>
+                    <a href="{{ url_for('login') }}" class="btn btn-outline-secondary">Уже есть аккаунт? Войти</a>
                 </div>
             </div>
         </div>
         {% else %}
         <div class="card shadow-sm">
             <div class="card-header bg-info text-white">
-                <h3 class="h5 mb-0"><i class="fas fa-flag me-2"></i>Continue Learning</h3>
+                <h3 class="h5 mb-0"><i class="fas fa-flag me-2"></i>Продолжить обучение</h3>
             </div>
             <div class="card-body">
-                <p>Welcome back, {{ current_user.username }}! Ready to continue your cybersecurity journey?</p>
+                <p>С возвращением, {{ current_user.username }}! Готовы продолжить свое путешествие в мир кибербезопасности?</p>
                 <div class="d-grid">
-                    <a href="{{ url_for('tutorials') }}" class="btn btn-info">Go to Tutorials</a>
+                    <a href="{{ url_for('tutorials') }}" class="btn btn-info">Перейти к урокам</a>
                 </div>
             </div>
         </div>
@@ -131,8 +131,8 @@
 <div class="row mt-5">
     <div class="col-12">
         <div class="alert alert-warning">
-            <h4><i class="fas fa-exclamation-triangle me-2"></i>Important Note</h4>
-            <p>The knowledge shared on this platform is intended for educational purposes only. Always use your cybersecurity skills ethically and legally. Unauthorized testing or attacks against systems without explicit permission is illegal and unethical.</p>
+            <h4><i class="fas fa-exclamation-triangle me-2"></i>Важное примечание</h4>
+            <p>Знания, которыми делятся на этой платформе, предназначены только для образовательных целей. Всегда используйте свои навыки кибербезопасности этично и законно. Несанкционированное тестирование или атаки на системы без явного разрешения являются незаконными и неэтичными.</p>
         </div>
     </div>
 </div>

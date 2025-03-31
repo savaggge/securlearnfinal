@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="dark">
+<html lang="ru" data-bs-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>{% block title %}CyberSecEdu - Learn Cybersecurity Fundamentals{% endblock %}</title>
+    <title>{% block title %}КиберБезОбразование - Основы кибербезопасности{% endblock %}</title>
     
     <!-- Security Meta Tags -->
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://cdn.replit.com https://cdn.jsdelivr.net; font-src 'self' https://cdn.jsdelivr.net; img-src 'self' data:;">
@@ -29,7 +29,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
         <div class="container">
             <a class="navbar-brand" href="{{ url_for('index') }}">
-                <i class="fas fa-shield-alt me-2"></i>CyberSecEdu
+                <i class="fas fa-shield-alt me-2"></i>КиберБезОбразование
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" 
                     aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,16 +38,16 @@
             <div class="collapse navbar-collapse" id="navbarMain">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link {% if request.path == url_for('index') %}active{% endif %}" href="{{ url_for('index') }}">Home</a>
+                        <a class="nav-link {% if request.path == url_for('index') %}active{% endif %}" href="{{ url_for('index') }}">Главная</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link {% if request.path == url_for('tutorials') %}active{% endif %}" href="{{ url_for('tutorials') }}">Tutorials</a>
+                        <a class="nav-link {% if request.path == url_for('tutorials') %}active{% endif %}" href="{{ url_for('tutorials') }}">Учебные материалы</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link {% if request.path == url_for('glossary') %}active{% endif %}" href="{{ url_for('glossary') }}">Glossary</a>
+                        <a class="nav-link {% if request.path == url_for('glossary') %}active{% endif %}" href="{{ url_for('glossary') }}">Глоссарий</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link {% if request.path == url_for('resources') %}active{% endif %}" href="{{ url_for('resources') }}">Resources</a>
+                        <a class="nav-link {% if request.path == url_for('resources') %}active{% endif %}" href="{{ url_for('resources') }}">Ресурсы</a>
                     </li>
                 </ul>
                 <div class="navbar-nav">
@@ -55,10 +55,10 @@
                         <span class="nav-item nav-link text-light me-3">
                             <i class="fas fa-user me-1"></i>{{ current_user.username }}
                         </span>
-                        <a class="nav-link" href="{{ url_for('logout') }}">Logout</a>
+                        <a class="nav-link" href="{{ url_for('logout') }}">Выйти</a>
                     {% else %}
-                        <a class="nav-link {% if request.path == url_for('login') %}active{% endif %}" href="{{ url_for('login') }}">Login</a>
-                        <a class="nav-link {% if request.path == url_for('register') %}active{% endif %}" href="{{ url_for('register') }}">Register</a>
+                        <a class="nav-link {% if request.path == url_for('login') %}active{% endif %}" href="{{ url_for('login') }}">Вход</a>
+                        <a class="nav-link {% if request.path == url_for('register') %}active{% endif %}" href="{{ url_for('register') }}">Регистрация</a>
                     {% endif %}
                 </div>
             </div>
@@ -89,31 +89,31 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <h5><i class="fas fa-shield-alt me-2"></i>CyberSecEdu</h5>
-                    <p>Empowering beginners with essential cybersecurity knowledge and skills.</p>
+                    <h5><i class="fas fa-shield-alt me-2"></i>КиберБезОбразование</h5>
+                    <p>Обучаем начинающих основным знаниям и навыкам кибербезопасности.</p>
                 </div>
                 <div class="col-md-3">
-                    <h5>Quick Links</h5>
+                    <h5>Быстрые ссылки</h5>
                     <ul class="list-unstyled">
-                        <li><a href="{{ url_for('index') }}" class="text-light">Home</a></li>
-                        <li><a href="{{ url_for('tutorials') }}" class="text-light">Tutorials</a></li>
-                        <li><a href="{{ url_for('glossary') }}" class="text-light">Glossary</a></li>
-                        <li><a href="{{ url_for('resources') }}" class="text-light">Resources</a></li>
+                        <li><a href="{{ url_for('index') }}" class="text-light">Главная</a></li>
+                        <li><a href="{{ url_for('tutorials') }}" class="text-light">Учебные материалы</a></li>
+                        <li><a href="{{ url_for('glossary') }}" class="text-light">Глоссарий</a></li>
+                        <li><a href="{{ url_for('resources') }}" class="text-light">Ресурсы</a></li>
                     </ul>
                 </div>
                 <div class="col-md-3">
-                    <h5>Security</h5>
+                    <h5>Безопасность</h5>
                     <ul class="list-unstyled">
-                        <li><a href="#" class="text-light" data-bs-toggle="modal" data-bs-target="#securityModal">Security Measures</a></li>
-                        <li><a href="#" class="text-light">Privacy Policy</a></li>
-                        <li><a href="#" class="text-light">Terms of Use</a></li>
+                        <li><a href="#" class="text-light" data-bs-toggle="modal" data-bs-target="#securityModal">Меры безопасности</a></li>
+                        <li><a href="#" class="text-light">Политика конфиденциальности</a></li>
+                        <li><a href="#" class="text-light">Условия использования</a></li>
                     </ul>
                 </div>
             </div>
             <hr class="mt-4">
             <div class="row">
                 <div class="col-md-12 text-center">
-                    <p class="mb-0">&copy; 2023 CyberSecEdu. All rights reserved.</p>
+                    <p class="mb-0">&copy; 2023 КиберБезОбразование. Все права защищены.</p>
                 </div>
             </div>
         </div>
@@ -124,25 +124,25 @@
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="securityModalLabel">Website Security Measures</h5>
+                    <h5 class="modal-title" id="securityModalLabel">Меры безопасности сайта</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <h6>This website implements various security measures:</h6>
+                    <h6>Этот сайт использует различные меры безопасности:</h6>
                     <ul>
-                        <li><strong>Content Security Policy (CSP)</strong>: Restricts which resources can be loaded</li>
-                        <li><strong>HTTP Strict Transport Security (HSTS)</strong>: Enforces secure connections</li>
-                        <li><strong>X-Content-Type-Options</strong>: Prevents MIME-type sniffing</li>
-                        <li><strong>X-Frame-Options</strong>: Prevents clickjacking attacks</li>
-                        <li><strong>X-XSS-Protection</strong>: Helps prevent cross-site scripting attacks</li>
-                        <li><strong>Secure Password Storage</strong>: Passwords are hashed, not stored in plaintext</li>
-                        <li><strong>CSRF Protection</strong>: Forms include CSRF tokens to prevent cross-site request forgery</li>
-                        <li><strong>Input Validation</strong>: All user inputs are validated and sanitized</li>
-                        <li><strong>Secure Session Management</strong>: Sessions are handled securely</li>
+                        <li><strong>Политика безопасности контента (CSP)</strong>: Ограничивает загрузку ресурсов</li>
+                        <li><strong>HTTP Strict Transport Security (HSTS)</strong>: Обеспечивает защищенные соединения</li>
+                        <li><strong>X-Content-Type-Options</strong>: Предотвращает MIME-type sniffing</li>
+                        <li><strong>X-Frame-Options</strong>: Предотвращает атаки кликджекинга</li>
+                        <li><strong>X-XSS-Protection</strong>: Помогает предотвращать XSS-атаки</li>
+                        <li><strong>Безопасное хранение паролей</strong>: Пароли хешируются, а не хранятся в открытом виде</li>
+                        <li><strong>CSRF-защита</strong>: Формы включают CSRF-токены для предотвращения подделки межсайтовых запросов</li>
+                        <li><strong>Валидация ввода</strong>: Все пользовательские вводы проверяются и обезвреживаются</li>
+                        <li><strong>Безопасное управление сессиями</strong>: Сессии обрабатываются безопасным образом</li>
                     </ul>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
                 </div>
             </div>
         </div>

@@ -29,7 +29,7 @@ def tutorial(tutorial_id):
     tutorial_data = next((t for t in TUTORIALS if t['id'] == tutorial_id), None)
     
     if not tutorial_data:
-        flash('Tutorial not found!', 'danger')
+        flash('Урок не найден!', 'danger')
         return redirect(url_for('tutorials'))
 
     # If user is logged in, track progress
@@ -51,7 +51,7 @@ def mark_complete(tutorial_id):
     # Validate the tutorial exists
     tutorial_data = next((t for t in TUTORIALS if t['id'] == tutorial_id), None)
     if not tutorial_data:
-        flash('Tutorial not found!', 'danger')
+        flash('Урок не найден!', 'danger')
         return redirect(url_for('tutorials'))
     
     # Check if progress record exists
@@ -75,7 +75,7 @@ def mark_complete(tutorial_id):
         progress.completed_date = datetime.utcnow()
     
     db.session.commit()
-    flash('Progress saved!', 'success')
+    flash('Прогресс сохранен!', 'success')
     return redirect(url_for('tutorial', tutorial_id=tutorial_id))
 
 @app.route('/glossary')
@@ -98,7 +98,7 @@ def login():
         
         # Basic validation
         if not email or not password:
-            flash('Please fill in all fields', 'danger')
+            flash('Пожалуйста, заполните все поля', 'danger')
             return render_template('login.html')
         
         # Find user
@@ -106,7 +106,7 @@ def login():
         
         # Check credentials
         if user is None or not user.check_password(password):
-            flash('Invalid email or password', 'danger')
+            flash('Неверный email или пароль', 'danger')
             return render_template('login.html')
         
         # Log in user
@@ -136,20 +136,20 @@ def register():
         
         # Basic validation
         if not username or not email or not password or not confirm_password:
-            flash('Please fill in all fields', 'danger')
+            flash('Пожалуйста, заполните все поля', 'danger')
             return render_template('register.html')
         
         if password != confirm_password:
-            flash('Passwords do not match', 'danger')
+            flash('Пароли не совпадают', 'danger')
             return render_template('register.html')
         
         # Check if username or email already exists
         if User.query.filter_by(username=username).first():
-            flash('Username already taken', 'danger')
+            flash('Имя пользователя уже занято', 'danger')
             return render_template('register.html')
         
         if User.query.filter_by(email=email).first():
-            flash('Email already registered', 'danger')
+            flash('Email уже зарегистрирован', 'danger')
             return render_template('register.html')
         
         # Create new user
@@ -159,7 +159,7 @@ def register():
         db.session.add(user)
         db.session.commit()
         
-        flash('Registration successful! Please log in.', 'success')
+        flash('Регистрация успешна! Пожалуйста, войдите в систему.', 'success')
         return redirect(url_for('login'))
     
     return render_template('register.html')
@@ -171,12 +171,12 @@ def logout():
 
 @app.errorhandler(404)
 def page_not_found(e):
-    return render_template('error.html', error_code=404, error_message="Page not found"), 404
+    return render_template('error.html', error_code=404, error_message="Страница не найдена"), 404
 
 @app.errorhandler(500)
 def internal_server_error(e):
-    return render_template('error.html', error_code=500, error_message="Internal server error"), 500
+    return render_template('error.html', error_code=500, error_message="Внутренняя ошибка сервера"), 500
 
 @app.errorhandler(403)
 def forbidden(e):
-    return render_template('error.html', error_code=403, error_message="Access forbidden"), 403
+    return render_template('error.html', error_code=403, error_message="Доступ запрещен"), 403

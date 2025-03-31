@@ -1,13 +1,13 @@
 {% extends "layout.html" %}
 
-{% block title %}Register | CyberSecEdu{% endblock %}
+{% block title %}Регистрация | КиберБезОбразование{% endblock %}
 
 {% block content %}
 <div class="row justify-content-center">
     <div class="col-md-8">
         <div class="card shadow-sm">
             <div class="card-header bg-primary text-white">
-                <h2 class="h4 mb-0"><i class="fas fa-user-plus me-2"></i>Create an Account</h2>
+                <h2 class="h4 mb-0"><i class="fas fa-user-plus me-2"></i>Создать аккаунт</h2>
             </div>
             <div class="card-body">
                 <form method="post" action="{{ url_for('register') }}" id="registration-form" class="needs-validation" novalidate>
@@ -15,64 +15,64 @@
                     
                     <div class="row mb-3">
                         <div class="col-md-6">
-                            <label for="username" class="form-label">Username</label>
+                            <label for="username" class="form-label">Имя пользователя</label>
                             <div class="input-group">
                                 <span class="input-group-text"><i class="fas fa-user"></i></span>
                                 <input type="text" class="form-control" id="username" name="username" required 
                                        pattern="^[a-zA-Z0-9_]{3,20}$" 
-                                       title="Username must be 3-20 characters using only letters, numbers, and underscores"
-                                       placeholder="Choose a username">
+                                       title="Имя пользователя должно содержать от 3 до 20 символов, только буквы, цифры и нижнее подчеркивание"
+                                       placeholder="Выберите имя пользователя">
                                 <div class="invalid-feedback">
-                                    Username must be 3-20 characters using only letters, numbers, and underscores.
+                                    Имя пользователя должно содержать от 3 до 20 символов, только буквы, цифры и нижнее подчеркивание.
                                 </div>
                             </div>
-                            <div class="form-text">3-20 characters, letters, numbers, and underscores only</div>
+                            <div class="form-text">3-20 символов, только буквы, цифры и нижнее подчеркивание</div>
                         </div>
                         
                         <div class="col-md-6">
-                            <label for="email" class="form-label">Email address</label>
+                            <label for="email" class="form-label">Электронная почта</label>
                             <div class="input-group">
                                 <span class="input-group-text"><i class="fas fa-envelope"></i></span>
                                 <input type="email" class="form-control" id="email" name="email" required
-                                       placeholder="Enter your email">
+                                       placeholder="Введите вашу электронную почту">
                                 <div class="invalid-feedback">
-                                    Please enter a valid email address.
+                                    Пожалуйста, введите корректный адрес электронной почты.
                                 </div>
                             </div>
-                            <div class="form-text">We'll never share your email with others</div>
+                            <div class="form-text">Мы никогда не будем делиться вашей почтой с другими</div>
                         </div>
                     </div>
                     
                     <div class="row mb-3">
                         <div class="col-md-6">
-                            <label for="password" class="form-label">Password</label>
+                            <label for="password" class="form-label">Пароль</label>
                             <div class="input-group">
                                 <span class="input-group-text"><i class="fas fa-lock"></i></span>
                                 <input type="password" class="form-control" id="password" name="password" required
                                        pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$"
-                                       title="Password must be at least 8 characters with at least one uppercase letter, one lowercase letter, one number, and one special character"
-                                       placeholder="Create a strong password">
-                                <button class="btn btn-outline-secondary" type="button" id="toggle-password" aria-label="Toggle password visibility">
+                                       title="Пароль должен содержать не менее 8 символов, включая хотя бы одну заглавную букву, одну строчную букву, одну цифру и один специальный символ"
+                                       placeholder="Создайте надежный пароль">
+                                <button class="btn btn-outline-secondary" type="button" id="toggle-password" aria-label="Показать/скрыть пароль">
                                     <i class="fas fa-eye"></i>
                                 </button>
                                 <div class="invalid-feedback">
-                                    Password must meet all the requirements listed below.
+                                    Пароль должен соответствовать всем требованиям, перечисленным ниже.
                                 </div>
                             </div>
                             <div id="password-strength" class="mt-2"></div>
                         </div>
                         
                         <div class="col-md-6">
-                            <label for="confirm_password" class="form-label">Confirm Password</label>
+                            <label for="confirm_password" class="form-label">Подтвердите пароль</label>
                             <div class="input-group">
                                 <span class="input-group-text"><i class="fas fa-lock"></i></span>
                                 <input type="password" class="form-control" id="confirm_password" name="confirm_password" required
-                                       placeholder="Confirm your password">
-                                <button class="btn btn-outline-secondary" type="button" id="toggle-confirm-password" aria-label="Toggle password visibility">
+                                       placeholder="Подтвердите ваш пароль">
+                                <button class="btn btn-outline-secondary" type="button" id="toggle-confirm-password" aria-label="Показать/скрыть пароль">
                                     <i class="fas fa-eye"></i>
                                 </button>
                                 <div class="invalid-feedback">
-                                    Passwords do not match.
+                                    Пароли не совпадают.
                                 </div>
                             </div>
                             <div id="password-match" class="form-text"></div>
@@ -82,15 +82,15 @@
                     <div class="mb-3">
                         <div class="card bg-light">
                             <div class="card-header">
-                                <h3 class="h6 mb-0">Password Requirements</h3>
+                                <h3 class="h6 mb-0">Требования к паролю</h3>
                             </div>
                             <div class="card-body">
                                 <ul class="password-requirements mb-0 small">
-                                    <li id="length-check"><i class="fas fa-times-circle text-danger me-2"></i>At least 8 characters</li>
-                                    <li id="uppercase-check"><i class="fas fa-times-circle text-danger me-2"></i>At least one uppercase letter</li>
-                                    <li id="lowercase-check"><i class="fas fa-times-circle text-danger me-2"></i>At least one lowercase letter</li>
-                                    <li id="number-check"><i class="fas fa-times-circle text-danger me-2"></i>At least one number</li>
-                                    <li id="special-check"><i class="fas fa-times-circle text-danger me-2"></i>At least one special character (@$!%*?&)</li>
+                                    <li id="length-check"><i class="fas fa-times-circle text-danger me-2"></i>Не менее 8 символов</li>
+                                    <li id="uppercase-check"><i class="fas fa-times-circle text-danger me-2"></i>Не менее одной заглавной буквы</li>
+                                    <li id="lowercase-check"><i class="fas fa-times-circle text-danger me-2"></i>Не менее одной строчной буквы</li>
+                                    <li id="number-check"><i class="fas fa-times-circle text-danger me-2"></i>Не менее одной цифры</li>
+                                    <li id="special-check"><i class="fas fa-times-circle text-danger me-2"></i>Не менее одного специального символа (@$!%*?&)</li>
                                 </ul>
                             </div>
                         </div>
@@ -99,16 +99,16 @@
                     <div class="mb-3 form-check">
                         <input type="checkbox" class="form-check-input" id="terms" name="terms" required>
                         <label class="form-check-label" for="terms">
-                            I agree to the <a href="#" class="text-decoration-none">Terms of Service</a> and <a href="#" class="text-decoration-none">Privacy Policy</a>
+                            Я согласен с <a href="#" class="text-decoration-none">Условиями использования</a> и <a href="#" class="text-decoration-none">Политикой конфиденциальности</a>
                         </label>
                         <div class="invalid-feedback">
-                            You must agree to the terms and conditions.
+                            Вы должны согласиться с условиями и положениями.
                         </div>
                     </div>
                     
                     <div class="d-grid gap-2">
                         <button type="submit" class="btn btn-primary" id="register-btn">
-                            <i class="fas fa-user-plus me-1"></i> Create Account
+                            <i class="fas fa-user-plus me-1"></i> Создать аккаунт
                         </button>
                     </div>
                 </form>
@@ -116,26 +116,26 @@
                 <hr class="my-4">
                 
                 <div class="text-center">
-                    <p class="mb-0">Already have an account? <a href="{{ url_for('login') }}" class="text-decoration-none">Login here</a></p>
+                    <p class="mb-0">Уже есть аккаунт? <a href="{{ url_for('login') }}" class="text-decoration-none">Войдите здесь</a></p>
                 </div>
             </div>
         </div>
         
         <div class="card mt-4 shadow-sm">
             <div class="card-header bg-info text-white">
-                <h3 class="h5 mb-0"><i class="fas fa-shield-alt me-2"></i>Account Security</h3>
+                <h3 class="h5 mb-0"><i class="fas fa-shield-alt me-2"></i>Безопасность аккаунта</h3>
             </div>
             <div class="card-body">
-                <p>Creating a strong, unique password is your first line of defense in cybersecurity:</p>
+                <p>Создание надежного уникального пароля - ваша первая линия защиты в кибербезопасности:</p>
                 <ul>
-                    <li>Use a different password for each of your accounts</li>
-                    <li>Make your passwords long and complex</li>
-                    <li>Consider using a passphrase: a series of random words with special characters</li>
-                    <li>Never use personal information that could be easily discovered</li>
-                    <li>Change your passwords regularly, especially after a data breach</li>
-                    <li>Consider using a password manager to generate and store strong passwords</li>
+                    <li>Используйте разные пароли для каждой из ваших учетных записей</li>
+                    <li>Делайте ваши пароли длинными и сложными</li>
+                    <li>Рассмотрите возможность использования парольной фразы: серии случайных слов со специальными символами</li>
+                    <li>Никогда не используйте личную информацию, которую можно легко обнаружить</li>
+                    <li>Регулярно меняйте пароли, особенно после утечки данных</li>
+                    <li>Рассмотрите возможность использования менеджера паролей для генерации и хранения надежных паролей</li>
                 </ul>
-                <p class="mb-0 small text-muted">After registering, we recommend enabling two-factor authentication for additional security.</p>
+                <p class="mb-0 small text-muted">После регистрации рекомендуем включить двухфакторную аутентификацию для дополнительной безопасности.</p>
             </div>
         </div>
     </div>
@@ -204,7 +204,7 @@
             if (hasLength && hasUppercase && hasLowercase && hasNumber && hasSpecial) {
                 passwordField.setCustomValidity('');
             } else {
-                passwordField.setCustomValidity('Password does not meet requirements');
+                passwordField.setCustomValidity('Пароль не соответствует требованиям');
             }
         }
         
@@ -242,13 +242,13 @@
                 passwordStrengthMeter.innerHTML = '';
                 return;
             } else if (strength < 3) {
-                strengthText = 'Weak';
+                strengthText = 'Слабый';
                 strengthClass = 'danger';
             } else if (strength < 5) {
-                strengthText = 'Moderate';
+                strengthText = 'Средний';
                 strengthClass = 'warning';
             } else {
-                strengthText = 'Strong';
+                strengthText = 'Сильный';
                 strengthClass = 'success';
             }
             
@@ -262,7 +262,7 @@
             
             const strengthLabel = document.createElement('small');
             strengthLabel.className = `mt-1 text-${strengthClass}`;
-            strengthLabel.textContent = `Password strength: ${strengthText}`;
+            strengthLabel.textContent = `Надежность пароля: ${strengthText}`;
             
             passwordStrengthMeter.appendChild(progressBar);
             passwordStrengthMeter.appendChild(strengthLabel);
@@ -280,13 +280,13 @@
             }
             
             if (password === confirmPassword) {
-                passwordMatchText.textContent = 'Passwords match';
+                passwordMatchText.textContent = 'Пароли совпадают';
                 passwordMatchText.className = 'form-text text-success';
                 confirmPasswordField.setCustomValidity('');
             } else {
-                passwordMatchText.textContent = 'Passwords do not match';
+                passwordMatchText.textContent = 'Пароли не совпадают';
                 passwordMatchText.className = 'form-text text-danger';
-                confirmPasswordField.setCustomValidity('Passwords do not match');
+                confirmPasswordField.setCustomValidity('Пароли не совпадают');
             }
         }
         
@@ -305,7 +305,7 @@
             
             if (password !== confirmPassword) {
                 e.preventDefault();
-                confirmPasswordField.setCustomValidity('Passwords do not match');
+                confirmPasswordField.setCustomValidity('Пароли не совпадают');
             } else {
                 confirmPasswordField.setCustomValidity('');
             }

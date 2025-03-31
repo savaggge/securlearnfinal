@@ -8,114 +8,114 @@ TUTORIALS = [
     # Fundamentals Category
     {
         "id": "intro-to-cybersecurity",
-        "title": "Introduction to Cybersecurity",
-        "description": "Learn the basic concepts and importance of cybersecurity in today's digital world.",
+        "title": "Введение в кибербезопасность",
+        "description": "Изучите основные концепции и важность кибербезопасности в современном цифровом мире.",
         "category": "fundamentals",
-        "difficulty": "Beginner",
-        "duration": "15 min",
-        "objectives": "Understand what cybersecurity is, why it matters, and common cyber threats.",
-        "introduction": "Cybersecurity refers to the practice of protecting systems, networks, and programs from digital attacks. These attacks are usually aimed at accessing, changing, or destroying sensitive information; extorting money from users; or interrupting normal business processes. This tutorial will introduce you to the fundamentals of cybersecurity and why it's crucial in our increasingly connected world.",
+        "difficulty": "Начинающий",
+        "duration": "15 мин",
+        "objectives": "Понять, что такое кибербезопасность, почему она важна и какие существуют распространенные киберугрозы.",
+        "introduction": "Кибербезопасность относится к практике защиты систем, сетей и программ от цифровых атак. Эти атаки обычно направлены на получение доступа, изменение или уничтожение конфиденциальной информации; вымогательство денег у пользователей; или нарушение нормальных бизнес-процессов. Этот учебник познакомит вас с основами кибербезопасности и объяснит, почему она имеет решающее значение в нашем все более взаимосвязанном мире.",
         "sections": [
             {
-                "title": "What is Cybersecurity?",
+                "title": "Что такое кибербезопасность?",
                 "content": [
-                    "Cybersecurity is the practice of defending computers, servers, mobile devices, electronic systems, networks, and data from malicious attacks. It's also known as information technology security or electronic information security.",
-                    "The field is becoming increasingly important due to our growing reliance on computer systems, the Internet, and wireless network standards such as Bluetooth and Wi-Fi. The growth of 'smart' devices, including smartphones, televisions, and various IoT (Internet of Things) devices, is also expanding the vulnerabilities that need to be addressed."
+                    "Кибербезопасность - это практика защиты компьютеров, серверов, мобильных устройств, электронных систем, сетей и данных от вредоносных атак. Она также известна как безопасность информационных технологий или безопасность электронной информации.",
+                    "Эта область становится все более важной из-за нашей растущей зависимости от компьютерных систем, Интернета и стандартов беспроводных сетей, таких как Bluetooth и Wi-Fi. Рост количества 'умных' устройств, включая смартфоны, телевизоры и различные устройства IoT (Интернет вещей), также расширяет уязвимости, которые необходимо устранять."
                 ]
             },
             {
-                "title": "Why is Cybersecurity Important?",
+                "title": "Почему кибербезопасность важна?",
                 "content": [
-                    "With the scale and sophistication of cyber attacks increasing, individuals and organizations need robust security measures to protect sensitive information. Here's why cybersecurity matters:",
-                    "1. Protection of Personal Information: Your personal data, such as bank account details, social security numbers, and health records, needs to be protected from unauthorized access.",
-                    "2. Business Continuity: Companies need to protect their data to maintain operations and ensure services to customers.",
-                    "3. National Security: Governments need to secure critical infrastructure and protect sensitive information from nation-state attacks.",
-                    "4. Legal Requirements: Many industries have regulatory requirements for data protection (like GDPR, HIPAA, etc.)."
+                    "С увеличением масштаба и сложности кибератак частным лицам и организациям требуются надежные меры безопасности для защиты конфиденциальной информации. Вот почему кибербезопасность имеет значение:",
+                    "1. Защита личной информации: Ваши личные данные, такие как данные банковского счета, номера социального страхования и медицинские записи, должны быть защищены от несанкционированного доступа.",
+                    "2. Непрерывность бизнеса: Компаниям необходимо защищать свои данные для поддержания операций и обеспечения услуг клиентам.",
+                    "3. Национальная безопасность: Правительствам необходимо защищать критически важную инфраструктуру и конфиденциальную информацию от атак на уровне государств.",
+                    "4. Правовые требования: Многие отрасли имеют нормативные требования по защите данных (например, GDPR, HIPAA и др.)."
                 ]
             },
             {
-                "title": "Common Cyber Threats",
+                "title": "Распространенные киберугрозы",
                 "content": [
-                    "Understanding common threats is the first step in protecting yourself. Here are some prevalent types of cyber attacks:",
-                    "• Malware: Malicious software designed to harm or exploit devices, including viruses, worms, trojans, and ransomware.",
-                    "• Phishing: Deceptive attempts to steal sensitive information by disguising as a trustworthy entity in electronic communications.",
-                    "• Social Engineering: Psychological manipulation to trick users into making security mistakes or giving away sensitive information.",
-                    "• Man-in-the-Middle (MitM) Attacks: Attackers secretly relay and possibly alter communication between two parties who believe they are directly communicating with each other.",
-                    "• Denial-of-Service: Attacks designed to make a machine or network resource unavailable by flooding systems with traffic."
+                    "Понимание распространенных угроз - это первый шаг к защите себя. Вот некоторые распространенные типы кибератак:",
+                    "• Вредоносное ПО: Злонамеренное программное обеспечение, предназначенное для нанесения вреда или эксплуатации устройств, включая вирусы, черви, трояны и программы-вымогатели.",
+                    "• Фишинг: Обманные попытки кражи конфиденциальной информации путем маскировки под доверенную организацию в электронных коммуникациях.",
+                    "• Социальная инженерия: Психологические манипуляции, направленные на то, чтобы обманом заставить пользователей совершать ошибки безопасности или раскрывать конфиденциальную информацию.",
+                    "• Атаки типа 'человек посередине' (MitM): Злоумышленники тайно передают и, возможно, изменяют коммуникации между двумя сторонами, которые считают, что общаются напрямую друг с другом.",
+                    "• Атаки отказа в обслуживании: Атаки, направленные на то, чтобы сделать машину или сетевой ресурс недоступным путем перегрузки систем трафиком."
                 ],
                 "alert": {
                     "type": "warning",
                     "icon": "exclamation-triangle",
-                    "title": "Important Note",
-                    "content": "The frequency and sophistication of cyber attacks are constantly increasing. Staying informed about current threats is crucial for maintaining effective security."
+                    "title": "Важное примечание",
+                    "content": "Частота и сложность кибератак постоянно увеличиваются. Быть в курсе текущих угроз крайне важно для поддержания эффективной безопасности."
                 }
             },
             {
-                "title": "The CIA Triad: Core Principles of Security",
+                "title": "Триада ЦРУ (CIA): Основные принципы безопасности",
                 "content": [
-                    "The CIA triad represents the three core principles of information security:",
-                    "• Confidentiality: Ensuring that information is accessible only to those authorized to have access.",
-                    "• Integrity: Maintaining and assuring the accuracy and completeness of data over its entire lifecycle.",
-                    "• Availability: Ensuring that authorized users have access to information when needed."
+                    "Триада ЦРУ (CIA) представляет три основных принципа информационной безопасности:",
+                    "• Конфиденциальность (Confidentiality): Обеспечение доступа к информации только тем, кто имеет на это разрешение.",
+                    "• Целостность (Integrity): Поддержание и обеспечение точности и полноты данных на протяжении всего их жизненного цикла.",
+                    "• Доступность (Availability): Обеспечение доступа авторизованных пользователей к информации, когда это необходимо."
                 ],
                 "image": {
                     "url": "https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/svgs/solid/shield-halved.svg",
-                    "alt": "CIA Triad diagram",
-                    "caption": "The three pillars of information security: Confidentiality, Integrity, and Availability"
+                    "alt": "Диаграмма триады ЦРУ",
+                    "caption": "Три столпа информационной безопасности: Конфиденциальность, Целостность и Доступность"
                 }
             }
         ],
         "key_takeaways": [
-            "Cybersecurity is the practice of protecting digital systems, networks, and data from attacks",
-            "The importance of cybersecurity continues to grow as we rely more on digital technology",
-            "Common cyber threats include malware, phishing, and social engineering",
-            "The CIA triad (Confidentiality, Integrity, Availability) forms the core principles of information security",
-            "Everyone has a role to play in maintaining cybersecurity, not just IT professionals"
+            "Кибербезопасность - это практика защиты цифровых систем, сетей и данных от атак",
+            "Важность кибербезопасности продолжает расти по мере того, как мы все больше полагаемся на цифровые технологии",
+            "К распространенным киберугрозам относятся вредоносное ПО, фишинг и социальная инженерия",
+            "Триада ЦРУ (Конфиденциальность, Целостность, Доступность) формирует основные принципы информационной безопасности",
+            "Каждый человек играет определенную роль в поддержании кибербезопасности, а не только ИТ-специалисты"
         ],
         "exercise": {
-            "title": "Security Self-Assessment",
-            "description": "Evaluate your current security practices to identify potential vulnerabilities.",
+            "title": "Самооценка безопасности",
+            "description": "Оцените свои текущие практики безопасности, чтобы выявить потенциальные уязвимости.",
             "steps": [
-                "Make a list of all your digital accounts (email, social media, banking, etc.)",
-                "Check if you're using unique passwords for each account",
-                "Verify if you have two-factor authentication enabled where available",
-                "Review your privacy settings on social media platforms",
-                "Check if your devices have the latest security updates installed"
+                "Составьте список всех ваших цифровых аккаунтов (электронная почта, социальные сети, банковские услуги и т.д.)",
+                "Проверьте, используете ли вы уникальные пароли для каждого аккаунта",
+                "Проверьте, включена ли двухфакторная аутентификация там, где она доступна",
+                "Просмотрите настройки конфиденциальности в социальных сетях",
+                "Проверьте, установлены ли на ваших устройствах последние обновления безопасности"
             ],
-            "hint": "Focus on improving one aspect of your security at a time, starting with the most sensitive accounts like email and banking."
+            "hint": "Сосредоточьтесь на улучшении одного аспекта вашей безопасности за раз, начиная с наиболее важных аккаунтов, таких как электронная почта и банковские аккаунты."
         },
         "further_reading": [
             {
-                "title": "NIST Cybersecurity Framework",
+                "title": "Основы кибербезопасности NIST",
                 "url": "https://www.nist.gov/cyberframework",
-                "description": "A set of guidelines for mitigating organizational cybersecurity risks"
+                "description": "Набор рекомендаций по снижению рисков кибербезопасности в организациях"
             },
             {
-                "title": "Cybersecurity and Infrastructure Security Agency",
+                "title": "Агентство по кибербезопасности и безопасности инфраструктуры",
                 "url": "https://www.cisa.gov/",
-                "description": "US government resources on cybersecurity best practices"
+                "description": "Ресурсы правительства США по лучшим практикам кибербезопасности"
             },
             {
-                "title": "Stay Safe Online - National Cybersecurity Alliance",
+                "title": "Будьте в безопасности онлайн - Национальный альянс кибербезопасности",
                 "url": "https://staysafeonline.org/",
-                "description": "Resources for online safety and security awareness"
+                "description": "Ресурсы по безопасности в интернете и повышению осведомленности о безопасности"
             }
         ],
         "related_tutorials": [
             {
                 "id": "password-security",
-                "title": "Creating Strong Passwords",
-                "difficulty": "Beginner"
+                "title": "Создание надежных паролей",
+                "difficulty": "Начинающий"
             },
             {
                 "id": "social-engineering",
-                "title": "Recognizing Social Engineering Attacks",
-                "difficulty": "Beginner"
+                "title": "Распознавание атак социальной инженерии",
+                "difficulty": "Начинающий"
             },
             {
                 "id": "data-privacy",
-                "title": "Protecting Your Digital Privacy",
-                "difficulty": "Beginner"
+                "title": "Защита вашей цифровой конфиденциальности",
+                "difficulty": "Начинающий"
             }
         ]
     },
