@@ -1112,154 +1112,154 @@ TUTORIALS = [
     },
     {
         "id": "phishing-protection",
-        "title": "Protecting Against Phishing",
-        "description": "Learn to identify and avoid phishing attacks that try to steal your information.",
+        "title": "Защита от фишинга",
+        "description": "Узнайте, как распознавать и избегать фишинговых атак, которые пытаются украсть вашу информацию.",
         "category": "web-security",
-        "difficulty": "Beginner",
-        "duration": "20 min",
-        "objectives": "Understand what phishing is, learn to identify phishing attempts, and develop strategies to protect yourself.",
-        "introduction": "Phishing is one of the most common and effective cyber attacks, using deception to trick people into revealing sensitive information or installing malware. These attacks can come through email, text messages, social media, or even phone calls. This tutorial will help you recognize phishing attempts and take steps to protect yourself from these increasingly sophisticated scams.",
+        "difficulty": "Начинающий",
+        "duration": "20 мин",
+        "objectives": "Понять, что такое фишинг, научиться идентифицировать попытки фишинга и разработать стратегии самозащиты.",
+        "introduction": "Фишинг — одна из самых распространенных и эффективных кибератак, использующая обман, чтобы заставить людей раскрыть конфиденциальную информацию или установить вредоносное ПО. Эти атаки могут поступать через электронную почту, текстовые сообщения, социальные сети или даже телефонные звонки. Этот учебник поможет вам распознавать попытки фишинга и принимать меры для защиты от этих все более изощренных мошенничеств.",
         "sections": [
             {
-                "title": "Understanding Phishing Attacks",
+                "title": "Понимание фишинговых атак",
                 "content": [
-                    "Phishing is a type of social engineering attack where attackers masquerade as trusted entities to trick victims into revealing sensitive information or taking harmful actions. Here's what you need to know:",
-                    "• Phishing primarily works by exploiting trust rather than technical vulnerabilities",
-                    "• Attacks can target individuals (spear phishing) or cast a wide net with generic messages",
-                    "• The goal is typically to steal credentials, financial information, or personal data",
-                    "• Attackers may also attempt to install malware or ransomware",
-                    "• Phishing comes in many forms across various communication channels",
-                    "Understanding the basic types of phishing can help you identify potential attacks:"
+                    "Фишинг — это тип атаки социальной инженерии, при которой злоумышленники маскируются под доверенные организации, чтобы обманом заставить жертв раскрыть конфиденциальную информацию или совершить вредоносные действия. Вот что вам нужно знать:",
+                    "• Фишинг преимущественно работает путем эксплуатации доверия, а не технических уязвимостей",
+                    "• Атаки могут быть направлены на конкретных лиц (целевой фишинг) или массово распространяться с помощью общих сообщений",
+                    "• Целью обычно является кража учетных данных, финансовой информации или личных данных",
+                    "• Злоумышленники также могут пытаться установить вредоносное ПО или программы-вымогатели",
+                    "• Фишинг встречается во многих формах через различные каналы коммуникации",
+                    "Понимание основных типов фишинга может помочь вам идентифицировать потенциальные атаки:"
                 ],
                 "image": {
                     "url": "https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/svgs/solid/fish.svg",
-                    "alt": "Phishing Illustration",
-                    "caption": "Phishing attempts to 'hook' victims by impersonating legitimate organizations"
+                    "alt": "Иллюстрация фишинга",
+                    "caption": "Фишинг пытается 'подцепить' жертв, выдавая себя за легитимные организации"
                 }
             },
             {
-                "title": "Common Types of Phishing",
+                "title": "Распространенные типы фишинга",
                 "content": [
-                    "Phishing attacks come in several varieties, each with distinct characteristics:",
-                    "• Email phishing: The most common type, using fraudulent emails that appear to come from legitimate organizations",
-                    "• Spear phishing: Targeted attacks customized for specific individuals, often using personal information",
-                    "• Whaling: Targeting high-profile individuals like executives or politicians",
-                    "• Smishing: Phishing via SMS text messages",
-                    "• Vishing: Voice phishing using phone calls",
-                    "• Clone phishing: Replicating legitimate communications but replacing links or attachments with malicious ones",
-                    "• Search engine phishing: Creating fake websites that appear in search results",
-                    "• Business Email Compromise (BEC): Impersonating executives to request wire transfers or sensitive information",
-                    "The techniques evolve constantly, but the core strategy remains the same: manipulation through impersonation."
+                    "Фишинговые атаки бывают нескольких видов, каждый с отличительными характеристиками:",
+                    "• Фишинг по электронной почте: Наиболее распространенный тип, использующий поддельные электронные письма, которые выглядят так, как будто они поступили от легитимных организаций",
+                    "• Целевой фишинг (спир-фишинг): Таргетированные атаки, настроенные для конкретных лиц, часто с использованием личной информации",
+                    "• Китовый фишинг (вейлинг): Нацелен на высокопоставленных лиц, таких как руководители или политики",
+                    "• Смишинг: Фишинг через SMS-сообщения",
+                    "• Вишинг: Голосовой фишинг с использованием телефонных звонков",
+                    "• Клонированный фишинг: Копирование легитимных коммуникаций, но с заменой ссылок или вложений на вредоносные",
+                    "• Фишинг через поисковые системы: Создание поддельных сайтов, которые появляются в результатах поиска",
+                    "• Компрометация деловой электронной почты (BEC): Выдача себя за руководителей для запроса денежных переводов или конфиденциальной информации",
+                    "Техники постоянно развиваются, но основная стратегия остается неизменной: манипуляция через имитацию."
                 ],
                 "alert": {
                     "type": "danger",
                     "icon": "exclamation-circle",
-                    "title": "Increasing Sophistication",
-                    "content": "Modern phishing attempts are becoming increasingly sophisticated, with fewer spelling errors, professional designs, and even interactive elements. Never assume you're too savvy to be fooled."
+                    "title": "Растущая сложность",
+                    "content": "Современные попытки фишинга становятся все более сложными, с меньшим количеством орфографических ошибок, профессиональным дизайном и даже интерактивными элементами. Никогда не думайте, что вы слишком осведомлены, чтобы попасться."
                 }
             },
             {
-                "title": "How to Identify Phishing Attempts",
+                "title": "Как идентифицировать попытки фишинга",
                 "content": [
-                    "While phishing attacks are becoming more sophisticated, they often contain tell-tale signs that can help you identify them:",
-                    "1. Suspicious sender addresses:",
-                    "   • Slight misspellings in domain names (microsoftsupport.com instead of microsoft.com)",
-                    "   • Personal email domains for business communications (amazon-support@gmail.com)",
-                    "   • Mismatched sender name and email address",
+                    "Хотя фишинговые атаки становятся все более изощренными, они часто содержат характерные признаки, которые могут помочь вам их идентифицировать:",
+                    "1. Подозрительные адреса отправителей:",
+                    "   • Небольшие ошибки в доменных именах (microsoftsupport.com вместо microsoft.com)",
+                    "   • Личные почтовые домены для деловых коммуникаций (amazon-support@gmail.com)",
+                    "   • Несоответствие между именем отправителя и адресом электронной почты",
                     "",
-                    "2. Urgency and pressure tactics:",
-                    "   • Messages creating a sense of emergency or requiring immediate action",
-                    "   • Threats of negative consequences if you don't act quickly",
-                    "   • Limited-time offers that are too good to be true",
+                    "2. Тактики срочности и давления:",
+                    "   • Сообщения, создающие чувство срочности или требующие немедленных действий",
+                    "   • Угрозы негативных последствий, если вы не действуете быстро",
+                    "   • Ограниченные по времени предложения, которые слишком хороши, чтобы быть правдой",
                     "",
-                    "3. Suspicious links and attachments:",
-                    "   • Links that don't match the purported destination (hover without clicking to check)",
-                    "   • Shortened URLs that hide the actual destination",
-                    "   • Unexpected attachments, especially executable files (.exe, .zip, .scr)",
+                    "3. Подозрительные ссылки и вложения:",
+                    "   • Ссылки, которые не соответствуют заявленному назначению (наведите без нажатия, чтобы проверить)",
+                    "   • Сокращенные URL, которые скрывают реальное назначение",
+                    "   • Неожиданные вложения, особенно исполняемые файлы (.exe, .zip, .scr)",
                     "",
-                    "4. Content red flags:",
-                    "   • Generic greetings (\"Dear User\" instead of your name)",
-                    "   • Grammatical errors and unusual phrasing",
-                    "   • Requests for sensitive information",
-                    "   • Inconsistent branding or formatting",
+                    "4. Признаки опасности в содержании:",
+                    "   • Общие приветствия (\"Уважаемый пользователь\" вместо вашего имени)",
+                    "   • Грамматические ошибки и необычные формулировки",
+                    "   • Запросы конфиденциальной информации",
+                    "   • Несогласованный брендинг или форматирование",
                     "",
-                    "Always verify suspicious communications through official channels before taking any requested action."
+                    "Всегда проверяйте подозрительные коммуникации через официальные каналы, прежде чем предпринимать какие-либо запрашиваемые действия."
                 ],
                 "code": {
                     "language": "text",
-                    "snippet": "# How to verify email headers and links\n\n## Checking the true destination of a link:\n1. Hover your mouse over the link (don't click)\n2. Look at the status bar or popup to see the actual URL\n3. Check if the domain matches the expected organization\n\n## Examining email headers (advanced):\n- In Gmail: Click the three dots → \"Show original\"\n- In Outlook: Open email → File → Properties → \"Internet headers\"\n\n## Red flags in URLs:\n- Misspellings (microsft.com vs microsoft.com)\n- Extra words (paypal-secure.com vs paypal.com)\n- Unexpected subdomains (login.paypal.phishing.com)\n- Unusual TLDs (.xyz, .tk instead of .com, .org)"
+                    "snippet": "# Как проверить заголовки и ссылки электронной почты\n\n## Проверка истинного назначения ссылки:\n1. Наведите мышь на ссылку (не нажимайте)\n2. Посмотрите на строку состояния или всплывающее окно, чтобы увидеть фактический URL\n3. Проверьте, соответствует ли домен ожидаемой организации\n\n## Изучение заголовков электронной почты (продвинутый уровень):\n- В Gmail: Нажмите на три точки → \"Показать оригинал\"\n- В Outlook: Открыть письмо → Файл → Свойства → \"Заголовки Интернета\"\n\n## Предупреждающие знаки в URL:\n- Опечатки (microsft.com вместо microsoft.com)\n- Дополнительные слова (paypal-secure.com вместо paypal.com)\n- Неожиданные поддомены (login.paypal.phishing.com)\n- Необычные TLD (.xyz, .tk вместо .com, .org)"
                 }
             },
             {
-                "title": "Protecting Yourself from Phishing",
+                "title": "Защита от фишинга",
                 "content": [
-                    "Take these steps to minimize your risk from phishing attacks:",
-                    "• Verify before acting: Independently contact the organization through official channels if you're unsure",
-                    "• Never click suspicious links: Type the official website address directly in your browser",
-                    "• Be cautious with attachments: Scan them with security software before opening",
-                    "• Use multi-factor authentication: This provides an extra layer of protection even if credentials are compromised",
-                    "• Keep software updated: Ensure your devices and applications have the latest security patches",
-                    "• Use email filtering: Enable spam filters and security features in your email service",
-                    "• Be skeptical of urgency: Legitimate organizations rarely demand immediate action",
-                    "• Report phishing attempts: Use the reporting features in your email client or forward to relevant authorities",
-                    "• Educate yourself: Stay informed about current phishing techniques",
-                    "Remember that even tech-savvy individuals can fall victim to sophisticated phishing. Always maintain a healthy skepticism."
+                    "Предпримите следующие шаги для минимизации риска от фишинговых атак:",
+                    "• Проверяйте перед действием: Самостоятельно свяжитесь с организацией через официальные каналы, если вы не уверены",
+                    "• Никогда не нажимайте на подозрительные ссылки: Введите официальный адрес веб-сайта напрямую в браузере",
+                    "• Будьте осторожны с вложениями: Просканируйте их с помощью программного обеспечения безопасности перед открытием",
+                    "• Используйте многофакторную аутентификацию: Это обеспечивает дополнительный уровень защиты, даже если учетные данные скомпрометированы",
+                    "• Поддерживайте программное обеспечение в актуальном состоянии: Убедитесь, что ваши устройства и приложения имеют последние обновления безопасности",
+                    "• Используйте фильтрацию электронной почты: Включите фильтры спама и функции безопасности в вашем почтовом сервисе",
+                    "• Скептически относитесь к срочности: Легитимные организации редко требуют немедленных действий",
+                    "• Сообщайте о попытках фишинга: Используйте функции отчетности в вашем почтовом клиенте или пересылайте в соответствующие органы",
+                    "• Образовывайте себя: Будьте в курсе современных методов фишинга",
+                    "Помните, что даже технически грамотные люди могут стать жертвами изощренного фишинга. Всегда сохраняйте здоровый скептицизм."
                 ]
             }
         ],
         "key_takeaways": [
-            "Phishing attacks attempt to steal information by impersonating trusted entities",
-            "Red flags include urgency, suspicious links, generic greetings, and requests for sensitive information",
-            "Always verify communications through official channels before taking action",
-            "Enable multi-factor authentication to protect accounts even if credentials are compromised",
-            "Report phishing attempts to help protect others and improve security systems"
+            "Фишинговые атаки пытаются украсть информацию, выдавая себя за доверенные организации",
+            "Предупреждающие признаки включают срочность, подозрительные ссылки, общие приветствия и запросы конфиденциальной информации",
+            "Всегда проверяйте коммуникации через официальные каналы перед выполнением каких-либо действий",
+            "Включите многофакторную аутентификацию для защиты учетных записей, даже если учетные данные скомпрометированы",
+            "Сообщайте о попытках фишинга, чтобы защитить других и улучшить системы безопасности"
         ],
         "exercise": {
-            "title": "Phishing Email Analysis",
-            "description": "Practice identifying phishing attempts by analyzing sample emails.",
+            "title": "Анализ фишинговых писем",
+            "description": "Практикуйтесь в определении попыток фишинга, анализируя образцы электронных писем.",
             "steps": [
-                "Review your email spam folder for potential phishing attempts",
-                "For each suspicious email, check the sender's address for inconsistencies",
-                "Hover over links (without clicking) to see the actual destination",
-                "Look for urgency, generic greetings, and requests for personal information",
-                "Note grammatical errors or unusual phrasing",
-                "Consider whether you were expecting this communication",
-                "Determine whether the email is legitimate or a phishing attempt"
+                "Просмотрите папку спама вашей электронной почты на наличие потенциальных попыток фишинга",
+                "Для каждого подозрительного письма проверьте адрес отправителя на наличие несоответствий",
+                "Наведите курсор на ссылки (без нажатия), чтобы увидеть фактическое назначение",
+                "Обратите внимание на срочность, общие приветствия и запросы личной информации",
+                "Отметьте грамматические ошибки и необычные формулировки",
+                "Подумайте, ожидали ли вы это сообщение",
+                "Определите, является ли письмо легитимным или попыткой фишинга"
             ],
-            "hint": "If you can't find examples in your own inbox, search for 'phishing email examples' online to see samples. The more examples you study, the better you'll become at spotting real attempts."
+            "hint": "Если вы не можете найти примеры в своем почтовом ящике, поищите 'примеры фишинговых писем' в интернете. Чем больше примеров вы изучите, тем лучше вы научитесь распознавать реальные попытки."
         },
         "further_reading": [
             {
                 "title": "Phishing.org",
                 "url": "https://www.phishing.org/what-is-phishing",
-                "description": "Comprehensive resource on phishing attacks and prevention"
+                "description": "Комплексный ресурс о фишинговых атаках и их предотвращении"
             },
             {
                 "title": "FTC Phishing Guidance",
                 "url": "https://consumer.ftc.gov/articles/how-recognize-and-avoid-phishing-scams",
-                "description": "Federal Trade Commission guide to recognizing and avoiding phishing"
+                "description": "Руководство Федеральной торговой комиссии по распознаванию и предотвращению фишинга"
             },
             {
                 "title": "CISA Phishing Page",
                 "url": "https://www.cisa.gov/topics/cyber-threats-and-advisories/types-threats/phishing",
-                "description": "Cybersecurity and Infrastructure Security Agency resources on phishing"
+                "description": "Ресурсы Агентства кибербезопасности и безопасности инфраструктуры по фишингу"
             }
         ],
         "related_tutorials": [
             {
                 "id": "social-engineering",
-                "title": "Recognizing Social Engineering Attacks",
-                "difficulty": "Beginner"
+                "title": "Распознавание атак социальной инженерии",
+                "difficulty": "Начинающий"
             },
             {
                 "id": "secure-browsing",
-                "title": "Safe Web Browsing Practices",
-                "difficulty": "Beginner"
+                "title": "Безопасное использование веб-браузера",
+                "difficulty": "Начинающий"
             },
             {
                 "id": "two-factor-authentication",
-                "title": "Setting Up Two-Factor Authentication",
-                "difficulty": "Beginner"
+                "title": "Настройка двухфакторной аутентификации",
+                "difficulty": "Начинающий"
             }
         ]
     },
