@@ -663,201 +663,201 @@ TUTORIALS = [
     # Network Security Category
     {
         "id": "secure-browsing",
-        "title": "Safe Web Browsing Practices",
-        "description": "Learn how to protect yourself while browsing the internet.",
+        "title": "Безопасное использование веб-браузера",
+        "description": "Узнайте, как защитить себя при просмотре интернета.",
         "category": "network-security",
-        "difficulty": "Beginner",
-        "duration": "20 min",
-        "objectives": "Understand common web browsing risks, recognize secure websites, and implement safe browsing habits.",
-        "introduction": "The web browser is your primary gateway to the internet, making it a critical point of security in your digital life. Understanding how to browse safely can protect you from many common cyber threats, including malware, phishing, and data theft. This tutorial covers essential practices for safer web browsing across all devices.",
+        "difficulty": "Начинающий",
+        "duration": "20 мин",
+        "objectives": "Понять распространенные риски при веб-серфинге, распознавать безопасные веб-сайты и внедрить безопасные привычки просмотра.",
+        "introduction": "Веб-браузер — ваш основной шлюз в интернет, что делает его критической точкой безопасности в вашей цифровой жизни. Понимание того, как безопасно просматривать веб-страницы, может защитить вас от многих распространенных киберугроз, включая вредоносное ПО, фишинг и кражу данных. Этот урок охватывает основные практики для более безопасного веб-серфинга на всех устройствах.",
         "sections": [
             {
-                "title": "Browser Security Basics",
+                "title": "Основы безопасности браузера",
                 "content": [
-                    "Your browser is constantly exposed to potential threats. Here are essential security practices to implement immediately:",
-                    "• Keep your browser updated: Browser updates often contain critical security patches",
-                    "• Use a modern, security-focused browser: Chrome, Firefox, Safari, and Edge all have good security features",
-                    "• Enable automatic updates: This ensures you always have the latest security protections",
-                    "• Review browser security settings: Familiarize yourself with and enable key security features",
-                    "• Use browser extensions selectively: Only install extensions from trusted sources and remove those you don't use",
-                    "• Clear browsing data regularly: This includes cookies, cache, and browsing history",
-                    "These fundamentals form the foundation of safer browsing, but they're just the beginning."
+                    "Ваш браузер постоянно подвергается потенциальным угрозам. Вот основные меры безопасности, которые следует внедрить немедленно:",
+                    "• Поддерживайте браузер в актуальном состоянии: Обновления браузера часто содержат критические патчи безопасности",
+                    "• Используйте современный браузер с ориентацией на безопасность: Chrome, Firefox, Safari и Edge имеют хорошие функции безопасности",
+                    "• Включите автоматические обновления: Это гарантирует, что у вас всегда будут последние средства защиты",
+                    "• Просмотрите настройки безопасности браузера: Ознакомьтесь и включите ключевые функции безопасности",
+                    "• Избирательно используйте расширения браузера: Устанавливайте расширения только из надежных источников и удаляйте те, которые не используете",
+                    "• Регулярно очищайте данные просмотра: Это включает файлы cookie, кэш и историю просмотра",
+                    "Эти основы формируют фундамент более безопасного веб-серфинга, но это только начало."
                 ],
                 "alert": {
                     "type": "warning",
                     "icon": "exclamation-triangle",
-                    "title": "Browser Extensions Risk",
-                    "content": "Browser extensions can access everything you do in your browser. Only install extensions from trusted sources, and regularly review the permissions you've granted."
+                    "title": "Риск расширений браузера",
+                    "content": "Расширения браузера могут получить доступ ко всему, что вы делаете в браузере. Устанавливайте расширения только из надежных источников и регулярно проверяйте предоставленные им разрешения."
                 }
             },
             {
-                "title": "Recognizing Secure Websites",
+                "title": "Распознавание безопасных веб-сайтов",
                 "content": [
-                    "Not all websites are equally secure. Here's how to identify safer sites:",
-                    "• Check for HTTPS: Look for 'https://' at the beginning of the address and a padlock icon in the address bar",
-                    "• Verify website addresses: Check for typos or slight variations that might indicate a fake site",
-                    "• Be wary of unfamiliar sites: Research new websites before providing any information",
-                    "• Look for privacy policies and contact information: Legitimate sites typically have these easily accessible",
-                    "• Check for trust signals: Look for professional design, updated content, and customer reviews",
-                    "• Use website safety checkers: Tools like Google Safe Browsing can help identify dangerous sites",
-                    "Remember that a professional appearance alone doesn't guarantee a site is legitimate. Always verify before sharing sensitive information."
+                    "Не все веб-сайты одинаково безопасны. Вот как определить более безопасные сайты:",
+                    "• Проверяйте наличие HTTPS: Ищите 'https://' в начале адреса и значок замка в адресной строке",
+                    "• Проверяйте адреса веб-сайтов: Обращайте внимание на опечатки или незначительные отличия, которые могут указывать на поддельный сайт",
+                    "• Будьте осторожны с незнакомыми сайтами: Изучайте новые веб-сайты перед предоставлением какой-либо информации",
+                    "• Ищите политики конфиденциальности и контактную информацию: Легитимные сайты обычно имеют их в легком доступе",
+                    "• Проверяйте сигналы доверия: Обращайте внимание на профессиональный дизайн, обновленный контент и отзывы клиентов",
+                    "• Используйте инструменты проверки безопасности сайтов: Такие как Google Safe Browsing, которые помогают выявить опасные сайты",
+                    "Помните, что профессиональный внешний вид сам по себе не гарантирует легитимность сайта. Всегда проверяйте перед тем, как делиться конфиденциальной информацией."
                 ],
                 "image": {
                     "url": "https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/svgs/solid/lock.svg",
-                    "alt": "HTTPS Secure Connection",
-                    "caption": "The padlock icon indicates a secure HTTPS connection, encrypting data between your browser and the website"
+                    "alt": "Безопасное HTTPS-соединение",
+                    "caption": "Значок замка указывает на безопасное HTTPS-соединение, шифрующее данные между вашим браузером и веб-сайтом"
                 }
             },
             {
-                "title": "Protecting Your Privacy While Browsing",
+                "title": "Защита вашей конфиденциальности при просмотре",
                 "content": [
-                    "Your browsing activity can reveal a lot about you. Here's how to maintain more privacy:",
-                    "• Use private browsing mode: This prevents your browser from saving your history, cookies, and site data",
-                    "• Consider a VPN (Virtual Private Network): This encrypts your internet connection and hides your IP address",
-                    "• Adjust cookie settings: Set your browser to delete cookies when you close it or block third-party cookies",
-                    "• Use privacy-focused search engines: Options like DuckDuckGo don't track your searches",
-                    "• Disable browser tracking: Enable 'Do Not Track' and other anti-tracking features in your browser",
-                    "• Review browser permissions: Control which sites can access your location, camera, microphone, and notifications",
-                    "• Use ad blockers: These can reduce tracking and protect against malvertising (malicious ads)",
-                    "Be aware that complete anonymity online is difficult to achieve. These measures increase your privacy but don't guarantee it."
+                    "Ваша активность в интернете может рассказать о вас многое. Вот как сохранить больше приватности:",
+                    "• Используйте режим приватного просмотра: Это предотвращает сохранение браузером вашей истории, файлов cookie и данных сайтов",
+                    "• Рассмотрите возможность использования VPN (виртуальной частной сети): Это шифрует ваше интернет-соединение и скрывает ваш IP-адрес",
+                    "• Настройте параметры файлов cookie: Настройте браузер на удаление файлов cookie при его закрытии или блокировку сторонних файлов cookie",
+                    "• Используйте поисковые системы, ориентированные на конфиденциальность: Такие как DuckDuckGo, которые не отслеживают ваши поисковые запросы",
+                    "• Отключите отслеживание в браузере: Включите функцию 'Do Not Track' и другие функции защиты от отслеживания в вашем браузере",
+                    "• Просматривайте разрешения браузера: Контролируйте, какие сайты могут получать доступ к вашему местоположению, камере, микрофону и уведомлениям",
+                    "• Используйте блокировщики рекламы: Они могут уменьшить отслеживание и защитить от вредоносной рекламы (malvertising)",
+                    "Имейте в виду, что полная анонимность в интернете труднодостижима. Эти меры повышают вашу конфиденциальность, но не гарантируют ее."
                 ],
                 "code": {
                     "language": "text",
-                    "snippet": "# Browser Privacy Settings Checklist\n\n1. Disable third-party cookies\n2. Enable 'Do Not Track'\n3. Block pop-ups\n4. Disable location tracking\n5. Review site permissions (camera, microphone, notifications)\n6. Set content blocking to strict\n7. Enable HTTPS-only mode if available\n8. Configure automatic deletion of browsing history and cookies"
+                    "snippet": "# Контрольный список настроек конфиденциальности браузера\n\n1. Отключите сторонние файлы cookie\n2. Включите 'Do Not Track' (Не отслеживать)\n3. Блокируйте всплывающие окна\n4. Отключите отслеживание местоположения\n5. Просмотрите разрешения сайтов (камера, микрофон, уведомления)\n6. Установите строгую блокировку контента\n7. Включите режим HTTPS-only, если доступен\n8. Настройте автоматическое удаление истории просмотров и файлов cookie"
                 }
             },
             {
-                "title": "Avoiding Web-Based Threats",
+                "title": "Избегание веб-угроз",
                 "content": [
-                    "The web contains various threats designed to compromise your security. Here's how to avoid them:",
-                    "• Be cautious about downloads: Only download files from trusted sources",
-                    "• Scan downloads: Use antivirus software to check downloaded files before opening them",
-                    "• Be wary of pop-ups: Avoid clicking on unexpected pop-up windows, especially those claiming your device is infected",
-                    "• Don't click suspicious links: Hover over links to see where they actually lead before clicking",
-                    "• Be careful with online forms: Think twice before submitting personal information",
-                    "• Watch out for social engineering: Be skeptical of urgent messages or too-good-to-be-true offers",
-                    "• Use secure payment methods: When shopping online, use credit cards or secure payment services with fraud protection",
-                    "Remember that most web-based attacks require some action from you. Taking a moment to evaluate before clicking or downloading can prevent many security issues."
+                    "Интернет содержит различные угрозы, направленные на компрометацию вашей безопасности. Вот как их избежать:",
+                    "• Будьте осторожны с загрузками: Загружайте файлы только из надежных источников",
+                    "• Сканируйте загрузки: Используйте антивирусное ПО для проверки загруженных файлов перед их открытием",
+                    "• Остерегайтесь всплывающих окон: Избегайте нажатия на неожиданные всплывающие окна, особенно те, которые утверждают, что ваше устройство заражено",
+                    "• Не нажимайте на подозрительные ссылки: Наведите курсор на ссылки, чтобы увидеть, куда они действительно ведут, прежде чем нажимать",
+                    "• Будьте осторожны с онлайн-формами: Дважды подумайте, прежде чем отправлять личную информацию",
+                    "• Остерегайтесь социальной инженерии: Скептически относитесь к срочным сообщениям или слишком хорошим, чтобы быть правдой, предложениям",
+                    "• Используйте безопасные способы оплаты: При покупках в интернете используйте кредитные карты или защищенные платежные сервисы с защитой от мошенничества",
+                    "Помните, что большинство веб-атак требуют от вас каких-либо действий. Взятие момента на оценку перед нажатием или загрузкой может предотвратить многие проблемы безопасности."
                 ]
             }
         ],
         "key_takeaways": [
-            "Keep your browser updated and use security features like HTTPS-only mode",
-            "Look for HTTPS and verify website addresses before sharing information",
-            "Use privacy tools like private browsing, VPNs, and privacy-focused search engines",
-            "Be cautious about downloads, pop-ups, and requests for personal information",
-            "Consider using security extensions from reputable providers to enhance protection"
+            "Поддерживайте браузер в актуальном состоянии и используйте функции безопасности, такие как режим HTTPS-only",
+            "Ищите HTTPS и проверяйте адреса веб-сайтов перед тем, как делиться информацией",
+            "Используйте инструменты конфиденциальности, такие как приватный просмотр, VPN и поисковые системы, ориентированные на приватность",
+            "Будьте осторожны с загрузками, всплывающими окнами и запросами личной информации",
+            "Рассмотрите возможность использования расширений безопасности от надежных провайдеров для усиления защиты"
         ],
         "exercise": {
-            "title": "Browser Security Checkup",
-            "description": "Assess and improve the security settings of your primary web browser.",
+            "title": "Проверка безопасности браузера",
+            "description": "Оцените и улучшите настройки безопасности вашего основного веб-браузера.",
             "steps": [
-                "Open your browser's settings or preferences menu",
-                "Check that your browser is updated to the latest version",
-                "Review and adjust privacy settings (cookies, tracking, browsing history)",
-                "Configure content permissions (location, camera, microphone, notifications)",
-                "Review installed extensions and remove any you don't recognize or need",
-                "Enable any available security features (phishing protection, malware scanning)",
-                "Set up a regular schedule to clear browsing data"
+                "Откройте меню настроек или предпочтений вашего браузера",
+                "Проверьте, что ваш браузер обновлен до последней версии",
+                "Просмотрите и настройте параметры конфиденциальности (файлы cookie, отслеживание, история просмотров)",
+                "Настройте разрешения для контента (местоположение, камера, микрофон, уведомления)",
+                "Просмотрите установленные расширения и удалите те, которые вы не распознаете или не используете",
+                "Включите все доступные функции безопасности (защита от фишинга, сканирование на вредоносное ПО)",
+                "Установите регулярное расписание для очистки данных просмотра"
             ],
-            "hint": "Most browsers have a security or privacy section in settings where you can find most of these options. If you're unsure about a specific setting, search for your browser name plus the setting to find documentation."
+            "hint": "Большинство браузеров имеют раздел безопасности или конфиденциальности в настройках, где вы можете найти большинство этих опций. Если вы не уверены в конкретной настройке, поищите название вашего браузера и настройки, чтобы найти документацию."
         },
         "further_reading": [
             {
                 "title": "Mozilla's Privacy & Security Guide",
                 "url": "https://support.mozilla.org/en-US/products/firefox/privacy-and-security",
-                "description": "Comprehensive guide to privacy and security features in Firefox"
+                "description": "Комплексное руководство по функциям конфиденциальности и безопасности в Firefox"
             },
             {
                 "title": "Electronic Frontier Foundation's Surveillance Self-Defense",
                 "url": "https://ssd.eff.org/",
-                "description": "Tips, tools, and tutorials for safer online communications"
+                "description": "Советы, инструменты и учебные материалы для более безопасного общения в Интернете"
             },
             {
                 "title": "Google's Safety Center",
                 "url": "https://safety.google/",
-                "description": "Resources for staying safer online with Google products"
+                "description": "Ресурсы для повышения безопасности при использовании продуктов Google"
             }
         ],
         "related_tutorials": [
             {
                 "id": "cybersecurity-threats",
-                "title": "Common Cybersecurity Threats",
-                "difficulty": "Beginner"
+                "title": "Распространенные киберугрозы",
+                "difficulty": "Начинающий"
             },
             {
                 "id": "private-browsing",
-                "title": "Using VPNs for Privacy",
-                "difficulty": "Intermediate"
+                "title": "Использование VPN для приватности",
+                "difficulty": "Средний"
             },
             {
                 "id": "social-engineering",
-                "title": "Recognizing Social Engineering Attacks",
-                "difficulty": "Beginner"
+                "title": "Распознавание атак социальной инженерии",
+                "difficulty": "Начинающий"
             }
         ]
     },
     {
         "id": "home-network-security",
-        "title": "Securing Your Home Network",
-        "description": "Learn how to protect your home Wi-Fi network and connected devices.",
+        "title": "Защита домашней сети",
+        "description": "Узнайте, как защитить домашнюю сеть Wi-Fi и подключенные устройства.",
         "category": "network-security",
-        "difficulty": "Beginner",
-        "duration": "25 min",
-        "objectives": "Understand network security risks, configure router security settings, and protect connected devices.",
-        "introduction": "Your home network is the gateway connecting all your devices to the internet. If compromised, attackers could access personal data, monitor your online activities, or use your network for malicious purposes. This tutorial will guide you through practical steps to secure your home network, protecting your digital life from the foundation up.",
+        "difficulty": "Начинающий",
+        "duration": "25 мин",
+        "objectives": "Понять риски безопасности сети, настроить параметры безопасности роутера и защитить подключенные устройства.",
+        "introduction": "Ваша домашняя сеть — это шлюз, соединяющий все ваши устройства с интернетом. В случае взлома злоумышленники могут получить доступ к личным данным, отслеживать вашу онлайн-активность или использовать вашу сеть в злонамеренных целях. Этот учебник проведет вас через практические шаги по защите вашей домашней сети, обеспечивая защиту вашей цифровой жизни с самого основания.",
         "sections": [
             {
-                "title": "Understanding Home Network Vulnerabilities",
+                "title": "Понимание уязвимостей домашней сети",
                 "content": [
-                    "Your home network faces several potential security risks:",
-                    "• Unauthorized access: Others using your network without permission",
-                    "• Traffic interception: Attackers capturing data sent over your network",
-                    "• Device compromise: Vulnerable devices being hacked",
-                    "• Router vulnerabilities: Outdated firmware with security flaws",
-                    "• Default settings: Factory configurations that are inherently insecure",
-                    "• Unprotected IoT devices: Smart home devices with weak security",
-                    "These vulnerabilities can lead to privacy breaches, identity theft, or even your network being used in wider attacks. The good news is that most can be addressed with simple configuration changes."
+                    "Ваша домашняя сеть сталкивается с несколькими потенциальными рисками безопасности:",
+                    "• Несанкционированный доступ: Другие используют вашу сеть без разрешения",
+                    "• Перехват трафика: Злоумышленники перехватывают данные, отправляемые по вашей сети",
+                    "• Компрометация устройств: Взлом уязвимых устройств",
+                    "• Уязвимости роутера: Устаревшая прошивка с недостатками безопасности",
+                    "• Настройки по умолчанию: Заводские конфигурации, которые изначально небезопасны",
+                    "• Незащищенные IoT-устройства: Устройства умного дома со слабой защитой",
+                    "Эти уязвимости могут привести к нарушению конфиденциальности, краже личных данных или даже использованию вашей сети в более широких атаках. Хорошая новость в том, что большинство из них можно устранить с помощью простых изменений конфигурации."
                 ],
                 "image": {
                     "url": "https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/svgs/solid/wifi.svg",
-                    "alt": "Home Network Illustration",
-                    "caption": "Your home network connects all your devices to the internet and requires proper security configuration"
+                    "alt": "Иллюстрация домашней сети",
+                    "caption": "Ваша домашняя сеть соединяет все ваши устройства с интернетом и требует правильной настройки безопасности"
                 }
             },
             {
-                "title": "Securing Your Router",
+                "title": "Защита роутера",
                 "content": [
-                    "Your router is the central point of your network and the first line of defense. Here's how to secure it:",
-                    "1. Change the default login credentials:",
-                    "   • Access your router's admin interface (typically by entering 192.168.0.1 or 192.168.1.1 in your browser)",
-                    "   • Change both the admin username and password to strong, unique values",
+                    "Ваш роутер является центральной точкой вашей сети и первой линией защиты. Вот как его защитить:",
+                    "1. Измените учетные данные для входа по умолчанию:",
+                    "   • Получите доступ к интерфейсу администратора роутера (обычно введя 192.168.0.1 или 192.168.1.1 в браузере)",
+                    "   • Измените как имя пользователя администратора, так и пароль на надежные, уникальные значения",
                     "",
-                    "2. Update router firmware:",
-                    "   • Check for firmware updates in your router's admin interface",
-                    "   • Enable automatic updates if available",
+                    "2. Обновите прошивку роутера:",
+                    "   • Проверьте наличие обновлений прошивки в интерфейсе администратора роутера",
+                    "   • Включите автоматические обновления, если они доступны",
                     "",
-                    "3. Use strong encryption:",
-                    "   • Configure your Wi-Fi to use WPA3 if available, or at minimum WPA2",
-                    "   • Never use the outdated WEP protocol",
+                    "3. Используйте надежное шифрование:",
+                    "   • Настройте Wi-Fi на использование WPA3, если доступно, или как минимум WPA2",
+                    "   • Никогда не используйте устаревший протокол WEP",
                     "",
-                    "4. Set a strong Wi-Fi password:",
-                    "   • Create a unique, complex passphrase at least 12 characters long",
-                    "   • Consider changing it periodically",
+                    "4. Установите надежный пароль Wi-Fi:",
+                    "   • Создайте уникальную, сложную парольную фразу длиной не менее 12 символов",
+                    "   • Рассмотрите возможность периодической смены пароля",
                     "",
-                    "5. Disable remote management:",
-                    "   • Turn off remote access to your router's admin interface",
-                    "   • Only manage your router when connected to your home network",
+                    "5. Отключите удаленное управление:",
+                    "   • Выключите удаленный доступ к интерфейсу администратора роутера",
+                    "   • Управляйте роутером только при подключении к домашней сети",
                     "",
-                    "6. Change the default network name (SSID):",
-                    "   • Avoid including personal information or router model in the name",
-                    "   • Consider hiding your SSID (though this provides only minimal security)"
+                    "6. Измените имя сети по умолчанию (SSID):",
+                    "   • Избегайте включения личной информации или модели роутера в названии",
+                    "   • Рассмотрите возможность скрытия вашего SSID (хотя это обеспечивает лишь минимальную безопасность)"
                 ],
                 "alert": {
                     "type": "info",
                     "icon": "info-circle",
-                    "title": "Router Access",
-                    "content": "To access your router's admin interface, you'll need the default login credentials. These are typically printed on the router itself or included in the manual. If you can't find them, check the manufacturer's website or contact your internet service provider if they provided the router."
+                    "title": "Доступ к роутеру",
+                    "content": "Чтобы получить доступ к интерфейсу администратора роутера, вам понадобятся учетные данные для входа по умолчанию. Они обычно напечатаны на самом роутере или указаны в руководстве. Если вы не можете их найти, проверьте веб-сайт производителя или обратитесь к вашему интернет-провайдеру, если роутер предоставлен ими."
                 }
             },
             {
