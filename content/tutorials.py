@@ -861,252 +861,252 @@ TUTORIALS = [
                 }
             },
             {
-                "title": "Enhancing Network Configuration",
+                "title": "Улучшение конфигурации сети",
                 "content": [
-                    "Beyond basic router security, consider these additional network protections:",
-                    "• Enable the firewall: Most routers have a built-in firewall; make sure it's active",
-                    "• Use guest networks: Create a separate network for visitors and IoT devices",
-                    "• Disable unused features: Turn off services you don't use, like WPS (Wi-Fi Protected Setup)",
-                    "• Enable MAC address filtering: Restrict network access to specific devices (though this can be circumvented)",
-                    "• Use DNS filtering: Consider services like OpenDNS or NextDNS to block malicious websites",
-                    "• Implement access schedules: Set time limits for when devices can connect to the internet",
-                    "• Monitor connected devices: Regularly check what devices are connected to your network",
-                    "These configurations create multiple layers of protection for your network."
+                    "Помимо базовой защиты роутера, рассмотрите эти дополнительные меры защиты сети:",
+                    "• Включите брандмауэр: Большинство роутеров имеют встроенный брандмауэр; убедитесь, что он активен",
+                    "• Используйте гостевые сети: Создайте отдельную сеть для посетителей и IoT-устройств",
+                    "• Отключите неиспользуемые функции: Выключите сервисы, которые вы не используете, например WPS (Wi-Fi Protected Setup)",
+                    "• Включите фильтрацию MAC-адресов: Ограничьте доступ к сети только определенными устройствами (хотя это можно обойти)",
+                    "• Используйте DNS-фильтрацию: Рассмотрите сервисы типа OpenDNS или NextDNS для блокировки вредоносных веб-сайтов",
+                    "• Реализуйте расписания доступа: Установите временные ограничения для подключения устройств к интернету",
+                    "• Отслеживайте подключенные устройства: Регулярно проверяйте, какие устройства подключены к вашей сети",
+                    "Эти конфигурации создают несколько уровней защиты для вашей сети."
                 ],
                 "code": {
                     "language": "text",
-                    "snippet": "# Common router IP addresses for admin access:\n\n192.168.0.1\n192.168.1.1\n10.0.0.1\n192.168.2.1\n\n# To find your router IP on Windows:\nOpen Command Prompt and type: ipconfig\nLook for \"Default Gateway\"\n\n# To find your router IP on Mac/Linux:\nOpen Terminal and type: netstat -nr | grep default"
+                    "snippet": "# Распространенные IP-адреса роутеров для доступа администратора:\n\n192.168.0.1\n192.168.1.1\n10.0.0.1\n192.168.2.1\n\n# Чтобы найти IP-адрес роутера в Windows:\nОткройте Командную строку и введите: ipconfig\nИщите \"Default Gateway\" (Шлюз по умолчанию)\n\n# Чтобы найти IP-адрес роутера в Mac/Linux:\nОткройте Терминал и введите: netstat -nr | grep default"
                 }
             },
             {
-                "title": "Protecting Connected Devices",
+                "title": "Защита подключенных устройств",
                 "content": [
-                    "Even with a secure network, individual devices need protection:",
-                    "• Keep all devices updated: Install security updates for computers, phones, and IoT devices",
-                    "• Use security software: Install antivirus/anti-malware on compatible devices",
-                    "• Enable device firewalls: Activate built-in firewalls on computers and other capable devices",
-                    "• Secure IoT devices: Change default passwords and update firmware on smart home devices",
-                    "• Disable unnecessary connections: Turn off Bluetooth, Wi-Fi, and other connections when not in use",
-                    "• Use VPNs on public networks: Protect devices when they're away from your secure home network",
-                    "• Practice safe browsing: Be cautious about what you download and which sites you visit",
-                    "Remember that your network security is only as strong as your weakest device."
+                    "Даже при защищенной сети отдельные устройства нуждаются в защите:",
+                    "• Поддерживайте все устройства в актуальном состоянии: Устанавливайте обновления безопасности для компьютеров, телефонов и IoT-устройств",
+                    "• Используйте программное обеспечение для безопасности: Установите антивирус/антивредоносное ПО на совместимые устройства",
+                    "• Включите брандмауэры устройств: Активируйте встроенные брандмауэры на компьютерах и других поддерживающих это устройствах",
+                    "• Защитите IoT-устройства: Измените пароли по умолчанию и обновите прошивку на устройствах умного дома",
+                    "• Отключайте ненужные соединения: Выключайте Bluetooth, Wi-Fi и другие соединения, когда они не используются",
+                    "• Используйте VPN в общественных сетях: Защищайте устройства, когда они находятся вне вашей защищенной домашней сети",
+                    "• Практикуйте безопасный просмотр: Будьте осторожны с тем, что вы загружаете и какие сайты посещаете",
+                    "Помните, что безопасность вашей сети настолько сильна, насколько сильно ваше самое слабое устройство."
                 ]
             }
         ],
         "key_takeaways": [
-            "Your router is your first line of defense - secure it with strong credentials and updated firmware",
-            "Use WPA3 or WPA2 encryption with a strong, unique Wi-Fi password",
-            "Create guest networks for visitors and IoT devices to isolate them from your main network",
-            "Regularly update all connected devices and change default passwords",
-            "Monitor your network for unknown devices that might indicate unauthorized access"
+            "Ваш роутер — это ваша первая линия защиты — защитите его надежными учетными данными и обновленной прошивкой",
+            "Используйте шифрование WPA3 или WPA2 с надежным, уникальным паролем Wi-Fi",
+            "Создавайте гостевые сети для посетителей и IoT-устройств, чтобы изолировать их от вашей основной сети",
+            "Регулярно обновляйте все подключенные устройства и меняйте пароли по умолчанию",
+            "Отслеживайте наличие неизвестных устройств в вашей сети, которые могут указывать на несанкционированный доступ"
         ],
         "exercise": {
-            "title": "Home Network Security Audit",
-            "description": "Evaluate and improve the security of your home network.",
+            "title": "Аудит безопасности домашней сети",
+            "description": "Оцените и улучшите безопасность вашей домашней сети.",
             "steps": [
-                "Log into your router's admin interface (using the router IP address in a web browser)",
-                "Check if your router's firmware is up to date and update if necessary",
-                "Verify you're using WPA2 or WPA3 encryption for your Wi-Fi",
-                "Change your Wi-Fi password to a strong, unique passphrase",
-                "Create a guest network for visitors and IoT devices if your router supports it",
-                "Make a list of all devices connected to your network and verify they belong to you",
-                "Check for and disable unnecessary features like WPS or remote administration"
+                "Войдите в интерфейс администратора роутера (используя IP-адрес роутера в веб-браузере)",
+                "Проверьте, обновлена ли прошивка роутера, и обновите при необходимости",
+                "Убедитесь, что вы используете шифрование WPA2 или WPA3 для вашего Wi-Fi",
+                "Измените пароль Wi-Fi на надежную, уникальную парольную фразу",
+                "Создайте гостевую сеть для посетителей и IoT-устройств, если ваш роутер поддерживает эту функцию",
+                "Составьте список всех устройств, подключенных к вашей сети, и убедитесь, что они принадлежат вам",
+                "Проверьте и отключите ненужные функции, такие как WPS или удаленное администрирование"
             ],
-            "hint": "If you're unsure how to access specific settings, search for your router's model number followed by 'manual' or 'user guide' to find documentation."
+            "hint": "Если вы не уверены, как получить доступ к конкретным настройкам, найдите номер модели вашего роутера, а затем поищите 'руководство' или 'инструкцию пользователя' для получения документации."
         },
         "further_reading": [
             {
                 "title": "FTC's guidance on securing your wireless network",
                 "url": "https://consumer.ftc.gov/articles/how-secure-your-home-wi-fi-network",
-                "description": "Government recommendations for home network security"
+                "description": "Рекомендации правительства по безопасности домашней сети"
             },
             {
                 "title": "Router Security Checklist by CISA",
                 "url": "https://www.cisa.gov/sites/default/files/publications/Securing_the_Internet_of_Things_Infographic_S508C.pdf",
-                "description": "Cybersecurity & Infrastructure Security Agency router security guidance"
+                "description": "Руководство по безопасности роутера от Агентства по кибербезопасности и защите инфраструктуры"
             },
             {
                 "title": "IoT Security Foundation",
                 "url": "https://www.iotsecurityfoundation.org/best-practice-guidelines/",
-                "description": "Best practices for securing Internet of Things devices"
+                "description": "Лучшие практики по защите устройств Интернета вещей"
             }
         ],
         "related_tutorials": [
             {
                 "id": "secure-browsing",
-                "title": "Safe Web Browsing Practices",
-                "difficulty": "Beginner"
+                "title": "Безопасное использование веб-браузера",
+                "difficulty": "Начинающий"
             },
             {
                 "id": "private-browsing",
-                "title": "Using VPNs for Privacy",
-                "difficulty": "Intermediate"
+                "title": "Использование VPN для приватности",
+                "difficulty": "Средний"
             },
             {
                 "id": "iot-security",
-                "title": "Smart Home Device Security",
-                "difficulty": "Intermediate"
+                "title": "Безопасность устройств умного дома",
+                "difficulty": "Средний"
             }
         ]
     },
     # Web Security Category
     {
         "id": "website-safety",
-        "title": "Evaluating Website Security",
-        "description": "Learn how to identify secure websites and avoid dangerous ones.",
+        "title": "Оценка безопасности веб-сайтов",
+        "description": "Узнайте, как определять безопасные веб-сайты и избегать опасных.",
         "category": "web-security",
-        "difficulty": "Beginner",
-        "duration": "15 min",
-        "objectives": "Understand how to identify secure websites, recognize warning signs of malicious sites, and safely browse the web.",
-        "introduction": "Every day, we visit numerous websites for shopping, banking, social media, and information. Not all of these sites are equally secure, and some may even be dangerous. This tutorial will teach you how to evaluate website security and make informed decisions about which sites to trust with your information and activities.",
+        "difficulty": "Начинающий",
+        "duration": "15 мин",
+        "objectives": "Понять, как определять безопасные веб-сайты, распознавать признаки вредоносных сайтов и безопасно просматривать интернет.",
+        "introduction": "Каждый день мы посещаем множество веб-сайтов для совершения покупок, банковских операций, общения в социальных сетях и получения информации. Не все эти сайты одинаково безопасны, а некоторые могут быть даже опасными. Этот учебник научит вас оценивать безопасность веб-сайтов и принимать обоснованные решения о том, каким сайтам доверять свою информацию и действия.",
         "sections": [
             {
-                "title": "The Basics of Website Security",
+                "title": "Основы безопасности веб-сайтов",
                 "content": [
-                    "Website security involves several layers of protection that help ensure your data remains private and safe from attackers. Here are the fundamental aspects to understand:",
-                    "• HTTPS: Secure websites use HTTPS protocol, which encrypts data transmitted between your browser and the website",
-                    "• SSL/TLS certificates: Digital certificates that verify a website's identity and enable encrypted connections",
-                    "• Content security: Protections against malicious code execution and data theft",
-                    "• Authentication: Secure login systems to verify user identities",
-                    "• Data protection: How websites store and handle your personal information",
-                    "As a user, you can't see all these protections, but there are visible indicators that can help you assess a website's security."
+                    "Безопасность веб-сайта включает в себя несколько уровней защиты, которые помогают обеспечить конфиденциальность и безопасность ваших данных от злоумышленников. Вот основные аспекты, которые необходимо понимать:",
+                    "• HTTPS: Безопасные веб-сайты используют протокол HTTPS, который шифрует данные, передаваемые между вашим браузером и веб-сайтом",
+                    "• Сертификаты SSL/TLS: Цифровые сертификаты, которые подтверждают личность веб-сайта и обеспечивают зашифрованное соединение",
+                    "• Безопасность контента: Защита от выполнения вредоносного кода и кражи данных",
+                    "• Аутентификация: Безопасные системы входа для проверки личности пользователей",
+                    "• Защита данных: Как веб-сайты хранят и обрабатывают вашу личную информацию",
+                    "Как пользователь, вы не можете видеть все эти защиты, но существуют видимые индикаторы, которые могут помочь вам оценить безопасность веб-сайта."
                 ],
                 "alert": {
                     "type": "warning",
                     "icon": "exclamation-triangle",
-                    "title": "Critical Information",
-                    "content": "Never enter sensitive information (credit card details, passwords, personal data) on websites without HTTPS. The data could be intercepted by attackers."
+                    "title": "Критическая информация",
+                    "content": "Никогда не вводите конфиденциальную информацию (данные кредитной карты, пароли, личные данные) на веб-сайтах без HTTPS. Данные могут быть перехвачены злоумышленниками."
                 }
             },
             {
-                "title": "Identifying Secure Websites",
+                "title": "Определение безопасных веб-сайтов",
                 "content": [
-                    "When visiting a website, check for these security indicators:",
-                    "1. HTTPS and padlock icon:",
-                    "   • Look for 'https://' at the beginning of the website address",
-                    "   • Check for a padlock icon in the address bar",
-                    "   • Click on the padlock to view the site's security certificate information",
+                    "При посещении веб-сайта проверьте эти индикаторы безопасности:",
+                    "1. HTTPS и значок замка:",
+                    "   • Ищите 'https://' в начале адреса веб-сайта",
+                    "   • Проверьте наличие значка замка в адресной строке",
+                    "   • Нажмите на значок замка, чтобы просмотреть информацию о сертификате безопасности сайта",
                     "",
-                    "2. Website address verification:",
-                    "   • Carefully check the domain name (the main part of the URL)",
-                    "   • Watch for typos or slight variations (e.g., 'am a zon.com' instead of 'amazon.com')",
-                    "   • Be wary of subdomains that might trick you (e.g., 'amazon.fake-site.com' is not Amazon)",
+                    "2. Проверка адреса веб-сайта:",
+                    "   • Внимательно проверьте доменное имя (основную часть URL)",
+                    "   • Следите за опечатками или небольшими отличиями (например, 'am a zon.com' вместо 'amazon.com')",
+                    "   • Остерегайтесь поддоменов, которые могут вас обмануть (например, 'amazon.fake-site.com' — это не Amazon)",
                     "",
-                    "3. Trust indicators:",
-                    "   • Look for security seals or trust badges from recognized organizations",
-                    "   • Check for clear contact information, including physical address and phone number",
-                    "   • Verify the site has a privacy policy and terms of service",
+                    "3. Индикаторы доверия:",
+                    "   • Ищите печати безопасности или значки доверия от признанных организаций",
+                    "   • Проверьте наличие четкой контактной информации, включая физический адрес и номер телефона",
+                    "   • Убедитесь, что на сайте есть политика конфиденциальности и условия обслуживания",
                     "",
-                    "4. Website professionalism:",
-                    "   • Professional sites typically have few grammatical errors",
-                    "   • Navigation should work properly with no broken links",
-                    "   • Content should be updated regularly"
+                    "4. Профессионализм веб-сайта:",
+                    "   • Профессиональные сайты обычно имеют мало грамматических ошибок",
+                    "   • Навигация должна работать должным образом, без неработающих ссылок",
+                    "   • Содержание должно регулярно обновляться"
                 ],
                 "image": {
                     "url": "https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/svgs/solid/lock.svg",
-                    "alt": "HTTPS Lock Icon",
-                    "caption": "The padlock icon indicates a secure HTTPS connection, an essential feature for any site handling sensitive information"
+                    "alt": "Значок замка HTTPS",
+                    "caption": "Значок замка указывает на безопасное HTTPS-соединение, важнейшую функцию для любого сайта, обрабатывающего конфиденциальную информацию"
                 }
             },
             {
-                "title": "Warning Signs of Unsafe Websites",
+                "title": "Предупреждающие признаки небезопасных веб-сайтов",
                 "content": [
-                    "Be alert for these red flags that may indicate an unsafe or fraudulent website:",
-                    "• No HTTPS: The site uses only HTTP rather than HTTPS",
-                    "• Browser warnings: Your browser displays security warnings about the site",
-                    "• Poor design and functionality: The site looks unprofessional or poorly maintained",
-                    "• Too good to be true: Offers that seem unrealistically generous",
-                    "• Excessive pop-ups: Numerous pop-up windows, especially those that are difficult to close",
-                    "• Pressure tactics: Countdown timers or urgent messages pushing immediate action",
-                    "• Unusual payment methods: Requests for wire transfers, gift cards, or cryptocurrency only",
-                    "• Missing information: No privacy policy, terms of service, or contact information",
-                    "• Mismatched or suspicious URLs: The address doesn't match the purported organization",
-                    "• Excessive information requests: Asking for more personal information than necessary",
-                    "If you notice multiple red flags, it's best to leave the site immediately without entering any information."
+                    "Будьте внимательны к этим красным флагам, которые могут указывать на небезопасный или мошеннический веб-сайт:",
+                    "• Отсутствие HTTPS: Сайт использует только HTTP, а не HTTPS",
+                    "• Предупреждения браузера: Ваш браузер отображает предупреждения о безопасности сайта",
+                    "• Плохой дизайн и функциональность: Сайт выглядит непрофессионально или плохо поддерживается",
+                    "• Слишком хорошо, чтобы быть правдой: Предложения, которые кажутся нереалистично щедрыми",
+                    "• Чрезмерное количество всплывающих окон: Многочисленные всплывающие окна, особенно те, которые сложно закрыть",
+                    "• Тактика давления: Обратные отсчеты или срочные сообщения, побуждающие к немедленным действиям",
+                    "• Необычные способы оплаты: Запросы на денежные переводы, подарочные карты или только криптовалюту",
+                    "• Отсутствующая информация: Нет политики конфиденциальности, условий обслуживания или контактной информации",
+                    "• Несоответствующие или подозрительные URL: Адрес не соответствует заявленной организации",
+                    "• Чрезмерные запросы информации: Запрашивают больше личной информации, чем необходимо",
+                    "Если вы заметили несколько красных флагов, лучше всего немедленно покинуть сайт, не вводя никакой информации."
                 ],
                 "code": {
                     "language": "text",
-                    "snippet": "# How to check a website's reputation:\n\n1. Search for reviews of the website (e.g., \"is example.com safe\" or \"example.com reviews\")\n\n2. Use website safety checkers:\n   - Google Transparency Report: https://transparencyreport.google.com/safe-browsing/search\n   - Norton Safe Web: https://safeweb.norton.com\n   - McAfee WebAdvisor: https://www.mcafee.com/consumer/en-us/landing-page/webadvisor.html\n   - VirusTotal: https://www.virustotal.com/gui/home/url\n\n3. Check the WHOIS information to see when the domain was registered and by whom:\n   - https://lookup.icann.org\n   - https://whois.domaintools.com"
+                    "snippet": "# Как проверить репутацию веб-сайта:\n\n1. Поищите отзывы о веб-сайте (например, \"безопасен ли example.com\" или \"отзывы о example.com\")\n\n2. Используйте средства проверки безопасности веб-сайтов:\n   - Google Transparency Report: https://transparencyreport.google.com/safe-browsing/search\n   - Norton Safe Web: https://safeweb.norton.com\n   - McAfee WebAdvisor: https://www.mcafee.com/consumer/en-us/landing-page/webadvisor.html\n   - VirusTotal: https://www.virustotal.com/gui/home/url\n\n3. Проверьте информацию WHOIS, чтобы узнать, когда и кем был зарегистрирован домен:\n   - https://lookup.icann.org\n   - https://whois.domaintools.com"
                 }
             },
             {
-                "title": "Taking Action When Unsure",
+                "title": "Действия при неуверенности",
                 "content": [
-                    "If you're uncertain about a website's security, take these precautions:",
-                    "1. Research before sharing information:",
-                    "   • Search for reviews or information about the website",
-                    "   • Look for the company on social media or business directories",
-                    "   • Check if they have an established presence elsewhere",
+                    "Если вы не уверены в безопасности веб-сайта, примите следующие меры предосторожности:",
+                    "1. Исследуйте перед предоставлением информации:",
+                    "   • Поищите отзывы или информацию о веб-сайте",
+                    "   • Поищите компанию в социальных сетях или бизнес-каталогах",
+                    "   • Проверьте, есть ли у них устоявшееся присутствие в других местах",
                     "",
-                    "2. Use protective tools:",
-                    "   • Enable your browser's phishing and malware protection",
-                    "   • Consider using extensions like Web of Trust (WOT) or similar trust indicators",
-                    "   • Keep your antivirus and browser updated",
+                    "2. Используйте защитные инструменты:",
+                    "   • Включите защиту от фишинга и вредоносных программ в вашем браузере",
+                    "   • Рассмотрите возможность использования расширений, таких как Web of Trust (WOT) или аналогичных индикаторов доверия",
+                    "   • Поддерживайте антивирус и браузер в актуальном состоянии",
                     "",
-                    "3. Minimize risk:",
-                    "   • Use guest checkout instead of creating accounts when possible",
-                    "   • Consider using virtual credit cards or payment services like PayPal",
-                    "   • Never share sensitive information like your Social Security number unless absolutely necessary",
+                    "3. Минимизируйте риски:",
+                    "   • Используйте гостевую оплату вместо создания учетных записей, когда это возможно",
+                    "   • Рассмотрите возможность использования виртуальных кредитных карт или платежных сервисов, таких как PayPal",
+                    "   • Никогда не делитесь конфиденциальной информацией, такой как ваш номер социального страхования, если это абсолютно не необходимо",
                     "",
-                    "4. Trust your instincts:",
-                    "   • If something feels wrong about a website, it probably is",
-                    "   • There are almost always alternative websites for what you need",
-                    "   • No deal or offer is worth compromising your security"
+                    "4. Доверяйте своей интуиции:",
+                    "   • Если что-то кажется неправильным на веб-сайте, вероятно, так оно и есть",
+                    "   • Почти всегда есть альтернативные веб-сайты для того, что вам нужно",
+                    "   • Никакая сделка или предложение не стоит того, чтобы ставить под угрозу вашу безопасность"
                 ]
             }
         ],
         "key_takeaways": [
-            "Always look for HTTPS and the padlock icon before entering sensitive information",
-            "Verify website addresses carefully to avoid lookalike or imposter sites",
-            "Be suspicious of websites with poor design, grammar errors, or excessive pop-ups",
-            "Research unfamiliar websites before making purchases or creating accounts",
-            "Use browser security features and website reputation tools when in doubt"
+            "Всегда ищите HTTPS и значок замка перед вводом конфиденциальной информации",
+            "Тщательно проверяйте адреса веб-сайтов, чтобы избежать похожих или поддельных сайтов",
+            "Относитесь с подозрением к веб-сайтам с плохим дизайном, грамматическими ошибками или чрезмерным количеством всплывающих окон",
+            "Исследуйте незнакомые веб-сайты перед совершением покупок или созданием учетных записей",
+            "Используйте функции безопасности браузера и инструменты проверки репутации веб-сайтов в случае сомнений"
         ],
         "exercise": {
-            "title": "Website Security Evaluation Practice",
-            "description": "Assess the security of websites you regularly visit to practice identifying security features and potential issues.",
+            "title": "Практика оценки безопасности веб-сайтов",
+            "description": "Оцените безопасность веб-сайтов, которые вы регулярно посещаете, чтобы практиковаться в определении функций безопасности и потенциальных проблем.",
             "steps": [
-                "Make a list of 5-10 websites you use regularly (shopping, banking, social media, news, etc.)",
-                "For each website, check if it uses HTTPS by looking for the padlock icon",
-                "Click the padlock icon to view the security certificate information",
-                "Look for the privacy policy and review what data the site collects",
-                "Search for reviews or information about the security of each site",
-                "Note any sites that have concerning security practices and consider alternatives"
+                "Составьте список из 5-10 веб-сайтов, которыми вы регулярно пользуетесь (покупки, банкинг, социальные сети, новости и т.д.)",
+                "Для каждого веб-сайта проверьте, использует ли он HTTPS, посмотрев на значок замка",
+                "Нажмите на значок замка, чтобы просмотреть информацию о сертификате безопасности сайта",
+                "Найдите политику конфиденциальности и просмотрите, какие данные собирает сайт",
+                "Поищите отзывы или информацию о безопасности каждого сайта",
+                "Отметьте сайты, практики безопасности которых вызывают беспокойство, и рассмотрите альтернативы"
             ],
-            "hint": "Pay special attention to websites where you share financial information or personal data. These should have the highest level of security."
+            "hint": "Обратите особое внимание на веб-сайты, где вы делитесь финансовой информацией или личными данными. Они должны иметь самый высокий уровень безопасности."
         },
         "further_reading": [
             {
                 "title": "Google's Safety Center",
                 "url": "https://safety.google/security/security-tips/",
-                "description": "Tips for staying safe online from Google"
+                "description": "Советы по безопасности в интернете от Google"
             },
             {
                 "title": "Mozilla's HTTPS Explainer",
                 "url": "https://support.mozilla.org/en-US/kb/how-do-i-tell-if-my-connection-is-secure",
-                "description": "How to tell if your connection to a website is secure"
+                "description": "Как определить, безопасно ли ваше соединение с веб-сайтом"
             },
             {
                 "title": "FTC's Online Shopping Tips",
                 "url": "https://consumer.ftc.gov/articles/online-shopping",
-                "description": "Tips for safe online shopping from the Federal Trade Commission"
+                "description": "Советы по безопасным покупкам в интернете от Федеральной торговой комиссии"
             }
         ],
         "related_tutorials": [
             {
                 "id": "secure-browsing",
-                "title": "Safe Web Browsing Practices",
-                "difficulty": "Beginner"
+                "title": "Безопасное использование веб-браузера",
+                "difficulty": "Начинающий"
             },
             {
                 "id": "phishing-protection",
-                "title": "Protecting Against Phishing",
-                "difficulty": "Beginner"
+                "title": "Защита от фишинга",
+                "difficulty": "Начинающий"
             },
             {
                 "id": "online-shopping-security",
-                "title": "Secure Online Shopping",
-                "difficulty": "Beginner"
+                "title": "Безопасные покупки в интернете",
+                "difficulty": "Начинающий"
             }
         ]
     },
