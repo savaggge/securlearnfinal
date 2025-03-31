@@ -1,29 +1,29 @@
 {% extends "layout.html" %}
 
-{% block title %}Cybersecurity Glossary | CyberSecEdu{% endblock %}
+{% block title %}Глоссарий кибербезопасности | CyberSecEdu{% endblock %}
 
 {% block content %}
 <div class="py-4">
-    <h1 class="mb-4"><i class="fas fa-book me-3"></i>Cybersecurity Glossary</h1>
-    <p class="lead">Learn essential cybersecurity terminology and concepts</p>
+    <h1 class="mb-4"><i class="fas fa-book me-3"></i>Глоссарий кибербезопасности</h1>
+    <p class="lead">Изучайте основную терминологию и концепции кибербезопасности</p>
 </div>
 
 <div class="row mb-4">
     <div class="col-lg-8">
         <div class="input-group">
             <span class="input-group-text bg-primary text-white"><i class="fas fa-search"></i></span>
-            <input type="text" id="glossary-search" class="form-control" placeholder="Search for terms...">
+            <input type="text" id="glossary-search" class="form-control" placeholder="Поиск терминов...">
         </div>
     </div>
     <div class="col-lg-4">
         <select id="category-filter" class="form-select">
-            <option value="all" selected>All Categories</option>
-            <option value="general">General</option>
-            <option value="threats">Threats</option>
-            <option value="privacy">Privacy</option>
-            <option value="network">Network Security</option>
-            <option value="cryptography">Cryptography</option>
-            <option value="authentication">Authentication</option>
+            <option value="all" selected>Все категории</option>
+            <option value="general">Общие</option>
+            <option value="threats">Угрозы</option>
+            <option value="privacy">Конфиденциальность</option>
+            <option value="network">Сетевая безопасность</option>
+            <option value="cryptography">Криптография</option>
+            <option value="authentication">Аутентификация</option>
         </select>
     </div>
 </div>
@@ -32,7 +32,7 @@
     <div class="col-lg-3 mb-4">
         <div class="card shadow-sm sticky-top" style="top: 2rem;">
             <div class="card-header bg-primary text-white">
-                <h3 class="h5 mb-0">Alphabet Index</h3>
+                <h3 class="h5 mb-0">Алфавитный указатель</h3>
             </div>
             <div class="card-body p-2">
                 <div class="d-flex flex-wrap justify-content-center" id="alphabet-index">
@@ -45,12 +45,12 @@
         
         <div class="card shadow-sm mt-4">
             <div class="card-header bg-secondary text-white">
-                <h3 class="h5 mb-0">Term Count</h3>
+                <h3 class="h5 mb-0">Количество терминов</h3>
             </div>
             <div class="card-body">
                 <div id="terms-counter" class="text-center">
                     <h4 class="mb-0 display-4">{{ terms|length }}</h4>
-                    <p class="mb-0">cybersecurity terms</p>
+                    <p class="mb-0">терминов кибербезопасности</p>
                 </div>
             </div>
         </div>
@@ -58,7 +58,7 @@
 
     <div class="col-lg-9">
         <div id="no-results" class="alert alert-warning d-none">
-            <i class="fas fa-exclamation-circle me-2"></i>No terms found matching your search criteria.
+            <i class="fas fa-exclamation-circle me-2"></i>Не найдено терминов, соответствующих вашему запросу.
         </div>
         
         <div id="glossary-terms">
@@ -84,13 +84,13 @@
                         
                         {% if term.example %}
                         <div class="alert alert-secondary mt-2">
-                            <strong>Example:</strong> {{ term.example }}
+                            <strong>Пример:</strong> {{ term.example }}
                         </div>
                         {% endif %}
                         
                         {% if term.related_terms %}
                         <div class="mt-2">
-                            <strong>Related terms:</strong> 
+                            <strong>Связанные термины:</strong> 
                             {% for related in term.related_terms %}
                             <a href="#" class="related-term-link" data-term="{{ related|lower }}">{{ related }}</a>{% if not loop.last %}, {% endif %}
                             {% endfor %}

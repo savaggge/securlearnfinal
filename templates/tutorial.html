@@ -6,8 +6,8 @@
 <div class="container py-4">
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="{{ url_for('index') }}">Home</a></li>
-            <li class="breadcrumb-item"><a href="{{ url_for('tutorials') }}">Tutorials</a></li>
+            <li class="breadcrumb-item"><a href="{{ url_for('index') }}">Главная</a></li>
+            <li class="breadcrumb-item"><a href="{{ url_for('tutorials') }}">Учебники</a></li>
             <li class="breadcrumb-item active" aria-current="page">{{ tutorial.title }}</li>
         </ol>
     </nav>
@@ -24,15 +24,15 @@
                         <span class="badge bg-info">{{ tutorial.category|replace('-', ' ')|title }}</span>
                         
                         {% if current_user.is_authenticated and completed %}
-                        <span class="badge bg-success ms-2"><i class="fas fa-check me-1"></i>Completed</span>
+                        <span class="badge bg-success ms-2"><i class="fas fa-check me-1"></i>Выполнено</span>
                         {% endif %}
                     </div>
                     
                     <div class="alert alert-secondary mb-4">
-                        <p class="mb-0"><strong>Learning Objectives:</strong> {{ tutorial.objectives }}</p>
+                        <p class="mb-0"><strong>Цели обучения:</strong> {{ tutorial.objectives }}</p>
                     </div>
                     
-                    <h2>Introduction</h2>
+                    <h2>Введение</h2>
                     <p>{{ tutorial.introduction }}</p>
                     
                     <!-- Content Sections -->
@@ -47,7 +47,7 @@
                         <div class="card-header d-flex justify-content-between align-items-center">
                             <span>{{ section.code.language }}</span>
                             <button class="btn btn-sm btn-outline-light copy-btn" data-clipboard-target="#code-{{ loop.index }}">
-                                <i class="fas fa-copy me-1"></i>Copy
+                                <i class="fas fa-copy me-1"></i>Копировать
                             </button>
                         </div>
                         <div class="card-body">
@@ -77,7 +77,7 @@
                     <!-- Key Takeaways -->
                     <div class="card bg-light mt-4 mb-4">
                         <div class="card-header">
-                            <h3 class="h5 mb-0"><i class="fas fa-lightbulb me-2"></i>Key Takeaways</h3>
+                            <h3 class="h5 mb-0"><i class="fas fa-lightbulb me-2"></i>Ключевые моменты</h3>
                         </div>
                         <div class="card-body">
                             <ul class="mb-0">
@@ -90,7 +90,7 @@
                     
                     <!-- Practical Exercise -->
                     {% if tutorial.exercise %}
-                    <h2 class="mt-4">Practical Exercise</h2>
+                    <h2 class="mt-4">Практическое задание</h2>
                     <div class="card border-primary mb-4">
                         <div class="card-header bg-primary text-white">
                             <h3 class="h5 mb-0">{{ tutorial.exercise.title }}</h3>
@@ -98,7 +98,7 @@
                         <div class="card-body">
                             <p>{{ tutorial.exercise.description }}</p>
                             
-                            <h4 class="h6">Steps:</h4>
+                            <h4 class="h6">Шаги выполнения:</h4>
                             <ol>
                                 {% for step in tutorial.exercise.steps %}
                                 <li>{{ step }}</li>
@@ -107,7 +107,7 @@
                             
                             {% if tutorial.exercise.hint %}
                             <div class="alert alert-info mt-3">
-                                <strong>Hint:</strong> {{ tutorial.exercise.hint }}
+                                <strong>Подсказка:</strong> {{ tutorial.exercise.hint }}
                             </div>
                             {% endif %}
                         </div>
@@ -115,7 +115,7 @@
                     {% endif %}
                     
                     <!-- Further Reading -->
-                    <h2 class="mt-4">Further Reading</h2>
+                    <h2 class="mt-4">Дополнительные материалы</h2>
                     <ul>
                         {% for resource in tutorial.further_reading %}
                         <li><a href="{{ resource.url }}" target="_blank" rel="noopener noreferrer">{{ resource.title }}</a> - {{ resource.description }}</li>
@@ -127,7 +127,7 @@
                     <form action="{{ url_for('mark_complete', tutorial_id=tutorial.id) }}" method="post" class="mt-5">
                         <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
                         <button type="submit" class="btn btn-success">
-                            <i class="fas fa-check-circle me-2"></i>Mark as Complete
+                            <i class="fas fa-check-circle me-2"></i>Отметить как выполненное
                         </button>
                     </form>
                     {% endif %}
@@ -139,20 +139,20 @@
             <!-- Table of Contents -->
             <div class="card shadow-sm mb-4 sticky-top" style="top: 2rem;">
                 <div class="card-header bg-primary text-white">
-                    <h3 class="h5 mb-0"><i class="fas fa-list me-2"></i>Contents</h3>
+                    <h3 class="h5 mb-0"><i class="fas fa-list me-2"></i>Содержание</h3>
                 </div>
                 <div class="card-body">
                     <nav id="toc">
                         <ul class="list-unstyled">
-                            <li><a href="#introduction" class="text-decoration-none">Introduction</a></li>
+                            <li><a href="#introduction" class="text-decoration-none">Введение</a></li>
                             {% for section in tutorial.sections %}
                             <li class="mt-2"><a href="#section-{{ loop.index }}" class="text-decoration-none">{{ section.title }}</a></li>
                             {% endfor %}
-                            <li class="mt-2"><a href="#key-takeaways" class="text-decoration-none">Key Takeaways</a></li>
+                            <li class="mt-2"><a href="#key-takeaways" class="text-decoration-none">Ключевые моменты</a></li>
                             {% if tutorial.exercise %}
-                            <li class="mt-2"><a href="#practical-exercise" class="text-decoration-none">Practical Exercise</a></li>
+                            <li class="mt-2"><a href="#practical-exercise" class="text-decoration-none">Практическое задание</a></li>
                             {% endif %}
-                            <li class="mt-2"><a href="#further-reading" class="text-decoration-none">Further Reading</a></li>
+                            <li class="mt-2"><a href="#further-reading" class="text-decoration-none">Дополнительные материалы</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -161,7 +161,7 @@
             <!-- Related Tutorials -->
             <div class="card shadow-sm mb-4">
                 <div class="card-header bg-secondary text-white">
-                    <h3 class="h5 mb-0"><i class="fas fa-link me-2"></i>Related Tutorials</h3>
+                    <h3 class="h5 mb-0"><i class="fas fa-link me-2"></i>Связанные учебники</h3>
                 </div>
                 <div class="card-body">
                     <ul class="list-group list-group-flush">
@@ -178,21 +178,21 @@
             <!-- Difficulty Legend -->
             <div class="card shadow-sm">
                 <div class="card-header bg-info text-white">
-                    <h3 class="h5 mb-0"><i class="fas fa-info-circle me-2"></i>Difficulty Levels</h3>
+                    <h3 class="h5 mb-0"><i class="fas fa-info-circle me-2"></i>Уровни сложности</h3>
                 </div>
                 <div class="card-body">
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item d-flex justify-content-between align-items-center">
-                            Beginner
-                            <span class="badge bg-success">Foundational concepts, no prior knowledge required</span>
+                            Начальный
+                            <span class="badge bg-success">Базовые концепции, предварительные знания не требуются</span>
                         </li>
                         <li class="list-group-item d-flex justify-content-between align-items-center">
-                            Intermediate
-                            <span class="badge bg-warning text-dark">Builds on basic concepts</span>
+                            Средний
+                            <span class="badge bg-warning text-dark">Основано на базовых концепциях</span>
                         </li>
                         <li class="list-group-item d-flex justify-content-between align-items-center">
-                            Advanced
-                            <span class="badge bg-danger">Complex topics, requires previous knowledge</span>
+                            Продвинутый
+                            <span class="badge bg-danger">Сложные темы, требуются предварительные знания</span>
                         </li>
                     </ul>
                 </div>
