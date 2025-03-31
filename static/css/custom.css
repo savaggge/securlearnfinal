@@ -1,0 +1,309 @@
+/* Custom CSS Styles for CyberSecEdu */
+
+/* Global Styles */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+main {
+    flex: 1;
+}
+
+/* Typography Enhancements */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.text-muted {
+    opacity: 0.8;
+}
+
+/* Card Enhancements */
+.card {
+    border-radius: 0.5rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.card-header {
+    font-weight: 600;
+    padding: 0.75rem 1.25rem;
+}
+
+.card-body {
+    padding: 1.25rem;
+}
+
+/* Navbar Styling */
+.navbar-brand {
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.navbar .nav-link {
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    transition: all 0.2s ease;
+}
+
+.navbar .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.navbar .nav-link.active {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+/* Footer Styling */
+footer {
+    margin-top: auto;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+footer a {
+    transition: color 0.2s ease;
+}
+
+footer a:hover {
+    text-decoration: none;
+}
+
+/* Button Enhancements */
+.btn {
+    border-radius: 0.375rem;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    transition: all 0.2s ease;
+}
+
+.btn:focus {
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+.btn-primary {
+    background-color: var(--bs-primary);
+    border-color: var(--bs-primary);
+}
+
+.btn-primary:hover {
+    background-color: var(--bs-primary);
+    filter: brightness(90%);
+}
+
+/* Form Control Improvements */
+.form-control {
+    border-radius: 0.375rem;
+    padding: 0.5rem 0.75rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-control:focus {
+    border-color: var(--bs-primary);
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+.input-group-text {
+    background-color: var(--bs-light);
+    border-color: var(--bs-gray-300);
+}
+
+/* Badge Styling */
+.badge {
+    font-weight: 500;
+    padding: 0.35em 0.65em;
+    border-radius: 0.375rem;
+}
+
+/* Alert Enhancements */
+.alert {
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.alert-dismissible .btn-close {
+    padding: 1.25rem;
+}
+
+/* Homepage Styles */
+.feature-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--bs-primary);
+}
+
+/* Tutorial Page Styles */
+.toc-link.active {
+    font-weight: bold;
+    color: var(--bs-primary);
+}
+
+pre {
+    border-radius: 0.5rem;
+    padding: 1rem;
+    background-color: var(--bs-dark);
+    color: var(--bs-light);
+    overflow-x: auto;
+}
+
+code {
+    font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-size: 0.9em;
+}
+
+/* Glossary Page Styles */
+.alphabet-link {
+    width: 36px;
+    height: 36px;
+    line-height: 32px;
+    transition: all 0.2s;
+}
+
+.alphabet-link:hover {
+    background-color: var(--bs-primary);
+    color: white;
+}
+
+.glossary-item {
+    transition: box-shadow 0.3s ease;
+}
+
+.glossary-item:hover {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.related-term-link {
+    text-decoration: none;
+    border-bottom: 1px dotted;
+}
+
+/* Resources Page Styles */
+.resource-item .card-header {
+    padding: 0.75rem 1rem;
+}
+
+.resource-category.active {
+    background-color: var(--bs-primary);
+    color: white;
+    border-color: var(--bs-primary);
+}
+
+/* Authentication Forms */
+.password-requirements li {
+    margin-bottom: 0.5rem;
+    transition: color 0.2s ease;
+}
+
+#password-strength .progress {
+    height: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+/* Progress Tracking */
+.progress {
+    height: 0.5rem;
+    border-radius: 0.5rem;
+    background-color: var(--bs-gray-200);
+}
+
+/* Animation for card hover */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.02);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.card.pulse:hover {
+    animation: pulse 1s infinite;
+}
+
+/* Accessibility improvements */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+/* Dark theme specific adjustments */
+[data-bs-theme="dark"] {
+    --bs-body-color: #dee2e6;
+    --bs-body-bg: #212529;
+}
+
+[data-bs-theme="dark"] .card {
+    background-color: #2a2d31;
+    border-color: #444;
+}
+
+[data-bs-theme="dark"] .card-header {
+    border-bottom-color: #444;
+}
+
+[data-bs-theme="dark"] .form-control,
+[data-bs-theme="dark"] .input-group-text {
+    background-color: #343a40;
+    border-color: #444;
+    color: #dee2e6;
+}
+
+/* Print Styles */
+@media print {
+    .no-print {
+        display: none !important;
+    }
+    
+    body {
+        font-size: 12pt;
+    }
+    
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+    
+    .card {
+        break-inside: avoid;
+    }
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    .card-title {
+        font-size: 1.2rem;
+    }
+}

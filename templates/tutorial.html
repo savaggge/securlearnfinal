@@ -1,0 +1,237 @@
+{% extends "layout.html" %}
+
+{% block title %}{{ tutorial.title }} | CyberSecEdu{% endblock %}
+
+{% block content %}
+<div class="container py-4">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{{ url_for('index') }}">Home</a></li>
+            <li class="breadcrumb-item"><a href="{{ url_for('tutorials') }}">Tutorials</a></li>
+            <li class="breadcrumb-item active" aria-current="page">{{ tutorial.title }}</li>
+        </ol>
+    </nav>
+    
+    <div class="row">
+        <div class="col-lg-8">
+            <div class="card shadow-sm mb-4">
+                <div class="card-body">
+                    <h1 class="mb-3">{{ tutorial.title }}</h1>
+                    
+                    <div class="d-flex mb-4">
+                        <span class="badge bg-primary me-2">{{ tutorial.difficulty }}</span>
+                        <span class="badge bg-secondary me-2">{{ tutorial.duration }}</span>
+                        <span class="badge bg-info">{{ tutorial.category|replace('-', ' ')|title }}</span>
+                        
+                        {% if current_user.is_authenticated and completed %}
+                        <span class="badge bg-success ms-2"><i class="fas fa-check me-1"></i>Completed</span>
+                        {% endif %}
+                    </div>
+                    
+                    <div class="alert alert-secondary mb-4">
+                        <p class="mb-0"><strong>Learning Objectives:</strong> {{ tutorial.objectives }}</p>
+                    </div>
+                    
+                    <h2>Introduction</h2>
+                    <p>{{ tutorial.introduction }}</p>
+                    
+                    <!-- Content Sections -->
+                    {% for section in tutorial.sections %}
+                    <h2 class="mt-4">{{ section.title }}</h2>
+                    {% for paragraph in section.content %}
+                    <p>{{ paragraph }}</p>
+                    {% endfor %}
+                    
+                    {% if section.code %}
+                    <div class="card bg-dark text-light mb-4">
+                        <div class="card-header d-flex justify-content-between align-items-center">
+                            <span>{{ section.code.language }}</span>
+                            <button class="btn btn-sm btn-outline-light copy-btn" data-clipboard-target="#code-{{ loop.index }}">
+                                <i class="fas fa-copy me-1"></i>Copy
+                            </button>
+                        </div>
+                        <div class="card-body">
+                            <pre><code id="code-{{ loop.index }}" class="language-{{ section.code.language }}">{{ section.code.snippet }}</code></pre>
+                        </div>
+                    </div>
+                    {% endif %}
+                    
+                    {% if section.image %}
+                    <div class="text-center my-4">
+                        <figure class="figure">
+                            <img src="{{ section.image.url }}" alt="{{ section.image.alt }}" class="figure-img img-fluid rounded">
+                            <figcaption class="figure-caption text-center">{{ section.image.caption }}</figcaption>
+                        </figure>
+                    </div>
+                    {% endif %}
+                    
+                    {% if section.alert %}
+                    <div class="alert alert-{{ section.alert.type }} my-4">
+                        <h5><i class="fas fa-{{ section.alert.icon }} me-2"></i>{{ section.alert.title }}</h5>
+                        <p class="mb-0">{{ section.alert.content }}</p>
+                    </div>
+                    {% endif %}
+                    
+                    {% endfor %}
+                    
+                    <!-- Key Takeaways -->
+                    <div class="card bg-light mt-4 mb-4">
+                        <div class="card-header">
+                            <h3 class="h5 mb-0"><i class="fas fa-lightbulb me-2"></i>Key Takeaways</h3>
+                        </div>
+                        <div class="card-body">
+                            <ul class="mb-0">
+                                {% for point in tutorial.key_takeaways %}
+                                <li>{{ point }}</li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Practical Exercise -->
+                    {% if tutorial.exercise %}
+                    <h2 class="mt-4">Practical Exercise</h2>
+                    <div class="card border-primary mb-4">
+                        <div class="card-header bg-primary text-white">
+                            <h3 class="h5 mb-0">{{ tutorial.exercise.title }}</h3>
+                        </div>
+                        <div class="card-body">
+                            <p>{{ tutorial.exercise.description }}</p>
+                            
+                            <h4 class="h6">Steps:</h4>
+                            <ol>
+                                {% for step in tutorial.exercise.steps %}
+                                <li>{{ step }}</li>
+                                {% endfor %}
+                            </ol>
+                            
+                            {% if tutorial.exercise.hint %}
+                            <div class="alert alert-info mt-3">
+                                <strong>Hint:</strong> {{ tutorial.exercise.hint }}
+                            </div>
+                            {% endif %}
+                        </div>
+                    </div>
+                    {% endif %}
+                    
+                    <!-- Further Reading -->
+                    <h2 class="mt-4">Further Reading</h2>
+                    <ul>
+                        {% for resource in tutorial.further_reading %}
+                        <li><a href="{{ resource.url }}" target="_blank" rel="noopener noreferrer">{{ resource.title }}</a> - {{ resource.description }}</li>
+                        {% endfor %}
+                    </ul>
+                    
+                    <!-- Mark as Complete Button -->
+                    {% if current_user.is_authenticated and not completed %}
+                    <form action="{{ url_for('mark_complete', tutorial_id=tutorial.id) }}" method="post" class="mt-5">
+                        <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+                        <button type="submit" class="btn btn-success">
+                            <i class="fas fa-check-circle me-2"></i>Mark as Complete
+                        </button>
+                    </form>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4">
+            <!-- Table of Contents -->
+            <div class="card shadow-sm mb-4 sticky-top" style="top: 2rem;">
+                <div class="card-header bg-primary text-white">
+                    <h3 class="h5 mb-0"><i class="fas fa-list me-2"></i>Contents</h3>
+                </div>
+                <div class="card-body">
+                    <nav id="toc">
+                        <ul class="list-unstyled">
+                            <li><a href="#introduction" class="text-decoration-none">Introduction</a></li>
+                            {% for section in tutorial.sections %}
+                            <li class="mt-2"><a href="#section-{{ loop.index }}" class="text-decoration-none">{{ section.title }}</a></li>
+                            {% endfor %}
+                            <li class="mt-2"><a href="#key-takeaways" class="text-decoration-none">Key Takeaways</a></li>
+                            {% if tutorial.exercise %}
+                            <li class="mt-2"><a href="#practical-exercise" class="text-decoration-none">Practical Exercise</a></li>
+                            {% endif %}
+                            <li class="mt-2"><a href="#further-reading" class="text-decoration-none">Further Reading</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            
+            <!-- Related Tutorials -->
+            <div class="card shadow-sm mb-4">
+                <div class="card-header bg-secondary text-white">
+                    <h3 class="h5 mb-0"><i class="fas fa-link me-2"></i>Related Tutorials</h3>
+                </div>
+                <div class="card-body">
+                    <ul class="list-group list-group-flush">
+                        {% for related in tutorial.related_tutorials %}
+                        <li class="list-group-item">
+                            <a href="{{ url_for('tutorial', tutorial_id=related.id) }}" class="text-decoration-none">{{ related.title }}</a>
+                            <span class="badge bg-secondary float-end">{{ related.difficulty }}</span>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Difficulty Legend -->
+            <div class="card shadow-sm">
+                <div class="card-header bg-info text-white">
+                    <h3 class="h5 mb-0"><i class="fas fa-info-circle me-2"></i>Difficulty Levels</h3>
+                </div>
+                <div class="card-body">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Beginner
+                            <span class="badge bg-success">Foundational concepts, no prior knowledge required</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Intermediate
+                            <span class="badge bg-warning text-dark">Builds on basic concepts</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Advanced
+                            <span class="badge bg-danger">Complex topics, requires previous knowledge</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_scripts %}
+<script>
+    // Intersection Observer for active TOC highlighting
+    document.addEventListener('DOMContentLoaded', function() {
+        const sections = document.querySelectorAll('h2, h3');
+        const tocLinks = document.querySelectorAll('#toc a');
+        
+        const observerOptions = {
+            rootMargin: '0px 0px -70% 0px',
+            threshold: 0.1
+        };
+        
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const id = entry.target.getAttribute('id');
+                    tocLinks.forEach(link => {
+                        link.classList.remove('fw-bold', 'text-primary');
+                        if (link.getAttribute('href') === `#${id}`) {
+                            link.classList.add('fw-bold', 'text-primary');
+                        }
+                    });
+                }
+            });
+        }, observerOptions);
+        
+        sections.forEach(section => {
+            section.id = section.textContent.toLowerCase().replace(/[^\w]+/g, '-');
+            observer.observe(section);
+        });
+    });
+</script>
+{% endblock %}

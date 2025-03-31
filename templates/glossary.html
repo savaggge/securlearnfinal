@@ -1,0 +1,265 @@
+{% extends "layout.html" %}
+
+{% block title %}Cybersecurity Glossary | CyberSecEdu{% endblock %}
+
+{% block content %}
+<div class="py-4">
+    <h1 class="mb-4"><i class="fas fa-book me-3"></i>Cybersecurity Glossary</h1>
+    <p class="lead">Learn essential cybersecurity terminology and concepts</p>
+</div>
+
+<div class="row mb-4">
+    <div class="col-lg-8">
+        <div class="input-group">
+            <span class="input-group-text bg-primary text-white"><i class="fas fa-search"></i></span>
+            <input type="text" id="glossary-search" class="form-control" placeholder="Search for terms...">
+        </div>
+    </div>
+    <div class="col-lg-4">
+        <select id="category-filter" class="form-select">
+            <option value="all" selected>All Categories</option>
+            <option value="general">General</option>
+            <option value="threats">Threats</option>
+            <option value="privacy">Privacy</option>
+            <option value="network">Network Security</option>
+            <option value="cryptography">Cryptography</option>
+            <option value="authentication">Authentication</option>
+        </select>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-3 mb-4">
+        <div class="card shadow-sm sticky-top" style="top: 2rem;">
+            <div class="card-header bg-primary text-white">
+                <h3 class="h5 mb-0">Alphabet Index</h3>
+            </div>
+            <div class="card-body p-2">
+                <div class="d-flex flex-wrap justify-content-center" id="alphabet-index">
+                    {% for letter in 'ABCDEFGHIJKLMNOPQRSTUVWXYZ' %}
+                    <a href="#letter-{{ letter }}" class="text-center p-2 m-1 text-decoration-none border rounded alphabet-link">{{ letter }}</a>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+        
+        <div class="card shadow-sm mt-4">
+            <div class="card-header bg-secondary text-white">
+                <h3 class="h5 mb-0">Term Count</h3>
+            </div>
+            <div class="card-body">
+                <div id="terms-counter" class="text-center">
+                    <h4 class="mb-0 display-4">{{ terms|length }}</h4>
+                    <p class="mb-0">cybersecurity terms</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-9">
+        <div id="no-results" class="alert alert-warning d-none">
+            <i class="fas fa-exclamation-circle me-2"></i>No terms found matching your search criteria.
+        </div>
+        
+        <div id="glossary-terms">
+            {% set current_letter = '' %}
+            {% for term in terms|sort(attribute='term') %}
+                {% set first_letter = term.term[0]|upper %}
+                
+                {% if first_letter != current_letter %}
+                    {% if not loop.first %}</div>{% endif %}
+                    
+                    <div id="letter-{{ first_letter }}" class="letter-section mb-4">
+                    <h2 class="border-bottom pb-2">{{ first_letter }}</h2>
+                    {% set current_letter = first_letter %}
+                {% endif %}
+                
+                <div class="card mb-3 glossary-item" data-term="{{ term.term|lower }}" data-category="{{ term.category|lower }}">
+                    <div class="card-header d-flex justify-content-between align-items-center">
+                        <h3 class="h5 mb-0">{{ term.term }}</h3>
+                        <span class="badge bg-{{ term.category_color }}">{{ term.category }}</span>
+                    </div>
+                    <div class="card-body">
+                        <p>{{ term.definition }}</p>
+                        
+                        {% if term.example %}
+                        <div class="alert alert-secondary mt-2">
+                            <strong>Example:</strong> {{ term.example }}
+                        </div>
+                        {% endif %}
+                        
+                        {% if term.related_terms %}
+                        <div class="mt-2">
+                            <strong>Related terms:</strong> 
+                            {% for related in term.related_terms %}
+                            <a href="#" class="related-term-link" data-term="{{ related|lower }}">{{ related }}</a>{% if not loop.last %}, {% endif %}
+                            {% endfor %}
+                        </div>
+                        {% endif %}
+                    </div>
+                </div>
+                
+                {% if loop.last %}</div>{% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_scripts %}
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Search functionality
+        const searchInput = document.getElementById('glossary-search');
+        const categoryFilter = document.getElementById('category-filter');
+        const noResults = document.getElementById('no-results');
+        const termsCounter = document.getElementById('terms-counter').querySelector('h4');
+        const glossaryItems = document.querySelectorAll('.glossary-item');
+        const alphabetLinks = document.querySelectorAll('.alphabet-link');
+        const letterSections = document.querySelectorAll('.letter-section');
+        
+        // Filter terms based on search input and category
+        function filterTerms() {
+            const searchTerm = searchInput.value.toLowerCase();
+            const categoryValue = categoryFilter.value;
+            
+            let visibleCount = 0;
+            let hasResults = false;
+            
+            // Reset letter section visibility
+            letterSections.forEach(section => {
+                section.style.display = 'block';
+                section.querySelectorAll('.glossary-item').forEach(item => {
+                    item.style.display = 'none';
+                });
+            });
+            
+            // Filter items
+            glossaryItems.forEach(item => {
+                const termText = item.dataset.term;
+                const termCategory = item.dataset.category;
+                
+                const matchesSearch = termText.includes(searchTerm);
+                const matchesCategory = categoryValue === 'all' || termCategory === categoryValue;
+                
+                if (matchesSearch && matchesCategory) {
+                    item.style.display = 'block';
+                    hasResults = true;
+                    visibleCount++;
+                    
+                    // Get the letter section this term belongs to
+                    const firstLetter = termText[0].toUpperCase();
+                    const letterSection = document.getElementById(`letter-${firstLetter}`);
+                    if (letterSection) {
+                        letterSection.style.display = 'block';
+                    }
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+            
+            // Update counter
+            termsCounter.textContent = visibleCount;
+            
+            // Show/hide no results message
+            if (hasResults) {
+                noResults.classList.add('d-none');
+            } else {
+                noResults.classList.remove('d-none');
+            }
+            
+            // Check if any items are visible in each letter section
+            letterSections.forEach(section => {
+                const visibleItems = Array.from(section.querySelectorAll('.glossary-item')).some(item => 
+                    item.style.display === 'block'
+                );
+                
+                if (!visibleItems) {
+                    section.style.display = 'none';
+                }
+            });
+            
+            // Update alphabet link states
+            updateAlphabetLinkStates();
+        }
+        
+        function updateAlphabetLinkStates() {
+            alphabetLinks.forEach(link => {
+                const letter = link.textContent;
+                const letterSection = document.getElementById(`letter-${letter}`);
+                
+                if (letterSection && letterSection.style.display === 'none') {
+                    link.classList.add('text-muted');
+                    link.style.opacity = '0.5';
+                } else {
+                    link.classList.remove('text-muted');
+                    link.style.opacity = '1';
+                }
+            });
+        }
+        
+        // Event listeners
+        searchInput.addEventListener('input', filterTerms);
+        categoryFilter.addEventListener('change', filterTerms);
+        
+        // Handle related term links
+        document.querySelectorAll('.related-term-link').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const relatedTerm = this.dataset.term;
+                
+                // Clear existing filters
+                searchInput.value = relatedTerm;
+                categoryFilter.value = 'all';
+                
+                // Apply the filter
+                filterTerms();
+                
+                // Smooth scroll to the term
+                const relatedTermElement = document.querySelector(`.glossary-item[data-term="${relatedTerm}"]`);
+                if (relatedTermElement) {
+                    relatedTermElement.scrollIntoView({ behavior: 'smooth' });
+                    
+                    // Highlight the term briefly
+                    relatedTermElement.classList.add('border-primary');
+                    setTimeout(() => {
+                        relatedTermElement.classList.remove('border-primary');
+                    }, 2000);
+                }
+            });
+        });
+        
+        // Initialize
+        updateAlphabetLinkStates();
+    });
+</script>
+{% endblock %}
+
+{% block extra_head %}
+<style>
+    .alphabet-link {
+        width: 36px;
+        height: 36px;
+        line-height: 32px;
+        transition: all 0.2s;
+    }
+    
+    .alphabet-link:hover {
+        background-color: var(--bs-primary);
+        color: white;
+    }
+    
+    .glossary-item {
+        transition: box-shadow 0.3s ease;
+    }
+    
+    .glossary-item:hover {
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    }
+    
+    .related-term-link {
+        text-decoration: none;
+        border-bottom: 1px dotted;
+    }
+</style>
+{% endblock %}

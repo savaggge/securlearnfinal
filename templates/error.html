@@ -1,0 +1,75 @@
+{% extends "layout.html" %}
+
+{% block title %}Error {{ error_code }} | CyberSecEdu{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-8 text-center py-5">
+        <h1 class="display-1 text-danger">{{ error_code }}</h1>
+        <h2 class="mb-4">{{ error_message }}</h2>
+        
+        <div class="mb-5">
+            <p class="lead">
+                {% if error_code == 404 %}
+                The page you're looking for cannot be found.
+                {% elif error_code == 403 %}
+                You don't have permission to access this resource.
+                {% elif error_code == 500 %}
+                Something went wrong on our end. Please try again later.
+                {% else %}
+                An error occurred. Please try again or contact support.
+                {% endif %}
+            </p>
+        </div>
+        
+        <div class="card shadow-sm mb-4">
+            <div class="card-body">
+                <h3 class="h5 mb-3">What can you do?</h3>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="d-flex flex-column align-items-center mb-3">
+                            <i class="fas fa-home fa-3x mb-3 text-primary"></i>
+                            <h4 class="h6">Go to Homepage</h4>
+                            <p class="small text-muted">Return to our main page</p>
+                            <a href="{{ url_for('index') }}" class="btn btn-primary btn-sm">Home</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="d-flex flex-column align-items-center mb-3">
+                            <i class="fas fa-search fa-3x mb-3 text-primary"></i>
+                            <h4 class="h6">Browse Tutorials</h4>
+                            <p class="small text-muted">Find learning materials</p>
+                            <a href="{{ url_for('tutorials') }}" class="btn btn-primary btn-sm">Tutorials</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="d-flex flex-column align-items-center mb-3">
+                            <i class="fas fa-arrow-left fa-3x mb-3 text-primary"></i>
+                            <h4 class="h6">Go Back</h4>
+                            <p class="small text-muted">Return to previous page</p>
+                            <button onclick="window.history.back()" class="btn btn-primary btn-sm">Back</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        {% if error_code == 404 %}
+        <div class="alert alert-info">
+            <i class="fas fa-lightbulb me-2"></i>
+            <strong>Fun fact:</strong> In cybersecurity, a 404 error can sometimes be a security feature to hide sensitive information about your server's directory structure.
+        </div>
+        {% elif error_code == 403 %}
+        <div class="alert alert-info">
+            <i class="fas fa-lightbulb me-2"></i>
+            <strong>Fun fact:</strong> Access control is a fundamental principle of cybersecurity. 403 errors are an example of access controls working properly!
+        </div>
+        {% elif error_code == 500 %}
+        <div class="alert alert-info">
+            <i class="fas fa-lightbulb me-2"></i>
+            <strong>Fun fact:</strong> Proper error handling is an important security practice. It prevents attackers from gaining insights into how your systems work.
+        </div>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}
