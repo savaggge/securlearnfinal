@@ -150,6 +150,16 @@ footer a:hover {
     color: var(--bs-primary);
 }
 
+/* Стили для ключевых моментов */
+.card-header h3.h5 i.fa-lightbulb {
+    color: #ffc107; /* ярко-желтый цвет для иконки */
+}
+
+.card.bg-light .card-body {
+    color: #212529; /* темный цвет текста для контраста */
+    font-weight: 500; /* немного жирнее для лучшей читаемости */
+}
+
 pre {
     border-radius: 0.5rem;
     padding: 1rem;

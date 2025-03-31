@@ -1266,153 +1266,153 @@ TUTORIALS = [
     # Privacy Category
     {
         "id": "data-privacy",
-        "title": "Protecting Your Digital Privacy",
-        "description": "Learn how to protect your personal information and maintain privacy online.",
+        "title": "Защита вашей цифровой конфиденциальности",
+        "description": "Узнайте, как защитить вашу личную информацию и сохранить конфиденциальность в интернете.",
         "category": "privacy",
-        "difficulty": "Beginner",
-        "duration": "25 min",
-        "objectives": "Understand digital privacy threats, learn strategies to protect personal information, and take control of your online privacy.",
-        "introduction": "In today's connected world, our personal information is constantly being collected, shared, and sometimes exploited. Digital privacy refers to your ability to control what personal information is collected about you and how it's used. This tutorial will help you understand privacy threats and take practical steps to protect your personal data online.",
+        "difficulty": "Начинающий",
+        "duration": "25 мин",
+        "objectives": "Понимание угроз цифровой конфиденциальности, изучение стратегий защиты личной информации и получение контроля над вашей конфиденциальностью в интернете.",
+        "introduction": "В современном подключенном мире наша личная информация постоянно собирается, передается и иногда используется против нас. Цифровая конфиденциальность относится к вашей способности контролировать, какая личная информация собирается о вас и как она используется. Этот учебник поможет вам понять угрозы конфиденциальности и предпринять практические шаги для защиты ваших личных данных в интернете.",
         "sections": [
             {
-                "title": "Understanding Digital Privacy",
+                "title": "Понимание цифровой конфиденциальности",
                 "content": [
-                    "Digital privacy concerns the protection of your personal information in online environments. Here's what you need to understand:",
-                    "• Personal data is valuable: Companies collect data to target ads, develop products, or sell to third parties",
-                    "• Privacy vs. security: Privacy is about controlling your information, while security protects it from unauthorized access",
-                    "• The digital footprint: Everything you do online leaves traces that can be collected and analyzed",
-                    "• Data collection mechanisms: Cookies, tracking pixels, browser fingerprinting, and other technologies track your activities",
-                    "• Legal frameworks: Regulations like GDPR (Europe) and CCPA (California) provide some privacy protections",
-                    "Being aware of how your data is collected is the first step toward protecting it."
+                    "Цифровая конфиденциальность касается защиты вашей личной информации в онлайн-среде. Вот что вам нужно понимать:",
+                    "• Личные данные ценны: Компании собирают данные для таргетирования рекламы, разработки продуктов или продажи третьим лицам",
+                    "• Конфиденциальность и безопасность: Конфиденциальность — это контроль над вашей информацией, а безопасность защищает её от несанкционированного доступа",
+                    "• Цифровой след: Все, что вы делаете в интернете, оставляет следы, которые могут быть собраны и проанализированы",
+                    "• Механизмы сбора данных: Куки, пиксели отслеживания, цифровые отпечатки браузера и другие технологии отслеживают вашу активность",
+                    "• Правовые рамки: Регулирования, такие как GDPR (Европа) и CCPA (Калифорния), обеспечивают некоторую защиту конфиденциальности",
+                    "Осознание того, как собираются ваши данные, является первым шагом к их защите."
                 ],
                 "alert": {
                     "type": "info",
                     "icon": "info-circle",
-                    "title": "Your Data's Value",
-                    "content": "The average internet user generates significant value through their data. Estimates suggest individuals' data is worth hundreds or thousands of dollars annually to advertisers and data brokers."
+                    "title": "Ценность ваших данных",
+                    "content": "Среднестатистический пользователь интернета создает значительную ценность через свои данные. По оценкам, данные отдельных лиц стоят сотни или тысячи долларов ежегодно для рекламодателей и брокеров данных."
                 }
             },
             {
-                "title": "Common Privacy Threats",
+                "title": "Распространенные угрозы конфиденциальности",
                 "content": [
-                    "Various entities may compromise your privacy in different ways:",
-                    "• Data collection by websites and apps: Almost all online services collect information about users",
-                    "• Third-party tracking: Advertising networks track your browsing across multiple sites",
-                    "• Social media oversharing: Revealing too much personal information on social platforms",
-                    "• Data breaches: Unauthorized access to databases containing your personal information",
-                    "• Location tracking: GPS, Wi-Fi, and Bluetooth can reveal your physical movements",
-                    "• Invasive permissions: Apps requesting access to more data than they need to function",
-                    "• Public Wi-Fi snooping: Unencrypted networks allow others to intercept your traffic",
-                    "• Metadata collection: Information about your communications (who, when, how long) even if content is private",
-                    "Different privacy threats require different protective strategies."
+                    "Различные организации могут нарушать вашу конфиденциальность разными способами:",
+                    "• Сбор данных веб-сайтами и приложениями: Почти все онлайн-сервисы собирают информацию о пользователях",
+                    "• Отслеживание третьими лицами: Рекламные сети отслеживают ваш просмотр на нескольких сайтах",
+                    "• Чрезмерное раскрытие в социальных сетях: Раскрытие слишком большого количества личной информации на социальных платформах",
+                    "• Утечки данных: Несанкционированный доступ к базам данных, содержащим вашу личную информацию",
+                    "• Отслеживание местоположения: GPS, Wi-Fi и Bluetooth могут раскрыть ваши физические перемещения",
+                    "• Навязчивые разрешения: Приложения, запрашивающие доступ к большему количеству данных, чем им нужно для функционирования",
+                    "• Перехват данных в общественных Wi-Fi: Незашифрованные сети позволяют другим перехватывать ваш трафик",
+                    "• Сбор метаданных: Информация о ваших коммуникациях (кто, когда, как долго), даже если содержание является приватным",
+                    "Разные угрозы конфиденциальности требуют разных стратегий защиты."
                 ],
                 "image": {
                     "url": "https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/svgs/solid/user-shield.svg",
-                    "alt": "Digital Privacy Protection",
-                    "caption": "Protecting your personal information requires a multi-layered approach to privacy"
+                    "alt": "Защита цифровой конфиденциальности",
+                    "caption": "Защита вашей личной информации требует многоуровневого подхода к конфиденциальности"
                 }
             },
             {
-                "title": "Browser Privacy Techniques",
+                "title": "Методы обеспечения конфиденциальности в браузере",
                 "content": [
-                    "Your web browser is a primary point for data collection. Here's how to enhance browser privacy:",
-                    "1. Choose a privacy-focused browser:",
-                    "   • Options include Firefox, Brave, or Tor Browser",
-                    "   • Each offers different balances of privacy vs. convenience",
+                    "Ваш веб-браузер является основной точкой сбора данных. Вот как повысить конфиденциальность в браузере:",
+                    "1. Выберите браузер, ориентированный на конфиденциальность:",
+                    "   • Варианты включают Firefox, Brave или Tor Browser",
+                    "   • Каждый предлагает разный баланс между конфиденциальностью и удобством",
                     "",
-                    "2. Adjust browser settings:",
-                    "   • Block third-party cookies",
-                    "   • Enable 'Do Not Track'",
-                    "   • Use HTTPS-only mode",
-                    "   • Clear browsing data regularly",
+                    "2. Настройте параметры браузера:",
+                    "   • Блокируйте сторонние куки",
+                    "   • Включите функцию 'Do Not Track' (Не отслеживать)",
+                    "   • Используйте режим HTTPS-only",
+                    "   • Регулярно очищайте данные просмотра",
                     "",
-                    "3. Use privacy extensions:",
-                    "   • Ad blockers (uBlock Origin)",
-                    "   • Tracker blockers (Privacy Badger)",
-                    "   • HTTPS enforcers (HTTPS Everywhere)",
-                    "   • Cookie managers (Cookie AutoDelete)",
+                    "3. Используйте расширения для конфиденциальности:",
+                    "   • Блокировщики рекламы (uBlock Origin)",
+                    "   • Блокировщики трекеров (Privacy Badger)",
+                    "   • Принудительные HTTPS (HTTPS Everywhere)",
+                    "   • Менеджеры куки (Cookie AutoDelete)",
                     "",
-                    "4. Consider more advanced techniques:",
-                    "   • Compartmentalize browsing with different browsers or profiles",
-                    "   • Use private/incognito mode for sensitive browsing",
-                    "   • Consider a VPN for additional privacy"
+                    "4. Рассмотрите более продвинутые техники:",
+                    "   • Разделите просмотр с использованием разных браузеров или профилей",
+                    "   • Используйте приватный/инкогнито режим для конфиденциального просмотра",
+                    "   • Рассмотрите возможность использования VPN для дополнительной конфиденциальности"
                 ],
                 "code": {
                     "language": "text",
-                    "snippet": "# Recommended Privacy Browser Extensions\n\n## Essential Extensions:\n- uBlock Origin: Block ads and trackers\n- Privacy Badger: Learns to block invisible trackers\n- HTTPS Everywhere: Enforces secure connections\n- Decentraleyes: Protects against CDN tracking\n\n## Additional Privacy Tools:\n- Cookie AutoDelete: Automatically removes cookies\n- NoScript: Block JavaScript from untrusted sources\n- CanvasBlocker: Prevents fingerprinting\n- Disconnect: Visualizes and blocks trackers\n\n## To check your browser fingerprint:\n- Visit: https://coveryourtracks.eff.org/\n- Test how unique your browser appears to trackers"
+                    "snippet": "# Рекомендуемые расширения для конфиденциальности браузера\n\n## Основные расширения:\n- uBlock Origin: Блокирует рекламу и трекеры\n- Privacy Badger: Обучается блокировать невидимые трекеры\n- HTTPS Everywhere: Принудительно использует защищенные соединения\n- Decentraleyes: Защищает от отслеживания через CDN\n\n## Дополнительные инструменты конфиденциальности:\n- Cookie AutoDelete: Автоматически удаляет куки\n- NoScript: Блокирует JavaScript из ненадежных источников\n- CanvasBlocker: Предотвращает создание цифрового отпечатка\n- Disconnect: Визуализирует и блокирует трекеры\n\n## Чтобы проверить отпечаток вашего браузера:\n- Посетите: https://coveryourtracks.eff.org/\n- Проверьте, насколько уникально выглядит ваш браузер для трекеров"
                 }
             },
             {
-                "title": "Everyday Privacy Practices",
+                "title": "Ежедневные практики конфиденциальности",
                 "content": [
-                    "Beyond browser settings, incorporate these privacy practices into your daily digital life:",
-                    "• Audit app permissions: Review and restrict what data your apps can access",
-                    "• Use privacy-focused alternatives: Consider services like ProtonMail (email), Signal (messaging), or DuckDuckGo (search)",
-                    "• Read privacy policies: Pay attention to how services use your data, especially for financial or health apps",
-                    "• Manage social media privacy: Regularly review and update privacy settings on all platforms",
-                    "• Limit data sharing: Only provide necessary information when signing up for services",
-                    "• Use strong, unique passwords: Prevent unauthorized access to your accounts",
-                    "• Enable two-factor authentication: Add an extra layer of security",
-                    "• Be mindful of public Wi-Fi: Use a VPN when connecting to public networks",
-                    "• Regularly delete unused accounts: Reduce your digital footprint",
-                    "• Check data breach notifications: Use services like Have I Been Pwned to monitor for compromised accounts",
-                    "Small changes in habits can significantly improve your overall privacy posture."
+                    "Помимо настроек браузера, внедрите эти практики конфиденциальности в вашу повседневную цифровую жизнь:",
+                    "• Проверяйте разрешения приложений: Просматривайте и ограничивайте, к каким данным имеют доступ ваши приложения",
+                    "• Используйте альтернативы, ориентированные на конфиденциальность: Рассмотрите сервисы, такие как ProtonMail (электронная почта), Signal (мессенджер) или DuckDuckGo (поиск)",
+                    "• Читайте политики конфиденциальности: Обращайте внимание на то, как сервисы используют ваши данные, особенно для финансовых или медицинских приложений",
+                    "• Управляйте конфиденциальностью в социальных сетях: Регулярно проверяйте и обновляйте настройки конфиденциальности на всех платформах",
+                    "• Ограничивайте обмен данными: Предоставляйте только необходимую информацию при регистрации в сервисах",
+                    "• Используйте сильные, уникальные пароли: Предотвращайте несанкционированный доступ к вашим учетным записям",
+                    "• Включите двухфакторную аутентификацию: Добавьте дополнительный уровень безопасности",
+                    "• Будьте осторожны с общественным Wi-Fi: Используйте VPN при подключении к общественным сетям",
+                    "• Регулярно удаляйте неиспользуемые учетные записи: Сокращайте свой цифровой след",
+                    "• Проверяйте уведомления об утечках данных: Используйте сервисы, такие как Have I Been Pwned, для мониторинга скомпрометированных учетных записей",
+                    "Небольшие изменения в привычках могут значительно улучшить вашу общую позицию в отношении конфиденциальности."
                 ]
             }
         ],
         "key_takeaways": [
-            "Digital privacy is about controlling what personal information is collected and how it's used",
-            "Privacy threats include tracking, data collection, and oversharing on social media",
-            "Browser settings and privacy extensions can significantly reduce tracking",
-            "Choose privacy-focused alternatives for essential services like email and messaging",
-            "Regularly audit app permissions and social media privacy settings"
+            "Цифровая конфиденциальность — это контроль над тем, какая личная информация собирается и как она используется",
+            "Угрозы конфиденциальности включают отслеживание, сбор данных и чрезмерное раскрытие информации в социальных сетях",
+            "Настройки браузера и расширения для конфиденциальности могут значительно уменьшить отслеживание",
+            "Выберите альтернативы, ориентированные на конфиденциальность, для основных сервисов, таких как электронная почта и обмен сообщениями",
+            "Регулярно проверяйте разрешения приложений и настройки конфиденциальности в социальных сетях"
         ],
         "exercise": {
-            "title": "Personal Privacy Audit",
-            "description": "Evaluate and improve your current digital privacy practices.",
+            "title": "Аудит личной конфиденциальности",
+            "description": "Оцените и улучшите ваши текущие практики цифровой конфиденциальности.",
             "steps": [
-                "Check your browser's privacy settings and adjust them for better protection",
-                "Install at least one privacy-enhancing browser extension",
-                "Review app permissions on your mobile device and revoke unnecessary access",
-                "Check privacy settings on your social media accounts",
-                "Search for yourself online to see what information is publicly available",
-                "Set up alerts for data breaches through a service like Have I Been Pwned",
-                "Create a plan to gradually adopt more privacy-focused services"
+                "Проверьте настройки конфиденциальности вашего браузера и настройте их для лучшей защиты",
+                "Установите хотя бы одно расширение для повышения конфиденциальности",
+                "Просмотрите разрешения приложений на вашем мобильном устройстве и отзовите ненужный доступ",
+                "Проверьте настройки конфиденциальности в ваших учетных записях социальных сетей",
+                "Найдите себя в интернете, чтобы увидеть, какая информация о вас общедоступна",
+                "Настройте оповещения о утечках данных через сервис типа Have I Been Pwned",
+                "Создайте план для постепенного внедрения сервисов, ориентированных на конфиденциальность"
             ],
-            "hint": "Focus on improving one aspect of your privacy at a time. Start with the areas that contain your most sensitive information, such as financial apps or email."
+            "hint": "Сосредоточьтесь на улучшении одного аспекта вашей конфиденциальности за раз. Начните с областей, которые содержат вашу наиболее конфиденциальную информацию, таких как финансовые приложения или электронная почта."
         },
         "further_reading": [
             {
                 "title": "Electronic Frontier Foundation's Surveillance Self-Defense",
                 "url": "https://ssd.eff.org/",
-                "description": "Comprehensive guide to protecting yourself from surveillance and data collection"
+                "description": "Комплексное руководство по защите от слежки и сбора данных"
             },
             {
                 "title": "Privacy Tools",
                 "url": "https://www.privacytools.io/",
-                "description": "Curated list of privacy-focused software and services"
+                "description": "Подборка программного обеспечения и сервисов, ориентированных на конфиденциальность"
             },
             {
                 "title": "Data Detox Kit",
                 "url": "https://datadetoxkit.org/en/home",
-                "description": "Simple steps to reduce your data footprint online"
+                "description": "Простые шаги для уменьшения вашего цифрового следа в интернете"
             }
         ],
         "related_tutorials": [
             {
                 "id": "secure-browsing",
-                "title": "Safe Web Browsing Practices",
-                "difficulty": "Beginner"
+                "title": "Безопасное использование веб-браузера",
+                "difficulty": "Начинающий"
             },
             {
                 "id": "social-media-privacy",
-                "title": "Securing Your Social Media Accounts",
-                "difficulty": "Beginner"
+                "title": "Защита учетных записей в социальных сетях",
+                "difficulty": "Начинающий"
             },
             {
                 "id": "private-browsing",
-                "title": "Using VPNs for Privacy",
-                "difficulty": "Intermediate"
+                "title": "Использование VPN для конфиденциальности",
+                "difficulty": "Средний"
             }
         ]
     },
