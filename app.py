@@ -36,7 +36,7 @@ app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 @app.after_request
 def set_security_headers(response):
     # Content Security Policy
-    response.headers['Content-Security-Policy'] = "default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://cdn.replit.com https://cdn.jsdelivr.net; font-src 'self' https://cdn.jsdelivr.net; img-src 'self' data:;"
+    response.headers['Content-Security-Policy'] = "default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; font-src 'self' https://cdn.jsdelivr.net; img-src 'self' data:;"
     # HTTP Strict Transport Security
     response.headers['Strict-Transport-Security'] = 'max-age=31536000; includeSubDomains'
     # X-Content-Type-Options
